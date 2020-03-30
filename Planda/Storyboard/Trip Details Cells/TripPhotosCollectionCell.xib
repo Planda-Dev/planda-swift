@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="v5G-zE-HE1" customClass="TripPhotosCollectionCell" customModule="Planda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1nV-ew-pSw">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Montreal" translatesAutoresizingMaskIntoConstraints="NO" id="EZH-kO-epG">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="EZH-kO-epG" secondAttribute="trailing" id="CtH-7C-heM"/>
+                    <constraint firstItem="EZH-kO-epG" firstAttribute="leading" secondItem="1nV-ew-pSw" secondAttribute="leading" id="FYA-Hn-yee"/>
+                    <constraint firstItem="EZH-kO-epG" firstAttribute="top" secondItem="1nV-ew-pSw" secondAttribute="top" id="KM9-UE-fj1"/>
+                    <constraint firstAttribute="bottom" secondItem="EZH-kO-epG" secondAttribute="bottom" id="qEl-PX-9GY"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="120" height="120"/>
+            <point key="canvasLocation" x="-794.20289855072474" y="-32.8125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Montreal" width="1024" height="512"/>
+    </resources>
+</document>

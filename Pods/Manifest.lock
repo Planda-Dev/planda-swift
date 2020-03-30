@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (5.0.4)
+  - AMScrollingNavbar (5.6.1)
+  - DynamicButton (6.2.1)
+  - EMPageViewController (4.0.0)
+  - FloatingPanel (1.7.4)
+  - Floaty (4.2.0)
+  - GTProgressBar (0.3.3)
+  - LGButton (1.1.6)
+  - Pageboy (3.5.1)
+  - PieCharts (0.0.7)
+  - SwiftyButton (0.8.2)
+  - SwiftyJSON (4.3.0)
+  - YNSearch (2.4.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-rc.3)
+  - AMScrollingNavbar
+  - DynamicButton (~> 6.2.1)
+  - EMPageViewController
+  - FloatingPanel
+  - Floaty (~> 4.2.0)
+  - GTProgressBar
+  - LGButton
+  - Pageboy (~> 3.2)
+  - PieCharts
+  - SwiftyButton
+  - SwiftyJSON (~> 4.0)
+  - YNSearch
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AMScrollingNavbar
+    - DynamicButton
+    - EMPageViewController
+    - FloatingPanel
+    - Floaty
+    - GTProgressBar
+    - LGButton
+    - Pageboy
+    - PieCharts
+    - SwiftyButton
+    - SwiftyJSON
+    - YNSearch
+
+SPEC CHECKSUMS:
+  Alamofire: 0fe5fd24b4298dc377a6550da7d5f1b30e286fcb
+  AMScrollingNavbar: 602dd7a26efd0edb40d67ec20b5ee80b9f573bbb
+  DynamicButton: 95f30460793bd3510a5c213ac1b810a5e3d54b6a
+  EMPageViewController: de8c8d6ea44c77bc2463f2cb9b4128390d2391f2
+  FloatingPanel: 3c9d0e30fe350e1613157557769d2ec97f76b96b
+  Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
+  GTProgressBar: a480283ecb0ada50de16c71e634892826928f640
+  LGButton: 9f0a7f9d3030e3f504108342f6b66d64a429371b
+  Pageboy: 288353d4cc848c24deec2f7542f325089247c136
+  PieCharts: 30e50dfa7dc19e5b84e9878d32089673ef5d0453
+  SwiftyButton: 5b0ef314e9cf61cf8a83e456ddd1ea1f53f30598
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  YNSearch: 56d4aad4547fd1efce355cccc220a94735b1ea14
+
+PODFILE CHECKSUM: fd2290dcf97ab4d33f6c0d0307e7d1ebd55fe425
+
+COCOAPODS: 1.8.4
