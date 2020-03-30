@@ -3,19 +3,81 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52CE82FDA3B1F8E740C5A70E /* libPods-Planda.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37392E7A3572983CF94DC796 /* libPods-Planda.a */; };
 		C81D8A1523B8E4B20047AB9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81D8A1423B8E4B20047AB9B /* AppDelegate.swift */; };
 		C81D8A1723B8E4B20047AB9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81D8A1623B8E4B20047AB9B /* ViewController.swift */; };
 		C81D8A1A23B8E4B20047AB9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81D8A1823B8E4B20047AB9B /* Main.storyboard */; };
 		C81D8A1D23B8E4B20047AB9B /* Planda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C81D8A1B23B8E4B20047AB9B /* Planda.xcdatamodeld */; };
 		C81D8A1F23B8E4B60047AB9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81D8A1E23B8E4B60047AB9B /* Assets.xcassets */; };
 		C81D8A2223B8E4B60047AB9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81D8A2023B8E4B60047AB9B /* LaunchScreen.storyboard */; };
+		C825F6CF23D7E21C006B0192 /* AgendaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C825F6CD23D7E21C006B0192 /* AgendaCell.swift */; };
+		C825F6D023D7E21C006B0192 /* AgendaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C825F6CE23D7E21C006B0192 /* AgendaCell.xib */; };
+		C825F6D323D7E345006B0192 /* AgendaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C825F6D123D7E345006B0192 /* AgendaTableCell.swift */; };
+		C825F6D423D7E345006B0192 /* AgendaTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C825F6D223D7E345006B0192 /* AgendaTableCell.xib */; };
+		C825F6D623D7FEE4006B0192 /* TripDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C825F6D523D7FEE4006B0192 /* TripDetailsViewController.swift */; };
+		C825F6DD23D80911006B0192 /* BudgetTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C825F6DB23D80911006B0192 /* BudgetTableCell.swift */; };
+		C825F6DE23D80911006B0192 /* BudgetTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C825F6DC23D80911006B0192 /* BudgetTableCell.xib */; };
+		C825F6E223D8322E006B0192 /* BudgetTableCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = C825F6E023D8322E006B0192 /* BudgetTableCellTwo.xib */; };
+		C825F6E423D83375006B0192 /* BudgetTableCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C825F6E323D83375006B0192 /* BudgetTableCellTwo.swift */; };
+		C825F6E623DA1A7D006B0192 /* CreateEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C825F6E523DA1A7D006B0192 /* CreateEventController.swift */; };
+		C82D8B3223D2BC6800763E7B /* PagingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C82D8B3023D2BB1B00763E7B /* PagingTableViewCell.xib */; };
+		C84FB85323DA9071001E6930 /* BudgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84FB85223DA9071001E6930 /* BudgetCell.xib */; };
+		C84FB85923DB7561001E6930 /* DestinationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84FB85823DB7561001E6930 /* DestinationController.swift */; };
+		C84FB85B23DB987D001E6930 /* FlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84FB85A23DB987D001E6930 /* FlightCell.xib */; };
+		C84FB85D23DB9B71001E6930 /* FlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84FB85C23DB9B71001E6930 /* FlightCell.swift */; };
+		C851F9AF23C81ABE00F58EFF /* TripAgendaCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C851F9AE23C81ABE00F58EFF /* TripAgendaCollectionCell.swift */; };
+		C851F9B323C9240D00F58EFF /* TripPhotosCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C851F9B223C9240D00F58EFF /* TripPhotosCollectionCell.swift */; };
+		C85A8B9123CE7D330007C285 /* TripGroupCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A8B9023CE7D330007C285 /* TripGroupCollectionCell.swift */; };
+		C85A8B9523CE802A0007C285 /* TripGroupCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C85A8B8F23CE7D2F0007C285 /* TripGroupCollectionCell.xib */; };
+		C86BE93223DBA8DC00493ED1 /* OverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86BE93123DBA8DC00493ED1 /* OverlayController.swift */; };
+		C86BE93423DBA8F900493ED1 /* HousingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86BE93323DBA8F900493ED1 /* HousingController.swift */; };
+		C86BE93723DBCEF100493ED1 /* HousingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86BE93523DBCEF100493ED1 /* HousingCell.swift */; };
+		C86BE93823DBCEF100493ED1 /* HousingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86BE93623DBCEF100493ED1 /* HousingCell.xib */; };
+		C86BE94723E6237F00493ED1 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86BE94623E6237F00493ED1 /* RootController.swift */; };
+		C86BE94B23E625E000493ED1 /* UserTripsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86BE94A23E625E000493ED1 /* UserTripsController.swift */; };
+		C86BE95323E62FB500493ED1 /* TripsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86BE95223E62FB500493ED1 /* TripsTableViewController.swift */; };
+		C8A7F888243295DB002D5456 /* Pods in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8A7F887243295DB002D5456 /* Pods */; };
+		C8B7B9DE23B90D57005B677E /* storyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7B9DD23B90D57005B677E /* storyCollectionViewCell.swift */; };
+		C8B7B9E123B90FA9005B677E /* user-details.json in Resources */ = {isa = PBXBuildFile; fileRef = C8B7B9E023B90FA9005B677E /* user-details.json */; };
+		C8B7B9E323B90FD1005B677E /* SegmentedProgessBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7B9E223B90FD1005B677E /* SegmentedProgessBar.swift */; };
+		C8B7B9E623B91003005B677E /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7B9E523B91003005B677E /* StoryModel.swift */; };
+		C8B7B9E923B91066005B677E /* PlandaSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7B9E823B91066005B677E /* PlandaSupport.swift */; };
+		C8B7B9EB23B9109D005B677E /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7B9EA23B9109D005B677E /* ContentViewController.swift */; };
+		C8B7B9ED23B910C6005B677E /* PreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7B9EC23B910C6005B677E /* PreViewController.swift */; };
+		C8B7B9EF23B91F7D005B677E /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7B9EE23B91F7D005B677E /* MainTableViewController.swift */; };
+		C8B7B9F123B92033005B677E /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7B9F023B92033005B677E /* Trip.swift */; };
+		C8B7B9F323B9205E005B677E /* TripTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7B9F223B9205E005B677E /* TripTableCell.swift */; };
+		C8DCBD7723BA7AB800B320E5 /* UserTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DCBD7623BA7AB800B320E5 /* UserTripsViewController.swift */; };
+		C8DCBD7E23BB036300B320E5 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DCBD7D23BB036300B320E5 /* SwipingController.swift */; };
+		C8DCBD8023BB072D00B320E5 /* MyTripsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DCBD7F23BB072D00B320E5 /* MyTripsCell.swift */; };
+		C8DCBD8223BB0B1300B320E5 /* SocialTripsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DCBD8123BB0B1300B320E5 /* SocialTripsCell.swift */; };
+		C8DCBD8423BB7B5E00B320E5 /* TripTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DCBD8323BB7B5E00B320E5 /* TripTableCell.xib */; };
+		C8DCBD9C23BBF0AB00B320E5 /* Details_TablePhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DCBD9B23BBF0AB00B320E5 /* Details_TablePhotosCell.swift */; };
+		C8FED40023D615070068A238 /* BudgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FED3FE23D615070068A238 /* BudgetCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C8E9BA8223FB286400CC96DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C8A7F888243295DB002D5456 /* Pods in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		37392E7A3572983CF94DC796 /* libPods-Planda.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Planda.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3C6EEB5211CDFE1867AE87 /* Pods_Planda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Planda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB92300B9024605F53820CD2 /* Pods-Planda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.debug.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.debug.xcconfig"; sourceTree = "<group>"; };
 		C81D8A1123B8E4B20047AB9B /* Planda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81D8A1423B8E4B20047AB9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C81D8A1623B8E4B20047AB9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +86,51 @@
 		C81D8A1E23B8E4B60047AB9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C81D8A2123B8E4B60047AB9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C81D8A2323B8E4B60047AB9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C825F6CD23D7E21C006B0192 /* AgendaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaCell.swift; sourceTree = "<group>"; };
+		C825F6CE23D7E21C006B0192 /* AgendaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgendaCell.xib; sourceTree = "<group>"; };
+		C825F6D123D7E345006B0192 /* AgendaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableCell.swift; sourceTree = "<group>"; };
+		C825F6D223D7E345006B0192 /* AgendaTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgendaTableCell.xib; sourceTree = "<group>"; };
+		C825F6D523D7FEE4006B0192 /* TripDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsViewController.swift; sourceTree = "<group>"; };
+		C825F6DB23D80911006B0192 /* BudgetTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTableCell.swift; sourceTree = "<group>"; };
+		C825F6DC23D80911006B0192 /* BudgetTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetTableCell.xib; sourceTree = "<group>"; };
+		C825F6E023D8322E006B0192 /* BudgetTableCellTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetTableCellTwo.xib; sourceTree = "<group>"; };
+		C825F6E323D83375006B0192 /* BudgetTableCellTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetTableCellTwo.swift; sourceTree = "<group>"; };
+		C825F6E523DA1A7D006B0192 /* CreateEventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventController.swift; sourceTree = "<group>"; };
+		C82D8B3023D2BB1B00763E7B /* PagingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PagingTableViewCell.xib; path = "/Users/princecarter/Desktop/Xcode Projects/Planda/Planda/Storyboard/PagingTableViewCell.xib"; sourceTree = "<absolute>"; };
+		C84FB85223DA9071001E6930 /* BudgetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetCell.xib; sourceTree = "<group>"; };
+		C84FB85823DB7561001E6930 /* DestinationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationController.swift; sourceTree = "<group>"; };
+		C84FB85A23DB987D001E6930 /* FlightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightCell.xib; sourceTree = "<group>"; };
+		C84FB85C23DB9B71001E6930 /* FlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCell.swift; sourceTree = "<group>"; };
+		C851F9AE23C81ABE00F58EFF /* TripAgendaCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAgendaCollectionCell.swift; sourceTree = "<group>"; };
+		C851F9B223C9240D00F58EFF /* TripPhotosCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPhotosCollectionCell.swift; sourceTree = "<group>"; };
+		C85A8B8F23CE7D2F0007C285 /* TripGroupCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripGroupCollectionCell.xib; sourceTree = "<group>"; };
+		C85A8B9023CE7D330007C285 /* TripGroupCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripGroupCollectionCell.swift; sourceTree = "<group>"; };
+		C86BE93123DBA8DC00493ED1 /* OverlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayController.swift; sourceTree = "<group>"; };
+		C86BE93323DBA8F900493ED1 /* HousingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingController.swift; sourceTree = "<group>"; };
+		C86BE93523DBCEF100493ED1 /* HousingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingCell.swift; sourceTree = "<group>"; };
+		C86BE93623DBCEF100493ED1 /* HousingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HousingCell.xib; sourceTree = "<group>"; };
+		C86BE94623E6237F00493ED1 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		C86BE94A23E625E000493ED1 /* UserTripsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTripsController.swift; sourceTree = "<group>"; };
+		C86BE95223E62FB500493ED1 /* TripsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewController.swift; sourceTree = "<group>"; };
+		C8A7F887243295DB002D5456 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
+		C8B7B9DD23B90D57005B677E /* storyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyCollectionViewCell.swift; sourceTree = "<group>"; };
+		C8B7B9E023B90FA9005B677E /* user-details.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "user-details.json"; sourceTree = "<group>"; };
+		C8B7B9E223B90FD1005B677E /* SegmentedProgessBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedProgessBar.swift; sourceTree = "<group>"; };
+		C8B7B9E523B91003005B677E /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
+		C8B7B9E823B91066005B677E /* PlandaSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlandaSupport.swift; sourceTree = "<group>"; };
+		C8B7B9EA23B9109D005B677E /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		C8B7B9EC23B910C6005B677E /* PreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreViewController.swift; sourceTree = "<group>"; };
+		C8B7B9EE23B91F7D005B677E /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		C8B7B9F023B92033005B677E /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		C8B7B9F223B9205E005B677E /* TripTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableCell.swift; sourceTree = "<group>"; };
+		C8DCBD7623BA7AB800B320E5 /* UserTripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTripsViewController.swift; sourceTree = "<group>"; };
+		C8DCBD7D23BB036300B320E5 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwipingController.swift; path = "/Users/princecarter/Desktop/Xcode Projects/Planda/Planda/Controllers/SwipingController.swift"; sourceTree = "<absolute>"; };
+		C8DCBD7F23BB072D00B320E5 /* MyTripsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripsCell.swift; sourceTree = "<group>"; };
+		C8DCBD8123BB0B1300B320E5 /* SocialTripsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTripsCell.swift; sourceTree = "<group>"; };
+		C8DCBD8323BB7B5E00B320E5 /* TripTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripTableCell.xib; sourceTree = "<group>"; };
+		C8DCBD9B23BBF0AB00B320E5 /* Details_TablePhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details_TablePhotosCell.swift; sourceTree = "<group>"; };
+		C8FED3FE23D615070068A238 /* BudgetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCell.swift; sourceTree = "<group>"; };
+		D073997BC5C5824232065B53 /* Pods-Planda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.release.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +138,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52CE82FDA3B1F8E740C5A70E /* libPods-Planda.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A80B1B23344E8666E6A6E9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37392E7A3572983CF94DC796 /* libPods-Planda.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E319F32DA6D68C4DEE9C8D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB92300B9024605F53820CD2 /* Pods-Planda.debug.xcconfig */,
+				D073997BC5C5824232065B53 /* Pods-Planda.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C81D8A0823B8E4B20047AB9B = {
 			isa = PBXGroup;
 			children = (
+				C8A7F887243295DB002D5456 /* Pods */,
 				C81D8A1323B8E4B20047AB9B /* Planda */,
+				C8B7B9DF23B90F7B005B677E /* Resource */,
 				C81D8A1223B8E4B20047AB9B /* Products */,
+				9E319F32DA6D68C4DEE9C8D0 /* Pods */,
+				8A80B1B23344E8666E6A6E9A /* Frameworks */,
+				C8A7F8862432945B002D5456 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +186,193 @@
 		C81D8A1323B8E4B20047AB9B /* Planda */ = {
 			isa = PBXGroup;
 			children = (
+				C8DCBD8523BB909600B320E5 /* Storyboard */,
+				C8DCBD7823BABFED00B320E5 /* Controllers */,
+				C8B7B9DC23B90D1E005B677E /* Classes */,
+				C8B7B9E723B91050005B677E /* Extension */,
+				C8B7B9E423B90FF0005B677E /* Model */,
 				C81D8A1423B8E4B20047AB9B /* AppDelegate.swift */,
-				C81D8A1623B8E4B20047AB9B /* ViewController.swift */,
-				C81D8A1823B8E4B20047AB9B /* Main.storyboard */,
 				C81D8A1E23B8E4B60047AB9B /* Assets.xcassets */,
-				C81D8A2023B8E4B60047AB9B /* LaunchScreen.storyboard */,
 				C81D8A2323B8E4B60047AB9B /* Info.plist */,
 				C81D8A1B23B8E4B20047AB9B /* Planda.xcdatamodeld */,
+				C86BE94623E6237F00493ED1 /* RootController.swift */,
+				C86BE94A23E625E000493ED1 /* UserTripsController.swift */,
+				C86BE95223E62FB500493ED1 /* TripsTableViewController.swift */,
 			);
 			path = Planda;
+			sourceTree = "<group>";
+		};
+		C84FB84923DA6259001E6930 /* Create Trip Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C84FB85C23DB9B71001E6930 /* FlightCell.swift */,
+				C86BE93523DBCEF100493ED1 /* HousingCell.swift */,
+			);
+			path = "Create Trip Classes";
+			sourceTree = "<group>";
+		};
+		C84FB84E23DA63AB001E6930 /* Create Trip Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C84FB85A23DB987D001E6930 /* FlightCell.xib */,
+				C86BE93623DBCEF100493ED1 /* HousingCell.xib */,
+			);
+			path = "Create Trip Cells";
+			sourceTree = "<group>";
+		};
+		C84FB84F23DA6434001E6930 /* Individual Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C825F6CE23D7E21C006B0192 /* AgendaCell.xib */,
+				C825F6D223D7E345006B0192 /* AgendaTableCell.xib */,
+				C84FB85223DA9071001E6930 /* BudgetCell.xib */,
+				C825F6DC23D80911006B0192 /* BudgetTableCell.xib */,
+				C825F6E023D8322E006B0192 /* BudgetTableCellTwo.xib */,
+				C85A8B8F23CE7D2F0007C285 /* TripGroupCollectionCell.xib */,
+			);
+			path = "Individual Cells";
+			sourceTree = "<group>";
+		};
+		C84FB85023DA64DF001E6930 /* Individual Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C825F6CD23D7E21C006B0192 /* AgendaCell.swift */,
+				C825F6D123D7E345006B0192 /* AgendaTableCell.swift */,
+				C8FED3FE23D615070068A238 /* BudgetCell.swift */,
+				C825F6DB23D80911006B0192 /* BudgetTableCell.swift */,
+				C825F6E323D83375006B0192 /* BudgetTableCellTwo.swift */,
+				C85A8B9023CE7D330007C285 /* TripGroupCollectionCell.swift */,
+			);
+			path = "Individual Classes";
+			sourceTree = "<group>";
+		};
+		C86BE92F23DBA88600493ED1 /* Unused For Now */ = {
+			isa = PBXGroup;
+			children = (
+				C8B7B9EA23B9109D005B677E /* ContentViewController.swift */,
+				C8B7B9EC23B910C6005B677E /* PreViewController.swift */,
+				C8DCBD7623BA7AB800B320E5 /* UserTripsViewController.swift */,
+				C8B7B9EE23B91F7D005B677E /* MainTableViewController.swift */,
+				C81D8A1623B8E4B20047AB9B /* ViewController.swift */,
+			);
+			path = "Unused For Now";
+			sourceTree = "<group>";
+		};
+		C86BE93023DBA8A900493ED1 /* Create Trip Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C825F6E523DA1A7D006B0192 /* CreateEventController.swift */,
+				C84FB85823DB7561001E6930 /* DestinationController.swift */,
+				C86BE93123DBA8DC00493ED1 /* OverlayController.swift */,
+				C86BE93323DBA8F900493ED1 /* HousingController.swift */,
+			);
+			path = "Create Trip Controllers";
+			sourceTree = "<group>";
+		};
+		C8A7F8862432945B002D5456 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				5F3C6EEB5211CDFE1867AE87 /* Pods_Planda.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		C8B7B9DC23B90D1E005B677E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C84FB84923DA6259001E6930 /* Create Trip Classes */,
+				C8DCBD8E23BBE52C00B320E5 /* Trip Details Classes */,
+				C8DCBDA023BC0CBA00B320E5 /* 3 Page Classes */,
+				C8DCBD9F23BC0C7F00B320E5 /* Stories Classes */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C8B7B9DF23B90F7B005B677E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C8B7B9E023B90FA9005B677E /* user-details.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C8B7B9E423B90FF0005B677E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8B7B9E523B91003005B677E /* StoryModel.swift */,
+				C8B7B9F023B92033005B677E /* Trip.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8B7B9E723B91050005B677E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C8B7B9E823B91066005B677E /* PlandaSupport.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C8DCBD7823BABFED00B320E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C86BE93023DBA8A900493ED1 /* Create Trip Controllers */,
+				C86BE92F23DBA88600493ED1 /* Unused For Now */,
+				C8DCBD7D23BB036300B320E5 /* SwipingController.swift */,
+				C825F6D523D7FEE4006B0192 /* TripDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C8DCBD8523BB909600B320E5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C81D8A1823B8E4B20047AB9B /* Main.storyboard */,
+				C81D8A2023B8E4B60047AB9B /* LaunchScreen.storyboard */,
+				C84FB84E23DA63AB001E6930 /* Create Trip Cells */,
+				C8DCBDA123BC0E1D00B320E5 /* Trip Details Cells */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		C8DCBD8E23BBE52C00B320E5 /* Trip Details Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C84FB85023DA64DF001E6930 /* Individual Classes */,
+				C8DCBD9B23BBF0AB00B320E5 /* Details_TablePhotosCell.swift */,
+				C851F9AE23C81ABE00F58EFF /* TripAgendaCollectionCell.swift */,
+				C851F9B223C9240D00F58EFF /* TripPhotosCollectionCell.swift */,
+			);
+			path = "Trip Details Classes";
+			sourceTree = "<group>";
+		};
+		C8DCBD9F23BC0C7F00B320E5 /* Stories Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C8B7B9DD23B90D57005B677E /* storyCollectionViewCell.swift */,
+				C8B7B9E223B90FD1005B677E /* SegmentedProgessBar.swift */,
+			);
+			path = "Stories Classes";
+			sourceTree = "<group>";
+		};
+		C8DCBDA023BC0CBA00B320E5 /* 3 Page Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C8DCBD7F23BB072D00B320E5 /* MyTripsCell.swift */,
+				C8B7B9F223B9205E005B677E /* TripTableCell.swift */,
+				C8DCBD8123BB0B1300B320E5 /* SocialTripsCell.swift */,
+			);
+			path = "3 Page Classes";
+			sourceTree = "<group>";
+		};
+		C8DCBDA123BC0E1D00B320E5 /* Trip Details Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C8DCBD8323BB7B5E00B320E5 /* TripTableCell.xib */,
+				C82D8B3023D2BB1B00763E7B /* PagingTableViewCell.xib */,
+				C84FB84F23DA6434001E6930 /* Individual Cells */,
+			);
+			path = "Trip Details Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +382,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C81D8A2623B8E4B60047AB9B /* Build configuration list for PBXNativeTarget "Planda" */;
 			buildPhases = (
+				EB2FE1BD5BF3D195D929A383 /* [CP] Check Pods Manifest.lock */,
 				C81D8A0D23B8E4B20047AB9B /* Sources */,
 				C81D8A0E23B8E4B20047AB9B /* Frameworks */,
 				C81D8A0F23B8E4B20047AB9B /* Resources */,
+				C8E9BA8223FB286400CC96DC /* Embed Frameworks */,
+				73BE4D883ED9AB3264401A2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +410,7 @@
 				TargetAttributes = {
 					C81D8A1023B8E4B20047AB9B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -125,22 +437,107 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C84FB85323DA9071001E6930 /* BudgetCell.xib in Resources */,
+				C825F6D023D7E21C006B0192 /* AgendaCell.xib in Resources */,
+				C825F6E223D8322E006B0192 /* BudgetTableCellTwo.xib in Resources */,
+				C85A8B9523CE802A0007C285 /* TripGroupCollectionCell.xib in Resources */,
+				C825F6DE23D80911006B0192 /* BudgetTableCell.xib in Resources */,
+				C82D8B3223D2BC6800763E7B /* PagingTableViewCell.xib in Resources */,
+				C84FB85B23DB987D001E6930 /* FlightCell.xib in Resources */,
 				C81D8A2223B8E4B60047AB9B /* LaunchScreen.storyboard in Resources */,
 				C81D8A1F23B8E4B60047AB9B /* Assets.xcassets in Resources */,
+				C825F6D423D7E345006B0192 /* AgendaTableCell.xib in Resources */,
 				C81D8A1A23B8E4B20047AB9B /* Main.storyboard in Resources */,
+				C86BE93823DBCEF100493ED1 /* HousingCell.xib in Resources */,
+				C8DCBD8423BB7B5E00B320E5 /* TripTableCell.xib in Resources */,
+				C8B7B9E123B90FA9005B677E /* user-details.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73BE4D883ED9AB3264401A2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB2FE1BD5BF3D195D929A383 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Planda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C81D8A0D23B8E4B20047AB9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8FED40023D615070068A238 /* BudgetCell.swift in Sources */,
+				C851F9B323C9240D00F58EFF /* TripPhotosCollectionCell.swift in Sources */,
+				C8B7B9F123B92033005B677E /* Trip.swift in Sources */,
+				C8B7B9EB23B9109D005B677E /* ContentViewController.swift in Sources */,
+				C825F6E623DA1A7D006B0192 /* CreateEventController.swift in Sources */,
+				C85A8B9123CE7D330007C285 /* TripGroupCollectionCell.swift in Sources */,
+				C8B7B9ED23B910C6005B677E /* PreViewController.swift in Sources */,
+				C8B7B9DE23B90D57005B677E /* storyCollectionViewCell.swift in Sources */,
+				C8DCBD8023BB072D00B320E5 /* MyTripsCell.swift in Sources */,
+				C86BE93723DBCEF100493ED1 /* HousingCell.swift in Sources */,
 				C81D8A1723B8E4B20047AB9B /* ViewController.swift in Sources */,
+				C8B7B9E323B90FD1005B677E /* SegmentedProgessBar.swift in Sources */,
+				C8B7B9F323B9205E005B677E /* TripTableCell.swift in Sources */,
+				C825F6D323D7E345006B0192 /* AgendaTableCell.swift in Sources */,
+				C86BE94723E6237F00493ED1 /* RootController.swift in Sources */,
 				C81D8A1523B8E4B20047AB9B /* AppDelegate.swift in Sources */,
+				C8B7B9E923B91066005B677E /* PlandaSupport.swift in Sources */,
+				C825F6E423D83375006B0192 /* BudgetTableCellTwo.swift in Sources */,
+				C851F9AF23C81ABE00F58EFF /* TripAgendaCollectionCell.swift in Sources */,
+				C8DCBD9C23BBF0AB00B320E5 /* Details_TablePhotosCell.swift in Sources */,
+				C825F6D623D7FEE4006B0192 /* TripDetailsViewController.swift in Sources */,
+				C86BE93423DBA8F900493ED1 /* HousingController.swift in Sources */,
+				C84FB85D23DB9B71001E6930 /* FlightCell.swift in Sources */,
+				C8DCBD7E23BB036300B320E5 /* SwipingController.swift in Sources */,
 				C81D8A1D23B8E4B20047AB9B /* Planda.xcdatamodeld in Sources */,
+				C84FB85923DB7561001E6930 /* DestinationController.swift in Sources */,
+				C8B7B9EF23B91F7D005B677E /* MainTableViewController.swift in Sources */,
+				C86BE95323E62FB500493ED1 /* TripsTableViewController.swift in Sources */,
+				C825F6DD23D80911006B0192 /* BudgetTableCell.swift in Sources */,
+				C8DCBD8223BB0B1300B320E5 /* SocialTripsCell.swift in Sources */,
+				C86BE93223DBA8DC00493ED1 /* OverlayController.swift in Sources */,
+				C825F6CF23D7E21C006B0192 /* AgendaCell.swift in Sources */,
+				C86BE94B23E625E000493ED1 /* UserTripsController.swift in Sources */,
+				C8B7B9E623B91003005B677E /* StoryModel.swift in Sources */,
+				C8DCBD7723BA7AB800B320E5 /* UserTripsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +681,7 @@
 		};
 		C81D8A2723B8E4B60047AB9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB92300B9024605F53820CD2 /* Pods-Planda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,16 +690,18 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Prince-Carter.Planda";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C81D8A2823B8E4B60047AB9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D073997BC5C5824232065B53 /* Pods-Planda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,10 +710,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Prince-Carter.Planda";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
