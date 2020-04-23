@@ -1,6 +1,0 @@
-module Pods_Planda {
-  umbrella header "Pods-Planda-umbrella.h"
-
-  export *
-  module * { export * }
-}
