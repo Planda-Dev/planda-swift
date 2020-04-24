@@ -10,7 +10,7 @@ import UIKit
 
 class RecommendedCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate, PinterestLayoutDelegate {
     func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-        let height = 300.0
+        let height = 200.0
         return CGFloat(height)
     }
     
