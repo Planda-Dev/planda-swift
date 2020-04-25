@@ -1,6 +1,6 @@
 # Planda
 
-The Travel Powerhouse.
+Fly, Stay, Experience
 
 Planda is a traveling powerhouse. Whether you’re looking to spend your next vacation in Bali or take the kids to Disney World in the summer, Thrille makes it easy by aggregating your expenses and saving you money.
 
