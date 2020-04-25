@@ -6,6 +6,7 @@ target 'Planda' do
   use_frameworks!
 
   # Pods for Planda
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
 
   target 'PlandaTests' do
     inherit! :search_paths
