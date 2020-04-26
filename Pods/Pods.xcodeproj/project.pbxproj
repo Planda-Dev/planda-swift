@@ -7,24 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031703481D260CDA99DAC28ABAA9CAFC /* POPBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0BACBD4B1306D93DC0C614C90321A31 /* POPBasicAnimation.mm */; };
+		0390020EDE5DC28AC0260D96893213F6 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066169D91ED7E6EE95CECD4C3595B13 /* Spring.swift */; };
+		074DE1EAEBB222CAA3C9A3642C723201 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA7D94C38909F160485275B22DF1CC /* DesignableButton.swift */; };
+		080A5C9A46A8B2AEDA3B740D3120B929 /* POPMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 3998C78B830FD80E9531EF173D24911A /* POPMath.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		097DA5E1C60E62726E0D9B45BFAB0A3C /* Pods-PlandaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90BDEE4649441D28F7F644CECC0CB33 /* Pods-PlandaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10CC0DED42AC8D413BCA321D4A72C415 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782FD99514473741D6D6E25B08DC167 /* UITextField+fixCaretPosition.swift */; };
-		3BFFDAAF3955E78099BC25258E20746C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		3F382618063FE40A205947DCBF27959C /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B12DF41E29FE517538E13FC83CC7B3 /* SkyFloatingLabelTextField-dummy.m */; };
-		77C7ECED0A336A17176CF2673026385B /* Pods-Planda-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5FCFF1D58755111A0A9EC485B43D2B /* Pods-Planda-dummy.m */; };
+		0A875861D5FE30C449D99FDACDCBC8F5 /* POPAnimationTracer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A924C2838AA721CB5D2A06F984767EC /* POPAnimationTracer.mm */; };
+		0E5A51B10B75162D7A9C49320DA9C63F /* pop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 067EC19F6DC46C5A98EBDD2DA15BF94E /* pop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10678AE1BABC20542DC151C9A349D609 /* POPCustomAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = C845BDF066270D0F4C5D14DAAC047E97 /* POPCustomAnimation.mm */; };
+		10CC0DED42AC8D413BCA321D4A72C415 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3585D9B597023AA4000D2E917BF828EC /* UITextField+fixCaretPosition.swift */; };
+		134FD5032336DDDB9A8B386C64B1A2BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		1EC055455EF898EAA23AB76270C9F64D /* POPAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A22B8C6594FEB9AE610A4BCC0D7AC70 /* POPAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21B93DACEED1A22C132D9445FF723E92 /* pop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F9B09ED8C60A19174B42211E84FC7 /* pop-dummy.m */; };
+		271C3A25642C1818E1ABCF586335A712 /* POPAnimatableProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 3694D67BF091DEBB485F078C3DB33BFC /* POPAnimatableProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A1C4D2AF460D3B0F1CCE50C3E5374CD /* POPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = CDAF73BC97E533AD8741818FEEB97B6F /* POPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F251AECAFC8070A6B51389529D95C35 /* POPSpringAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 13957F4AE021A22FBA6B6BF354E24EEC /* POPSpringAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		32A6FE880BA536CCA0E026BBE32C4977 /* POPAnimationExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D2FDBDD223156640A480CB79F46AAB2 /* POPAnimationExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33E41D965E0AE6CFFAA51ACD51D0AC59 /* POPAnimationEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7511CB3572E88F14632B33ECC9A67A45 /* POPAnimationEvent.mm */; };
+		3BFFDAAF3955E78099BC25258E20746C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		3F382618063FE40A205947DCBF27959C /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CCFF2F02F4F4A6F6B39325AB7DDFE /* SkyFloatingLabelTextField-dummy.m */; };
+		3F43BDFDFBDB764E4E5903B90E39587E /* POPGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 22388B3D2A17B82C7A30254E850BDB23 /* POPGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44A28D16EB08B0BD5D488E8BC77A3346 /* POPSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ADF3A76B91FEE1DC96E7CA95DF570AB /* POPSpringAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4533B91CCCC3F1CC76546E7D33970BB3 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180CC7CECBB75B280ECBFCD59FCB601F /* pop.framework */; };
+		48DA0691977DA03C672983C1511FD4B5 /* POP.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1B0ABC0646DE1DE512A70A2A8B17E3 /* POP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F43B3335DF1BBC09D32378B83894A27 /* POPCGUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = C599DB727ABEDD12AB07166929DEE452 /* POPCGUtils.mm */; };
+		5002C714EFFC2B2E91E4D630A2D340D5 /* POPAnimatablePropertyTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 963A410BE01543F99539EC5FA469EFE1 /* POPAnimatablePropertyTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5361CDF9BB4F342A521306337B849A9C /* POPBasicAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 221905E258F07DD1ED9C55042DB9787C /* POPBasicAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5982B3876FBD091506FE36DEAB118A2B /* POPDecayAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E0687A968B8DF60F28E079406ACE5EE /* POPDecayAnimation.mm */; };
+		62615D161ED3AC72B6B133DC74BB3B02 /* POPAnimationTracerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB5CC582586F7ABED6126C96B90B432 /* POPAnimationTracerInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63B633CE5ECE81D5EAB185DDE1304AD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FC6BA7CB64EE10B4D6FC3B144D2B66 /* UIKit.framework */; };
+		688ED6DB548A741D12FC2B67733BE0D9 /* POPPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F533BD8485269253A0F1A959CD7A0A /* POPPropertyAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D5D916281EE0B869516F3BE602235FD /* POPAnimatorPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A585AA4ABD48B24C22FE86C22DAA23 /* POPAnimatorPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6E019666DD772BE37031E3D8B9DA0A09 /* WYMaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE68DEB27E0124A24C71D6CEBD3D166 /* WYMaterialButton.swift */; };
+		6F33343CEAFC5429A49CCEF18C244A75 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA0BCF906B749A028EEFC9160F9B5E /* SpringButton.swift */; };
+		705082738706B50E06A577BCD91F58C5 /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1589E22175B3474325182BDC0C169579 /* POPAnimationExtras.mm */; };
+		70CC3F0E9F8D3768FD55C7F812EC22D0 /* POPVector.h in Headers */ = {isa = PBXBuildFile; fileRef = CE13B15CC4B54F4EA12BE25BEB805445 /* POPVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		730C82F4BF6F18E0933D6A3B30657673 /* POPBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1491FFEF063F9F1B9E7FF3C000077A /* POPBasicAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E1B6DA31058389F79DAF54591DF6AAA /* Pods-PlandaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A838C0901C3D631DB04C4829EBBF556 /* Pods-PlandaTests-dummy.m */; };
-		8F97E0080F6F67F1592223966C7E67E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9D8D46605709D8478747D4A2A03D8413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A06EDDB2DFEB61E61F709A5C8EA29A07 /* Pods-Planda-PlandaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44A91FE25F94D5E0C462936891FA58 /* Pods-Planda-PlandaUITests-dummy.m */; };
-		B09FEC0B831B6F4E6D415077BF437A2A /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FC28F4F320CEE424898BFC0C88C516 /* SkyFloatingLabelTextField.swift */; };
-		B11D5985127066B49D444CBEE6E21E2A /* Pods-Planda-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B4D0E9E90BD509E874F2FA4C5CEDAD9 /* Pods-Planda-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6560C23E0F6A5F13CE2F4C2A3774A73 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1436A6E315780E102B5EBDD0C46AEE0 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE63B846EDD498D4335668FFD70F3F25 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C415521CCA1F6BAA26542ED6CBD71788 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
-		F45C4E2DB9B7CE1453B61DC847EF30EA /* Pods-Planda-PlandaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BD4162E328E73D860894658CC734AE /* Pods-Planda-PlandaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9593C440B7C6D8E7F68FC56B1A3E21B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7E9E105399FF6F4761EA16199B830FC5 /* POPAnimationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B78036357699D30B80634C2301CE75 /* POPAnimationEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		800B16C749DAB56B48F2635BA92CF5B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		879592CE0C65727548272F1F3A10375A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		8B1F793AD95366E76D87364522D12850 /* POPGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941B9D4CFA29E01E5FCCE6B150661692 /* POPGeometry.mm */; };
+		8CA93E15B14D5AE1C60B00079E2497B5 /* POPAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27AC9FADB464E7444D0D6AA930A814F4 /* POPAnimator.mm */; };
+		92268468B9AC15E33E096FAE01397A51 /* WYMaterialButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2D9CBF9AEACE61DEF3C81A097BAB04 /* WYMaterialButton-dummy.m */; };
+		9B9AED9F6E6BC2112C61B9121F13494A /* POPPropertyAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0D759A4B8E0BE24D0447E7865225B7 /* POPPropertyAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9C04B7B0C966DA872D6B649D5272D117 /* POPLayerExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D761C90BE80DB9F8C79A6EB831615B /* POPLayerExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E300C8236BD6D9EE8834782F25941C2 /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD633A94C528FA79BF1A6A58F6399605 /* POPVector.mm */; };
+		9F7E0E240B664651595E85322FFB4BAE /* POPAnimationRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 73F82D44633D7E493EF70EB8F79C8B7B /* POPAnimationRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A3A49039FDB9E346D487A8A3F4E66595 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		A7A1B224E16B054125C739793CE49EA3 /* POPAnimationTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D87612930031DF194454510623D063C /* POPAnimationTracer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A83F67600CBF06EC913BA3452611D0F0 /* WYMaterialButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B81B1E9F35504297C627A7565D0E562 /* WYMaterialButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8EEEAF0D18D7513E6A907E51BBE2CF1 /* POPAction.h in Headers */ = {isa = PBXBuildFile; fileRef = B1DACE7378FDFAA755B6E3C09D2FE9DB /* POPAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ABBB89F3E79D523FE321C3D245E1E223 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F562CB8C51DB8C687717CC068003045 /* TransformationMatrix.cpp */; };
+		AE707074A4134B117766E69FC7493DAC /* FloatConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6D83ED9F7A8AAF1F446CFAEBD7D2D9 /* FloatConversion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0247C62565581B0201709C23C9006B7 /* POPCustomAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = AA9D20B68F26ED085BEA52AFF60775CA /* POPCustomAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B09FEC0B831B6F4E6D415077BF437A2A /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F973F61BC706E2EE72E01789C63997 /* SkyFloatingLabelTextField.swift */; };
+		B0CBD0F914E00537850E3CC631FBE90D /* Pods-Planda-PlandaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44A91FE25F94D5E0C462936891FA58 /* Pods-Planda-PlandaUITests-dummy.m */; };
+		BA3D6D45CE739AE1984306FFD0C670FE /* Pods-Planda-PlandaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BD4162E328E73D860894658CC734AE /* Pods-Planda-PlandaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF246CF4576552DE02F4A26FBC179D0C /* POPDecayAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D455D006304948A17636D82CCCB454B /* POPDecayAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C039EC9FEAC5AC23FBB91A7C6D80E669 /* Pods-Planda-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5FCFF1D58755111A0A9EC485B43D2B /* Pods-Planda-dummy.m */; };
+		C17D829E376A83344F72F088E727CF73 /* POPSpringSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 24A602C782ABFD282CDCCAAFC12E3830 /* POPSpringSolver.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C313E5110A55A574DD1B1C1A85B494E1 /* UnitBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D718227D2364EA00AB518EA695E6CA7 /* UnitBezier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C6756B968957F045FACF1D71277EB496 /* POPAnimationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A1418356A9739B9A544CCF9A4CC8F383 /* POPAnimationPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CEFBA10370E913548D0AF96EED43EAA0 /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 544B13E36C6BB9C908C4FB7B6BD6D0AE /* POPPropertyAnimation.mm */; };
+		D288A38FC7C9ED35F70D95D8AA153381 /* Pods-Planda-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B4D0E9E90BD509E874F2FA4C5CEDAD9 /* Pods-Planda-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6560C23E0F6A5F13CE2F4C2A3774A73 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE838C115EBA33AAA2534554F5227155 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6760E3EA311729864B96417041FD207 /* POPAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = D453D87533583AF7F2BB304BCDDDCAE7 /* POPAnimation.mm */; };
+		D8DD6466FF7B3E4BC34D87DFE738B9F9 /* TransformationMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 42D9BE2861255355D939A10F5C4F5E0B /* TransformationMatrix.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D957A25B8C1B75E3FA6C40EE8C2DC2F0 /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97C11698E8DACC07BD02A6B775EA364B /* POPSpringAnimation.mm */; };
+		DE654B946E61984DAB2FECB581990FC0 /* POPCGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 13281C35AA3CF4285C97865047AF907D /* POPCGUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E0416C0BF5DB84736B5C8ED9D9D6EA53 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E7D1795253663E05AE4F5082146168 /* SpringAnimation.swift */; };
+		E2DF1B0AC671FF49B25BE1B292446B2E /* POPLayerExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93B16F21A5A84ECE2457EA54DDCEC513 /* POPLayerExtras.mm */; };
+		E3503B36E838B75E3768AF597742D75C /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0E474D49219412A63DEE5374B159EDC /* POPAnimatableProperty.mm */; };
+		E80D9F06728DCF678250C54411014331 /* POPAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 339903DDE478189F9C43F6FA1DA314DD /* POPAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE63B846EDD498D4335668FFD70F3F25 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2ED99764FF7F8B94222F87CC38F17 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		EF7555D9F8F66F8490DDA9C20D32BF29 /* POPAnimationEventInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 726AA1012239EF45B2B0A38C13A3268E /* POPAnimationEventInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EF8FF4EC99196D99E107CD95103A3D3C /* POPAnimationRuntime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 234F7AE76BD91681033472AD268508AB /* POPAnimationRuntime.mm */; };
+		F51EF4137F0BD1839BC20E65050258CB /* POPDecayAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 590CB98CC86DA460D7DF42B4F62160CE /* POPDecayAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9593C440B7C6D8E7F68FC56B1A3E21B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */; };
+		FC5DA62B951D1948F7417A6761AF373A /* POPMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A58205A068EE814F249F373BB41EA /* POPMath.mm */; };
+		FF2BBE5A1B6583A6C2461163B0225A08 /* POPAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD2FB176A29A3E33C61A0EB82319486 /* POPAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1E2516CE474874ABAB2E5AFF8A6578BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0483D7F620C992E5C4BD62A7266EABB4;
+			remoteInfo = pop;
+		};
+		35DA259363B3D259EB66E1A88F74BBA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFBAF98039AB4BA7927B611FB65B61BC;
+			remoteInfo = SkyFloatingLabelTextField;
+		};
 		4E93B983D820CA646CA45FB08D5D5061 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -32,14 +111,35 @@
 			remoteGlobalIDString = 064FF903137DC2546CF4195A8FA1AE09;
 			remoteInfo = "Pods-Planda";
 		};
-		5230450BC436ECB13377F75483D3F6E8 /* PBXContainerItemProxy */ = {
+		607FA178BE11DD9CD962D9E00BB601D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DFBAF98039AB4BA7927B611FB65B61BC;
-			remoteInfo = SkyFloatingLabelTextField;
+			remoteGlobalIDString = EB4E0152F7DBF124833455F3AD767F74;
+			remoteInfo = WYMaterialButton;
 		};
-		F75574E364FD486376F8240D11CDE6E3 /* PBXContainerItemProxy */ = {
+		7D48CC3451406F4A3D218122CA7C2AD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0483D7F620C992E5C4BD62A7266EABB4;
+			remoteInfo = pop;
+		};
+		A5B103CBD8C282BB6CDA7050F441B293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB4E0152F7DBF124833455F3AD767F74;
+			remoteInfo = WYMaterialButton;
+		};
+		E035A68BA3CDE55C1312D7F5340E94C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0483D7F620C992E5C4BD62A7266EABB4;
+			remoteInfo = pop;
+		};
+		E196A91733546D8EAF0774EA051AF39A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -49,50 +149,131 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00DA0BCF906B749A028EEFC9160F9B5E /* SpringButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringButton.swift; path = Pod/Classes/SpringButton.swift; sourceTree = "<group>"; };
 		0484A8234BF59CCCC6AF0960FF040A01 /* Pods-Planda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Planda.debug.xcconfig"; sourceTree = "<group>"; };
+		067EC19F6DC46C5A98EBDD2DA15BF94E /* pop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-umbrella.h"; sourceTree = "<group>"; };
+		0BB5CC582586F7ABED6126C96B90B432 /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracerInternal.h; path = pop/POPAnimationTracerInternal.h; sourceTree = "<group>"; };
+		13281C35AA3CF4285C97865047AF907D /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
+		13957F4AE021A22FBA6B6BF354E24EEC /* POPSpringAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimationInternal.h; path = pop/POPSpringAnimationInternal.h; sourceTree = "<group>"; };
+		1589E22175B3474325182BDC0C169579 /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
+		180CC7CECBB75B280ECBFCD59FCB601F /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B81B1E9F35504297C627A7565D0E562 /* WYMaterialButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYMaterialButton-umbrella.h"; sourceTree = "<group>"; };
 		1C15DFEB26BA2DB949E3BAA86F5F8767 /* Pods-Planda-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Planda-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E9F9B09ED8C60A19174B42211E84FC7 /* pop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "pop-dummy.m"; sourceTree = "<group>"; };
+		1EEA7D94C38909F160485275B22DF1CC /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = Pod/Classes/DesignableButton.swift; sourceTree = "<group>"; };
+		2066169D91ED7E6EE95CECD4C3595B13 /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Pod/Classes/Spring.swift; sourceTree = "<group>"; };
+		213564D341C1226217CE35457C61E747 /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
+		221905E258F07DD1ED9C55042DB9787C /* POPBasicAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimationInternal.h; path = pop/POPBasicAnimationInternal.h; sourceTree = "<group>"; };
+		22388B3D2A17B82C7A30254E850BDB23 /* POPGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPGeometry.h; path = pop/POPGeometry.h; sourceTree = "<group>"; };
+		234F7AE76BD91681033472AD268508AB /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
+		24A602C782ABFD282CDCCAAFC12E3830 /* POPSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringSolver.h; path = pop/POPSpringSolver.h; sourceTree = "<group>"; };
+		27AC9FADB464E7444D0D6AA930A814F4 /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
+		2AE68DEB27E0124A24C71D6CEBD3D166 /* WYMaterialButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WYMaterialButton.swift; path = Pod/Classes/WYMaterialButton.swift; sourceTree = "<group>"; };
 		2C5C533DBFBAFD9964B1DF0ACAD9B841 /* Pods-Planda-PlandaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Planda-PlandaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		2D455D006304948A17636D82CCCB454B /* POPDecayAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimationInternal.h; path = pop/POPDecayAnimationInternal.h; sourceTree = "<group>"; };
 		2E0F20C9CE7E0E131007A6DFA8B1337E /* Pods-Planda-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Planda-frameworks.sh"; sourceTree = "<group>"; };
 		2E5FCFF1D58755111A0A9EC485B43D2B /* Pods-Planda-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Planda-dummy.m"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		330ED75FF8F2AFD8A7822CBD2968152F /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		339903DDE478189F9C43F6FA1DA314DD /* POPAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimator.h; path = pop/POPAnimator.h; sourceTree = "<group>"; };
+		3585D9B597023AA4000D2E917BF828EC /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		3694D67BF091DEBB485F078C3DB33BFC /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
+		3998C78B830FD80E9531EF173D24911A /* POPMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPMath.h; path = pop/POPMath.h; sourceTree = "<group>"; };
+		3AF59DA1E57D0350AF834996A259086D /* pop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = pop.xcconfig; sourceTree = "<group>"; };
+		3D718227D2364EA00AB518EA695E6CA7 /* UnitBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UnitBezier.h; path = pop/WebCore/UnitBezier.h; sourceTree = "<group>"; };
 		3EBE64851C47D89175FECEA6F694046C /* Pods-Planda.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Planda.modulemap"; sourceTree = "<group>"; };
+		42D9BE2861255355D939A10F5C4F5E0B /* TransformationMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TransformationMatrix.h; path = pop/WebCore/TransformationMatrix.h; sourceTree = "<group>"; };
+		4D0D759A4B8E0BE24D0447E7865225B7 /* POPPropertyAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimationInternal.h; path = pop/POPPropertyAnimationInternal.h; sourceTree = "<group>"; };
 		4D5C8D55B53AEA3F3019C16339346763 /* Pods-PlandaTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PlandaTests-Info.plist"; sourceTree = "<group>"; };
+		4F0CCFF2F02F4F4A6F6B39325AB7DDFE /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		51305B2D9D8DA36D89CC277D729083D2 /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = pop.framework; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F973F61BC706E2EE72E01789C63997 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		544B13E36C6BB9C908C4FB7B6BD6D0AE /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
 		54DAE5668B4C6CDB7978EB40EB9D0EE2 /* Pods-Planda-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Planda-Info.plist"; sourceTree = "<group>"; };
 		5633DBFC4E48CC4F48D5B48AED76AF1F /* Pods-Planda-PlandaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Planda-PlandaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		570682C46A9DCDC03BFCC29A3784E1FB /* Pods_Planda_PlandaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Planda_PlandaUITests.framework; path = "Pods-Planda-PlandaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5782FD99514473741D6D6E25B08DC167 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		590CB98CC86DA460D7DF42B4F62160CE /* POPDecayAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimation.h; path = pop/POPDecayAnimation.h; sourceTree = "<group>"; };
+		5A22B8C6594FEB9AE610A4BCC0D7AC70 /* POPAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimation.h; path = pop/POPAnimation.h; sourceTree = "<group>"; };
 		63728369DC157BAE34D9A6511F3CB69F /* Pods-PlandaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PlandaTests.modulemap"; sourceTree = "<group>"; };
 		65412C7ED10F99215745C14DCB097D14 /* Pods_PlandaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PlandaTests.framework; path = "Pods-PlandaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		654E9827E6661225EAF742674AFE66F9 /* WYMaterialButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WYMaterialButton.framework; path = WYMaterialButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A340643B820D418B6424EBF40794202 /* Pods_Planda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Planda.framework; path = "Pods-Planda.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BCC2463E6A04277930C4058AE50E721 /* WYMaterialButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WYMaterialButton.modulemap; sourceTree = "<group>"; };
+		6D87612930031DF194454510623D063C /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
+		6E0687A968B8DF60F28E079406ACE5EE /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
 		6FD74988374477FBF1D8A0BBEAACE8B1 /* Pods-Planda-PlandaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Planda-PlandaUITests.modulemap"; sourceTree = "<group>"; };
+		71B2ED99764FF7F8B94222F87CC38F17 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		726AA1012239EF45B2B0A38C13A3268E /* POPAnimationEventInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEventInternal.h; path = pop/POPAnimationEventInternal.h; sourceTree = "<group>"; };
+		73F82D44633D7E493EF70EB8F79C8B7B /* POPAnimationRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationRuntime.h; path = pop/POPAnimationRuntime.h; sourceTree = "<group>"; };
+		7511CB3572E88F14632B33ECC9A67A45 /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
+		77E88A3100DDF46001539D9209F33FB5 /* SkyFloatingLabelTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SkyFloatingLabelTextField-Info.plist"; sourceTree = "<group>"; };
 		7A838C0901C3D631DB04C4829EBBF556 /* Pods-PlandaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PlandaTests-dummy.m"; sourceTree = "<group>"; };
+		7A8A58205A068EE814F249F373BB41EA /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
 		7B4D0E9E90BD509E874F2FA4C5CEDAD9 /* Pods-Planda-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Planda-umbrella.h"; sourceTree = "<group>"; };
-		7D383EC4896440BE54EB7F59F927A81E /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
-		947B71B77A34033A6BE83E49414A1D3B /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		7E6B57266E7D2B9ECA709AA73D07CEC8 /* pop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = pop.modulemap; sourceTree = "<group>"; };
+		81206378AEA7B42DA983F5AA9B21C67F /* WYMaterialButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WYMaterialButton-Info.plist"; sourceTree = "<group>"; };
+		8738A1BA30098A257F7694454172A337 /* WYMaterialButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYMaterialButton-prefix.pch"; sourceTree = "<group>"; };
+		8A924C2838AA721CB5D2A06F984767EC /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
+		8F562CB8C51DB8C687717CC068003045 /* TransformationMatrix.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = TransformationMatrix.cpp; path = pop/WebCore/TransformationMatrix.cpp; sourceTree = "<group>"; };
+		93B16F21A5A84ECE2457EA54DDCEC513 /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
+		941B9D4CFA29E01E5FCCE6B150661692 /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
 		954FC7A7289CC18D3865D5CB6FE21563 /* Pods-Planda-PlandaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Planda-PlandaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		963A410BE01543F99539EC5FA469EFE1 /* POPAnimatablePropertyTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatablePropertyTypes.h; path = pop/POPAnimatablePropertyTypes.h; sourceTree = "<group>"; };
+		97C11698E8DACC07BD02A6B775EA364B /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
+		9A1491FFEF063F9F1B9E7FF3C000077A /* POPBasicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimation.h; path = pop/POPBasicAnimation.h; sourceTree = "<group>"; };
+		9ADF3A76B91FEE1DC96E7CA95DF570AB /* POPSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimation.h; path = pop/POPSpringAnimation.h; sourceTree = "<group>"; };
+		9B1B0ABC0646DE1DE512A70A2A8B17E3 /* POP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POP.h; path = pop/POP.h; sourceTree = "<group>"; };
+		9D2FDBDD223156640A480CB79F46AAB2 /* POPAnimationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationExtras.h; path = pop/POPAnimationExtras.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1436A6E315780E102B5EBDD0C46AEE0 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		A0E474D49219412A63DEE5374B159EDC /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
+		A1418356A9739B9A544CCF9A4CC8F383 /* POPAnimationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationPrivate.h; path = pop/POPAnimationPrivate.h; sourceTree = "<group>"; };
+		A23AEB029E53EE8995CDC6581D71BE69 /* pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-prefix.pch"; sourceTree = "<group>"; };
 		A8A74E6319F9E63AEBEF0897433F42E0 /* Pods-Planda-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Planda-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A93C7C30FF58B4B38B969F87AD186491 /* Pods-PlandaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PlandaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A9F533BD8485269253A0F1A959CD7A0A /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
+		AA9D20B68F26ED085BEA52AFF60775CA /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
+		AE838C115EBA33AAA2534554F5227155 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
 		AF44A91FE25F94D5E0C462936891FA58 /* Pods-Planda-PlandaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Planda-PlandaUITests-dummy.m"; sourceTree = "<group>"; };
+		B0E7D1795253663E05AE4F5082146168 /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Pod/Classes/SpringAnimation.swift; sourceTree = "<group>"; };
+		B1DACE7378FDFAA755B6E3C09D2FE9DB /* POPAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAction.h; path = pop/POPAction.h; sourceTree = "<group>"; };
 		B5F83DF9E1A15AB450E8706DAA628238 /* Pods-PlandaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlandaTests.release.xcconfig"; sourceTree = "<group>"; };
 		B8FC4F2D57AB6FCE2DB330BD17905100 /* Pods-Planda-PlandaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Planda-PlandaUITests-Info.plist"; sourceTree = "<group>"; };
-		C415521CCA1F6BAA26542ED6CBD71788 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
-		C7FC28F4F320CEE424898BFC0C88C516 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C3D761C90BE80DB9F8C79A6EB831615B /* POPLayerExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPLayerExtras.h; path = pop/POPLayerExtras.h; sourceTree = "<group>"; };
+		C599DB727ABEDD12AB07166929DEE452 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
+		C76E4417218F19AB1A335D8A2189C8A6 /* pop-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "pop-Info.plist"; sourceTree = "<group>"; };
+		C845BDF066270D0F4C5D14DAAC047E97 /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
 		CDA361BCE0E17C10F6E4E099D1A5CC38 /* Pods-Planda-PlandaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Planda-PlandaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDAF73BC97E533AD8741818FEEB97B6F /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
+		CE13B15CC4B54F4EA12BE25BEB805445 /* POPVector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPVector.h; path = pop/POPVector.h; sourceTree = "<group>"; };
+		CF9EFF2C1AD5816D9D1DFD26224F0DAA /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
 		D0BD4162E328E73D860894658CC734AE /* Pods-Planda-PlandaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Planda-PlandaUITests-umbrella.h"; sourceTree = "<group>"; };
 		D1C5D58F713C3F603517EC228F7223CB /* Pods-PlandaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlandaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D392C11EB32EACD5EC9C8D37B51482B6 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D453878533150CE2135801367082AE61 /* Pods-PlandaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PlandaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D453D87533583AF7F2BB304BCDDDCAE7 /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
+		D6FC6BA7CB64EE10B4D6FC3B144D2B66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E0127A3FEEA6DB405FB2DE643B1C01E6 /* WYMaterialButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WYMaterialButton.xcconfig; sourceTree = "<group>"; };
+		E0BACBD4B1306D93DC0C614C90321A31 /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
+		E3A585AA4ABD48B24C22FE86C22DAA23 /* POPAnimatorPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatorPrivate.h; path = pop/POPAnimatorPrivate.h; sourceTree = "<group>"; };
 		E90BDEE4649441D28F7F644CECC0CB33 /* Pods-PlandaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PlandaTests-umbrella.h"; sourceTree = "<group>"; };
+		EE6D83ED9F7A8AAF1F446CFAEBD7D2D9 /* FloatConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = pop/WebCore/FloatConversion.h; sourceTree = "<group>"; };
 		EE836D8A1F28D57F71431D2902CAB66F /* Pods-Planda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Planda.release.xcconfig"; sourceTree = "<group>"; };
-		F3B12DF41E29FE517538E13FC83CC7B3 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
-		F6F086D9136F3C5C5912D8A4C0E437D5 /* SkyFloatingLabelTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SkyFloatingLabelTextField-Info.plist"; sourceTree = "<group>"; };
+		F3B78036357699D30B80634C2301CE75 /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
+		FC2D9CBF9AEACE61DEF3C81A097BAB04 /* WYMaterialButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WYMaterialButton-dummy.m"; sourceTree = "<group>"; };
+		FD633A94C528FA79BF1A6A58F6399605 /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
 		FE1767F797F0620FF3A7C7DB2955A31E /* Pods-Planda-PlandaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Planda-PlandaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		FE1D44D1E57045C3AFB330DD72D091E0 /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		FFD2FB176A29A3E33C61A0EB82319486 /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		00ABBD29B6616EB3939D7312B3CE09E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800B16C749DAB56B48F2635BA92CF5B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13D971DB7C58250F899E09225458EA60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,11 +282,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69B7B542A76126F7AB236D603AE90EFF /* Frameworks */ = {
+		7258A819D9744E86C56A6DC7FCECB32C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F97E0080F6F67F1592223966C7E67E9 /* Foundation.framework in Frameworks */,
+				134FD5032336DDDB9A8B386C64B1A2BC /* Foundation.framework in Frameworks */,
+				4533B91CCCC3F1CC76546E7D33970BB3 /* pop.framework in Frameworks */,
+				63B633CE5ECE81D5EAB185DDE1304AD6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9634DC4A8353D9B241F11B0FA02C765C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A49039FDB9E346D487A8A3F4E66595 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,17 +308,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5A0A9C92DB21AD6068BCCA8B5BBF3A3 /* Frameworks */ = {
+		FF74085390B57EE130089BF8406BFF51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8D46605709D8478747D4A2A03D8413 /* Foundation.framework in Frameworks */,
+				879592CE0C65727548272F1F3A10375A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EB6BC715429D7DA67C21CE97DE6F50E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				180CC7CECBB75B280ECBFCD59FCB601F /* pop.framework */,
+				4CEAFEDDA432EEAD5A4D8F65A786C4E7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10CB090079559E92D820066C427257B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E088C4EA89A30916D27D3CC3AE6C3D3 /* pop */,
+				D5B81E7781F20177D350AB2209100C5B /* SkyFloatingLabelTextField */,
+				6E36F1C402E09D2F4EF61300807C6253 /* WYMaterialButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		16E1728ABB9C462734D1E3574E87C23E /* Pods-Planda */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,23 +371,129 @@
 			path = "Target Support Files/Pods-PlandaTests";
 			sourceTree = "<group>";
 		};
-		1CBB5C1EA61C2E4024A1ED965E505E3A /* Products */ = {
+		4835051051F9985707C49A34856FDC77 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				6A340643B820D418B6424EBF40794202 /* Pods_Planda.framework */,
 				570682C46A9DCDC03BFCC29A3784E1FB /* Pods_Planda_PlandaUITests.framework */,
 				65412C7ED10F99215745C14DCB097D14 /* Pods_PlandaTests.framework */,
+				51305B2D9D8DA36D89CC277D729083D2 /* pop.framework */,
 				D392C11EB32EACD5EC9C8D37B51482B6 /* SkyFloatingLabelTextField.framework */,
+				654E9827E6661225EAF742674AFE66F9 /* WYMaterialButton.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4B5B28EADCDFA01D242EDB164DBA4D61 /* Pods */ = {
+		4CEAFEDDA432EEAD5A4D8F65A786C4E7 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E0BAC5B0766D90549E31B4A12F1AE894 /* SkyFloatingLabelTextField */,
+				BD684F330ABF3EACB7B303B57D5EA32E /* Foundation.framework */,
+				D6FC6BA7CB64EE10B4D6FC3B144D2B66 /* UIKit.framework */,
 			);
-			name = Pods;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5E088C4EA89A30916D27D3CC3AE6C3D3 /* pop */ = {
+			isa = PBXGroup;
+			children = (
+				EE6D83ED9F7A8AAF1F446CFAEBD7D2D9 /* FloatConversion.h */,
+				9B1B0ABC0646DE1DE512A70A2A8B17E3 /* POP.h */,
+				B1DACE7378FDFAA755B6E3C09D2FE9DB /* POPAction.h */,
+				3694D67BF091DEBB485F078C3DB33BFC /* POPAnimatableProperty.h */,
+				A0E474D49219412A63DEE5374B159EDC /* POPAnimatableProperty.mm */,
+				963A410BE01543F99539EC5FA469EFE1 /* POPAnimatablePropertyTypes.h */,
+				5A22B8C6594FEB9AE610A4BCC0D7AC70 /* POPAnimation.h */,
+				D453D87533583AF7F2BB304BCDDDCAE7 /* POPAnimation.mm */,
+				F3B78036357699D30B80634C2301CE75 /* POPAnimationEvent.h */,
+				7511CB3572E88F14632B33ECC9A67A45 /* POPAnimationEvent.mm */,
+				726AA1012239EF45B2B0A38C13A3268E /* POPAnimationEventInternal.h */,
+				9D2FDBDD223156640A480CB79F46AAB2 /* POPAnimationExtras.h */,
+				1589E22175B3474325182BDC0C169579 /* POPAnimationExtras.mm */,
+				FFD2FB176A29A3E33C61A0EB82319486 /* POPAnimationInternal.h */,
+				A1418356A9739B9A544CCF9A4CC8F383 /* POPAnimationPrivate.h */,
+				73F82D44633D7E493EF70EB8F79C8B7B /* POPAnimationRuntime.h */,
+				234F7AE76BD91681033472AD268508AB /* POPAnimationRuntime.mm */,
+				6D87612930031DF194454510623D063C /* POPAnimationTracer.h */,
+				8A924C2838AA721CB5D2A06F984767EC /* POPAnimationTracer.mm */,
+				0BB5CC582586F7ABED6126C96B90B432 /* POPAnimationTracerInternal.h */,
+				339903DDE478189F9C43F6FA1DA314DD /* POPAnimator.h */,
+				27AC9FADB464E7444D0D6AA930A814F4 /* POPAnimator.mm */,
+				E3A585AA4ABD48B24C22FE86C22DAA23 /* POPAnimatorPrivate.h */,
+				9A1491FFEF063F9F1B9E7FF3C000077A /* POPBasicAnimation.h */,
+				E0BACBD4B1306D93DC0C614C90321A31 /* POPBasicAnimation.mm */,
+				221905E258F07DD1ED9C55042DB9787C /* POPBasicAnimationInternal.h */,
+				13281C35AA3CF4285C97865047AF907D /* POPCGUtils.h */,
+				C599DB727ABEDD12AB07166929DEE452 /* POPCGUtils.mm */,
+				AA9D20B68F26ED085BEA52AFF60775CA /* POPCustomAnimation.h */,
+				C845BDF066270D0F4C5D14DAAC047E97 /* POPCustomAnimation.mm */,
+				590CB98CC86DA460D7DF42B4F62160CE /* POPDecayAnimation.h */,
+				6E0687A968B8DF60F28E079406ACE5EE /* POPDecayAnimation.mm */,
+				2D455D006304948A17636D82CCCB454B /* POPDecayAnimationInternal.h */,
+				CDAF73BC97E533AD8741818FEEB97B6F /* POPDefines.h */,
+				22388B3D2A17B82C7A30254E850BDB23 /* POPGeometry.h */,
+				941B9D4CFA29E01E5FCCE6B150661692 /* POPGeometry.mm */,
+				C3D761C90BE80DB9F8C79A6EB831615B /* POPLayerExtras.h */,
+				93B16F21A5A84ECE2457EA54DDCEC513 /* POPLayerExtras.mm */,
+				3998C78B830FD80E9531EF173D24911A /* POPMath.h */,
+				7A8A58205A068EE814F249F373BB41EA /* POPMath.mm */,
+				A9F533BD8485269253A0F1A959CD7A0A /* POPPropertyAnimation.h */,
+				544B13E36C6BB9C908C4FB7B6BD6D0AE /* POPPropertyAnimation.mm */,
+				4D0D759A4B8E0BE24D0447E7865225B7 /* POPPropertyAnimationInternal.h */,
+				9ADF3A76B91FEE1DC96E7CA95DF570AB /* POPSpringAnimation.h */,
+				97C11698E8DACC07BD02A6B775EA364B /* POPSpringAnimation.mm */,
+				13957F4AE021A22FBA6B6BF354E24EEC /* POPSpringAnimationInternal.h */,
+				24A602C782ABFD282CDCCAAFC12E3830 /* POPSpringSolver.h */,
+				CE13B15CC4B54F4EA12BE25BEB805445 /* POPVector.h */,
+				FD633A94C528FA79BF1A6A58F6399605 /* POPVector.mm */,
+				8F562CB8C51DB8C687717CC068003045 /* TransformationMatrix.cpp */,
+				42D9BE2861255355D939A10F5C4F5E0B /* TransformationMatrix.h */,
+				3D718227D2364EA00AB518EA695E6CA7 /* UnitBezier.h */,
+				73BED9E7CC935B5E146B097FC424BFCF /* Support Files */,
+			);
+			name = pop;
+			path = pop;
+			sourceTree = "<group>";
+		};
+		6E36F1C402E09D2F4EF61300807C6253 /* WYMaterialButton */ = {
+			isa = PBXGroup;
+			children = (
+				1EEA7D94C38909F160485275B22DF1CC /* DesignableButton.swift */,
+				2066169D91ED7E6EE95CECD4C3595B13 /* Spring.swift */,
+				B0E7D1795253663E05AE4F5082146168 /* SpringAnimation.swift */,
+				00DA0BCF906B749A028EEFC9160F9B5E /* SpringButton.swift */,
+				2AE68DEB27E0124A24C71D6CEBD3D166 /* WYMaterialButton.swift */,
+				8337D30406A83AB9672D0F47E8C1827D /* Support Files */,
+			);
+			name = WYMaterialButton;
+			path = WYMaterialButton;
+			sourceTree = "<group>";
+		};
+		73BED9E7CC935B5E146B097FC424BFCF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E6B57266E7D2B9ECA709AA73D07CEC8 /* pop.modulemap */,
+				3AF59DA1E57D0350AF834996A259086D /* pop.xcconfig */,
+				1E9F9B09ED8C60A19174B42211E84FC7 /* pop-dummy.m */,
+				C76E4417218F19AB1A335D8A2189C8A6 /* pop-Info.plist */,
+				A23AEB029E53EE8995CDC6581D71BE69 /* pop-prefix.pch */,
+				067EC19F6DC46C5A98EBDD2DA15BF94E /* pop-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/pop";
+			sourceTree = "<group>";
+		};
+		8337D30406A83AB9672D0F47E8C1827D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BCC2463E6A04277930C4058AE50E721 /* WYMaterialButton.modulemap */,
+				E0127A3FEEA6DB405FB2DE643B1C01E6 /* WYMaterialButton.xcconfig */,
+				FC2D9CBF9AEACE61DEF3C81A097BAB04 /* WYMaterialButton-dummy.m */,
+				81206378AEA7B42DA983F5AA9B21C67F /* WYMaterialButton-Info.plist */,
+				8738A1BA30098A257F7694454172A337 /* WYMaterialButton-prefix.pch */,
+				1B81B1E9F35504297C627A7565D0E562 /* WYMaterialButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WYMaterialButton";
 			sourceTree = "<group>";
 		};
 		9BA0E23B2B56190302913A551F560A78 /* Pods-Planda-PlandaUITests */ = {
@@ -197,45 +513,29 @@
 			path = "Target Support Files/Pods-Planda-PlandaUITests";
 			sourceTree = "<group>";
 		};
-		BF86E9B4DD77A1391A5943A35289388F /* Support Files */ = {
+		A757E3640E3B55F7F61FEF755B0B970B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FE1D44D1E57045C3AFB330DD72D091E0 /* SkyFloatingLabelTextField.modulemap */,
-				947B71B77A34033A6BE83E49414A1D3B /* SkyFloatingLabelTextField.xcconfig */,
-				F3B12DF41E29FE517538E13FC83CC7B3 /* SkyFloatingLabelTextField-dummy.m */,
-				F6F086D9136F3C5C5912D8A4C0E437D5 /* SkyFloatingLabelTextField-Info.plist */,
-				7D383EC4896440BE54EB7F59F927A81E /* SkyFloatingLabelTextField-prefix.pch */,
-				A1436A6E315780E102B5EBDD0C46AEE0 /* SkyFloatingLabelTextField-umbrella.h */,
+				330ED75FF8F2AFD8A7822CBD2968152F /* SkyFloatingLabelTextField.modulemap */,
+				CF9EFF2C1AD5816D9D1DFD26224F0DAA /* SkyFloatingLabelTextField.xcconfig */,
+				4F0CCFF2F02F4F4A6F6B39325AB7DDFE /* SkyFloatingLabelTextField-dummy.m */,
+				77E88A3100DDF46001539D9209F33FB5 /* SkyFloatingLabelTextField-Info.plist */,
+				213564D341C1226217CE35457C61E747 /* SkyFloatingLabelTextField-prefix.pch */,
+				AE838C115EBA33AAA2534554F5227155 /* SkyFloatingLabelTextField-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SkyFloatingLabelTextField";
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				4B5B28EADCDFA01D242EDB164DBA4D61 /* Pods */,
-				1CBB5C1EA61C2E4024A1ED965E505E3A /* Products */,
+				0EB6BC715429D7DA67C21CE97DE6F50E /* Frameworks */,
+				10CB090079559E92D820066C427257B8 /* Pods */,
+				4835051051F9985707C49A34856FDC77 /* Products */,
 				D5495505531CC987A583E08AFA106378 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D5495505531CC987A583E08AFA106378 /* Targets Support Files */ = {
@@ -248,13 +548,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E0BAC5B0766D90549E31B4A12F1AE894 /* SkyFloatingLabelTextField */ = {
+		D5B81E7781F20177D350AB2209100C5B /* SkyFloatingLabelTextField */ = {
 			isa = PBXGroup;
 			children = (
-				C7FC28F4F320CEE424898BFC0C88C516 /* SkyFloatingLabelTextField.swift */,
-				C415521CCA1F6BAA26542ED6CBD71788 /* SkyFloatingLabelTextFieldWithIcon.swift */,
-				5782FD99514473741D6D6E25B08DC167 /* UITextField+fixCaretPosition.swift */,
-				BF86E9B4DD77A1391A5943A35289388F /* Support Files */,
+				53F973F61BC706E2EE72E01789C63997 /* SkyFloatingLabelTextField.swift */,
+				71B2ED99764FF7F8B94222F87CC38F17 /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				3585D9B597023AA4000D2E917BF828EC /* UITextField+fixCaretPosition.swift */,
+				A757E3640E3B55F7F61FEF755B0B970B /* Support Files */,
 			);
 			name = SkyFloatingLabelTextField;
 			path = SkyFloatingLabelTextField;
@@ -263,11 +563,61 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		466F0B59B4A02EB2B616CE14E636AC1A /* Headers */ = {
+		47702FCAA302E53AA6FA4410960A40FC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B11D5985127066B49D444CBEE6E21E2A /* Pods-Planda-umbrella.h in Headers */,
+				D288A38FC7C9ED35F70D95D8AA153381 /* Pods-Planda-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51D9479BE01F081BA330CB9F2FFD366F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE707074A4134B117766E69FC7493DAC /* FloatConversion.h in Headers */,
+				0E5A51B10B75162D7A9C49320DA9C63F /* pop-umbrella.h in Headers */,
+				48DA0691977DA03C672983C1511FD4B5 /* POP.h in Headers */,
+				A8EEEAF0D18D7513E6A907E51BBE2CF1 /* POPAction.h in Headers */,
+				271C3A25642C1818E1ABCF586335A712 /* POPAnimatableProperty.h in Headers */,
+				5002C714EFFC2B2E91E4D630A2D340D5 /* POPAnimatablePropertyTypes.h in Headers */,
+				1EC055455EF898EAA23AB76270C9F64D /* POPAnimation.h in Headers */,
+				7E9E105399FF6F4761EA16199B830FC5 /* POPAnimationEvent.h in Headers */,
+				EF7555D9F8F66F8490DDA9C20D32BF29 /* POPAnimationEventInternal.h in Headers */,
+				32A6FE880BA536CCA0E026BBE32C4977 /* POPAnimationExtras.h in Headers */,
+				FF2BBE5A1B6583A6C2461163B0225A08 /* POPAnimationInternal.h in Headers */,
+				C6756B968957F045FACF1D71277EB496 /* POPAnimationPrivate.h in Headers */,
+				9F7E0E240B664651595E85322FFB4BAE /* POPAnimationRuntime.h in Headers */,
+				A7A1B224E16B054125C739793CE49EA3 /* POPAnimationTracer.h in Headers */,
+				62615D161ED3AC72B6B133DC74BB3B02 /* POPAnimationTracerInternal.h in Headers */,
+				E80D9F06728DCF678250C54411014331 /* POPAnimator.h in Headers */,
+				6D5D916281EE0B869516F3BE602235FD /* POPAnimatorPrivate.h in Headers */,
+				730C82F4BF6F18E0933D6A3B30657673 /* POPBasicAnimation.h in Headers */,
+				5361CDF9BB4F342A521306337B849A9C /* POPBasicAnimationInternal.h in Headers */,
+				DE654B946E61984DAB2FECB581990FC0 /* POPCGUtils.h in Headers */,
+				B0247C62565581B0201709C23C9006B7 /* POPCustomAnimation.h in Headers */,
+				F51EF4137F0BD1839BC20E65050258CB /* POPDecayAnimation.h in Headers */,
+				BF246CF4576552DE02F4A26FBC179D0C /* POPDecayAnimationInternal.h in Headers */,
+				2A1C4D2AF460D3B0F1CCE50C3E5374CD /* POPDefines.h in Headers */,
+				3F43BDFDFBDB764E4E5903B90E39587E /* POPGeometry.h in Headers */,
+				9C04B7B0C966DA872D6B649D5272D117 /* POPLayerExtras.h in Headers */,
+				080A5C9A46A8B2AEDA3B740D3120B929 /* POPMath.h in Headers */,
+				688ED6DB548A741D12FC2B67733BE0D9 /* POPPropertyAnimation.h in Headers */,
+				9B9AED9F6E6BC2112C61B9121F13494A /* POPPropertyAnimationInternal.h in Headers */,
+				44A28D16EB08B0BD5D488E8BC77A3346 /* POPSpringAnimation.h in Headers */,
+				2F251AECAFC8070A6B51389529D95C35 /* POPSpringAnimationInternal.h in Headers */,
+				C17D829E376A83344F72F088E727CF73 /* POPSpringSolver.h in Headers */,
+				70CC3F0E9F8D3768FD55C7F812EC22D0 /* POPVector.h in Headers */,
+				D8DD6466FF7B3E4BC34D87DFE738B9F9 /* TransformationMatrix.h in Headers */,
+				C313E5110A55A574DD1B1C1A85B494E1 /* UnitBezier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		887EAD97D1C34AB4FF99F16F4AA2C78D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3D6D45CE739AE1984306FFD0C670FE /* Pods-Planda-PlandaUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,30 +637,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F61159535D6E90EA171F15C6DD3DC537 /* Headers */ = {
+		EDF0967AE942F63BBB1CF50D2D62BC60 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F45C4E2DB9B7CE1453B61DC847EF30EA /* Pods-Planda-PlandaUITests-umbrella.h in Headers */,
+				A83F67600CBF06EC913BA3452611D0F0 /* WYMaterialButton-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		064FF903137DC2546CF4195A8FA1AE09 /* Pods-Planda */ = {
+		0483D7F620C992E5C4BD62A7266EABB4 /* pop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54B76325008138A5F424C1DDC657D327 /* Build configuration list for PBXNativeTarget "Pods-Planda" */;
+			buildConfigurationList = 7B08CBFE383CFAB17B0C2EC862B55CD9 /* Build configuration list for PBXNativeTarget "pop" */;
 			buildPhases = (
-				466F0B59B4A02EB2B616CE14E636AC1A /* Headers */,
-				52D6C852D0B6451C0519DE9A4647E84C /* Sources */,
-				C5A0A9C92DB21AD6068BCCA8B5BBF3A3 /* Frameworks */,
-				64E6E2B4477877CC5F36F01BB2D54C05 /* Resources */,
+				51D9479BE01F081BA330CB9F2FFD366F /* Headers */,
+				26DE0C9F540F259832DCB133DABC53DD /* Sources */,
+				FF74085390B57EE130089BF8406BFF51 /* Frameworks */,
+				95C2749EF18D525BC97072949C3C0EFC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				388FAAB34A7023A16AC38FEEDB1A5A5B /* PBXTargetDependency */,
+			);
+			name = pop;
+			productName = pop;
+			productReference = 51305B2D9D8DA36D89CC277D729083D2 /* pop.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		064FF903137DC2546CF4195A8FA1AE09 /* Pods-Planda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B3761B44D9C1B68C91FCAA6D65A5491 /* Build configuration list for PBXNativeTarget "Pods-Planda" */;
+			buildPhases = (
+				47702FCAA302E53AA6FA4410960A40FC /* Headers */,
+				4508A13D33E5DE1220F3511F8462690B /* Sources */,
+				9634DC4A8353D9B241F11B0FA02C765C /* Frameworks */,
+				D5A33C0C5AEC2D25B2C6CE86F76DE1AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BC4FC1540B0A1F66623C6A7A22C35F8 /* PBXTargetDependency */,
+				3E71D7A5F7B93DBA1D37842A3566B07A /* PBXTargetDependency */,
+				BD1B9F537BE76031AD8D31B011CA771B /* PBXTargetDependency */,
 			);
 			name = "Pods-Planda";
 			productName = "Pods-Planda";
@@ -319,17 +689,19 @@
 		};
 		C35AE86AE6F85D1CB93819272FD8C403 /* Pods-Planda-PlandaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C7C1881D625E9E0792450F4F269F3F8 /* Build configuration list for PBXNativeTarget "Pods-Planda-PlandaUITests" */;
+			buildConfigurationList = 9A1798E4BCB2D1C270BD392A715B9229 /* Build configuration list for PBXNativeTarget "Pods-Planda-PlandaUITests" */;
 			buildPhases = (
-				F61159535D6E90EA171F15C6DD3DC537 /* Headers */,
-				F9268ECB149BEA8268F5B78D25E4F0EE /* Sources */,
-				69B7B542A76126F7AB236D603AE90EFF /* Frameworks */,
-				94B81972E8A1B2736C80E8976CC44EBE /* Resources */,
+				887EAD97D1C34AB4FF99F16F4AA2C78D /* Headers */,
+				9F2C306AE12CC7CA44FFFF14FA69052F /* Sources */,
+				00ABBD29B6616EB3939D7312B3CE09E9 /* Frameworks */,
+				A917CC07DC456FEB392AFB32284BB53D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8F2DA76F8F82B0EB27F0C54D8CDB989D /* PBXTargetDependency */,
+				443278838FDCB645BC1E9957A12F44FA /* PBXTargetDependency */,
+				6B1FC588C5A0D1288011A77A7B9E54F1 /* PBXTargetDependency */,
+				EBD6B9FC2F4811BBF6402D69967E8740 /* PBXTargetDependency */,
 			);
 			name = "Pods-Planda-PlandaUITests";
 			productName = "Pods-Planda-PlandaUITests";
@@ -373,6 +745,25 @@
 			productReference = D392C11EB32EACD5EC9C8D37B51482B6 /* SkyFloatingLabelTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EB4E0152F7DBF124833455F3AD767F74 /* WYMaterialButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51FA3235E8C40D594F490C338BBFF209 /* Build configuration list for PBXNativeTarget "WYMaterialButton" */;
+			buildPhases = (
+				EDF0967AE942F63BBB1CF50D2D62BC60 /* Headers */,
+				29E3A54AA947FC54717AACBBAC0A2835 /* Sources */,
+				7258A819D9744E86C56A6DC7FCECB32C /* Frameworks */,
+				20AF5F92AE31028BA2CE3530ADB4184F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10213FE243BA97127B27A406659AD16F /* PBXTargetDependency */,
+			);
+			name = WYMaterialButton;
+			productName = WYMaterialButton;
+			productReference = 654E9827E6661225EAF742674AFE66F9 /* WYMaterialButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -391,14 +782,16 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1CBB5C1EA61C2E4024A1ED965E505E3A /* Products */;
+			productRefGroup = 4835051051F9985707C49A34856FDC77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				064FF903137DC2546CF4195A8FA1AE09 /* Pods-Planda */,
 				C35AE86AE6F85D1CB93819272FD8C403 /* Pods-Planda-PlandaUITests */,
 				D8AB7344B7B50268FABCA30C83AD6A31 /* Pods-PlandaTests */,
+				0483D7F620C992E5C4BD62A7266EABB4 /* pop */,
 				DFBAF98039AB4BA7927B611FB65B61BC /* SkyFloatingLabelTextField */,
+				EB4E0152F7DBF124833455F3AD767F74 /* WYMaterialButton */,
 			);
 		};
 /* End PBXProject section */
@@ -411,7 +804,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64E6E2B4477877CC5F36F01BB2D54C05 /* Resources */ = {
+		20AF5F92AE31028BA2CE3530ADB4184F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -425,7 +818,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94B81972E8A1B2736C80E8976CC44EBE /* Resources */ = {
+		95C2749EF18D525BC97072949C3C0EFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A917CC07DC456FEB392AFB32284BB53D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A33C0C5AEC2D25B2C6CE86F76DE1AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -435,11 +842,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		52D6C852D0B6451C0519DE9A4647E84C /* Sources */ = {
+		26DE0C9F540F259832DCB133DABC53DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77C7ECED0A336A17176CF2673026385B /* Pods-Planda-dummy.m in Sources */,
+				21B93DACEED1A22C132D9445FF723E92 /* pop-dummy.m in Sources */,
+				E3503B36E838B75E3768AF597742D75C /* POPAnimatableProperty.mm in Sources */,
+				D6760E3EA311729864B96417041FD207 /* POPAnimation.mm in Sources */,
+				33E41D965E0AE6CFFAA51ACD51D0AC59 /* POPAnimationEvent.mm in Sources */,
+				705082738706B50E06A577BCD91F58C5 /* POPAnimationExtras.mm in Sources */,
+				EF8FF4EC99196D99E107CD95103A3D3C /* POPAnimationRuntime.mm in Sources */,
+				0A875861D5FE30C449D99FDACDCBC8F5 /* POPAnimationTracer.mm in Sources */,
+				8CA93E15B14D5AE1C60B00079E2497B5 /* POPAnimator.mm in Sources */,
+				031703481D260CDA99DAC28ABAA9CAFC /* POPBasicAnimation.mm in Sources */,
+				4F43B3335DF1BBC09D32378B83894A27 /* POPCGUtils.mm in Sources */,
+				10678AE1BABC20542DC151C9A349D609 /* POPCustomAnimation.mm in Sources */,
+				5982B3876FBD091506FE36DEAB118A2B /* POPDecayAnimation.mm in Sources */,
+				8B1F793AD95366E76D87364522D12850 /* POPGeometry.mm in Sources */,
+				E2DF1B0AC671FF49B25BE1B292446B2E /* POPLayerExtras.mm in Sources */,
+				FC5DA62B951D1948F7417A6761AF373A /* POPMath.mm in Sources */,
+				CEFBA10370E913548D0AF96EED43EAA0 /* POPPropertyAnimation.mm in Sources */,
+				D957A25B8C1B75E3FA6C40EE8C2DC2F0 /* POPSpringAnimation.mm in Sources */,
+				9E300C8236BD6D9EE8834782F25941C2 /* POPVector.mm in Sources */,
+				ABBB89F3E79D523FE321C3D245E1E223 /* TransformationMatrix.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29E3A54AA947FC54717AACBBAC0A2835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074DE1EAEBB222CAA3C9A3642C723201 /* DesignableButton.swift in Sources */,
+				0390020EDE5DC28AC0260D96893213F6 /* Spring.swift in Sources */,
+				E0416C0BF5DB84736B5C8ED9D9D6EA53 /* SpringAnimation.swift in Sources */,
+				6F33343CEAFC5429A49CCEF18C244A75 /* SpringButton.swift in Sources */,
+				92268468B9AC15E33E096FAE01397A51 /* WYMaterialButton-dummy.m in Sources */,
+				6E019666DD772BE37031E3D8B9DA0A09 /* WYMaterialButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4508A13D33E5DE1220F3511F8462690B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C039EC9FEAC5AC23FBB91A7C6D80E669 /* Pods-Planda-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F2C306AE12CC7CA44FFFF14FA69052F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0CBD0F914E00537850E3CC631FBE90D /* Pods-Planda-PlandaUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,28 +916,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9268ECB149BEA8268F5B78D25E4F0EE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A06EDDB2DFEB61E61F709A5C8EA29A07 /* Pods-Planda-PlandaUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		388FAAB34A7023A16AC38FEEDB1A5A5B /* PBXTargetDependency */ = {
+		10213FE243BA97127B27A406659AD16F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SkyFloatingLabelTextField;
-			target = DFBAF98039AB4BA7927B611FB65B61BC /* SkyFloatingLabelTextField */;
-			targetProxy = F75574E364FD486376F8240D11CDE6E3 /* PBXContainerItemProxy */;
+			name = pop;
+			target = 0483D7F620C992E5C4BD62A7266EABB4 /* pop */;
+			targetProxy = 1E2516CE474874ABAB2E5AFF8A6578BB /* PBXContainerItemProxy */;
 		};
-		8F2DA76F8F82B0EB27F0C54D8CDB989D /* PBXTargetDependency */ = {
+		3E71D7A5F7B93DBA1D37842A3566B07A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WYMaterialButton;
+			target = EB4E0152F7DBF124833455F3AD767F74 /* WYMaterialButton */;
+			targetProxy = A5B103CBD8C282BB6CDA7050F441B293 /* PBXContainerItemProxy */;
+		};
+		443278838FDCB645BC1E9957A12F44FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SkyFloatingLabelTextField;
 			target = DFBAF98039AB4BA7927B611FB65B61BC /* SkyFloatingLabelTextField */;
-			targetProxy = 5230450BC436ECB13377F75483D3F6E8 /* PBXContainerItemProxy */;
+			targetProxy = 35DA259363B3D259EB66E1A88F74BBA5 /* PBXContainerItemProxy */;
+		};
+		6B1FC588C5A0D1288011A77A7B9E54F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WYMaterialButton;
+			target = EB4E0152F7DBF124833455F3AD767F74 /* WYMaterialButton */;
+			targetProxy = 607FA178BE11DD9CD962D9E00BB601D4 /* PBXContainerItemProxy */;
+		};
+		6BC4FC1540B0A1F66623C6A7A22C35F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SkyFloatingLabelTextField;
+			target = DFBAF98039AB4BA7927B611FB65B61BC /* SkyFloatingLabelTextField */;
+			targetProxy = E196A91733546D8EAF0774EA051AF39A /* PBXContainerItemProxy */;
 		};
 		A4FB097DAF095D07E4A02D89A1AB262B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -491,12 +955,24 @@
 			target = 064FF903137DC2546CF4195A8FA1AE09 /* Pods-Planda */;
 			targetProxy = 4E93B983D820CA646CA45FB08D5D5061 /* PBXContainerItemProxy */;
 		};
+		BD1B9F537BE76031AD8D31B011CA771B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pop;
+			target = 0483D7F620C992E5C4BD62A7266EABB4 /* pop */;
+			targetProxy = E035A68BA3CDE55C1312D7F5340E94C4 /* PBXContainerItemProxy */;
+		};
+		EBD6B9FC2F4811BBF6402D69967E8740 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pop;
+			target = 0483D7F620C992E5C4BD62A7266EABB4 /* pop */;
+			targetProxy = 7D48CC3451406F4A3D218122CA7C2AD4 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0CAA74F216DF54615123E226D57250E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 947B71B77A34033A6BE83E49414A1D3B /* SkyFloatingLabelTextField.xcconfig */;
+			baseConfigurationReference = CF9EFF2C1AD5816D9D1DFD26224F0DAA /* SkyFloatingLabelTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -530,42 +1006,7 @@
 			};
 			name = Release;
 		};
-		107C9D26B101E501D0E5D2A2562F3875 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 947B71B77A34033A6BE83E49414A1D3B /* SkyFloatingLabelTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
-				PRODUCT_MODULE_NAME = SkyFloatingLabelTextField;
-				PRODUCT_NAME = SkyFloatingLabelTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		362CBA914BA0241D8F40A22F0B47A9D7 /* Release */ = {
+		0FA9EBF47B771AE0BDA6C12D199ED4AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE1767F797F0620FF3A7C7DB2955A31E /* Pods-Planda-PlandaUITests.release.xcconfig */;
 			buildSettings = {
@@ -604,9 +1045,44 @@
 			};
 			name = Release;
 		};
-		6A654C0326723E6A23299D1A47CCD947 /* Release */ = {
+		107C9D26B101E501D0E5D2A2562F3875 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE836D8A1F28D57F71431D2902CAB66F /* Pods-Planda.release.xcconfig */;
+			baseConfigurationReference = CF9EFF2C1AD5816D9D1DFD26224F0DAA /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_MODULE_NAME = SkyFloatingLabelTextField;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		28C9A28C4805C03D4A3E4A5E8D020C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0484A8234BF59CCCC6AF0960FF040A01 /* Pods-Planda.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -637,11 +1113,83 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		55E9739E2B62F08BA0D495BF69EFCA4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0127A3FEEA6DB405FB2DE643B1C01E6 /* WYMaterialButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WYMaterialButton/WYMaterialButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WYMaterialButton/WYMaterialButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WYMaterialButton/WYMaterialButton.modulemap";
+				PRODUCT_MODULE_NAME = WYMaterialButton;
+				PRODUCT_NAME = WYMaterialButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64957E43028D46140A8C1F84D2458F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA361BCE0E17C10F6E4E099D1A5CC38 /* Pods-Planda-PlandaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Planda-PlandaUITests/Pods-Planda-PlandaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Planda-PlandaUITests/Pods-Planda-PlandaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -706,6 +1254,42 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		74B0EDA5A4E76F5259F8192DE253CC6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AF59DA1E57D0350AF834996A259086D /* pop.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/pop/pop-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/pop/pop.modulemap";
+				PRODUCT_MODULE_NAME = pop;
+				PRODUCT_NAME = pop;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -805,6 +1389,80 @@
 			};
 			name = Debug;
 		};
+		BC9AECE46104B6E366B6B1F3434A78E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE836D8A1F28D57F71431D2902CAB66F /* Pods-Planda.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Planda/Pods-Planda-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Planda/Pods-Planda.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CAD1BB44DDB671B4734573583F2B6144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AF59DA1E57D0350AF834996A259086D /* pop.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/pop/pop-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/pop/pop.modulemap";
+				PRODUCT_MODULE_NAME = pop;
+				PRODUCT_NAME = pop;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D4EC8B824B1F3E7B54B2DE66A1C94684 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5F83DF9E1A15AB450E8706DAA628238 /* Pods-PlandaTests.release.xcconfig */;
@@ -844,12 +1502,10 @@
 			};
 			name = Release;
 		};
-		DAC67A606AA66079F7347DED1171744B /* Debug */ = {
+		F233BED5340DA8E4470AC3F1424D1BE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDA361BCE0E17C10F6E4E099D1A5CC38 /* Pods-Planda-PlandaUITests.debug.xcconfig */;
+			baseConfigurationReference = E0127A3FEEA6DB405FB2DE643B1C01E6 /* WYMaterialButton.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -859,79 +1515,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Planda-PlandaUITests/Pods-Planda-PlandaUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/WYMaterialButton/WYMaterialButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WYMaterialButton/WYMaterialButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Planda-PlandaUITests/Pods-Planda-PlandaUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/WYMaterialButton/WYMaterialButton.modulemap";
+				PRODUCT_MODULE_NAME = WYMaterialButton;
+				PRODUCT_NAME = WYMaterialButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		DBBF7E02C3ADAE40FC0CBD21CBF1D067 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0484A8234BF59CCCC6AF0960FF040A01 /* Pods-Planda.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Planda/Pods-Planda-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Planda/Pods-Planda.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C7C1881D625E9E0792450F4F269F3F8 /* Build configuration list for PBXNativeTarget "Pods-Planda-PlandaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DAC67A606AA66079F7347DED1171744B /* Debug */,
-				362CBA914BA0241D8F40A22F0B47A9D7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1029B884A3473075DA6F8A22EF28C93A /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -950,11 +1559,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54B76325008138A5F424C1DDC657D327 /* Build configuration list for PBXNativeTarget "Pods-Planda" */ = {
+		51FA3235E8C40D594F490C338BBFF209 /* Build configuration list for PBXNativeTarget "WYMaterialButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBBF7E02C3ADAE40FC0CBD21CBF1D067 /* Debug */,
-				6A654C0326723E6A23299D1A47CCD947 /* Release */,
+				55E9739E2B62F08BA0D495BF69EFCA4D /* Debug */,
+				F233BED5340DA8E4470AC3F1424D1BE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B3761B44D9C1B68C91FCAA6D65A5491 /* Build configuration list for PBXNativeTarget "Pods-Planda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C9A28C4805C03D4A3E4A5E8D020C12 /* Debug */,
+				BC9AECE46104B6E366B6B1F3434A78E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B08CBFE383CFAB17B0C2EC862B55CD9 /* Build configuration list for PBXNativeTarget "pop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD1BB44DDB671B4734573583F2B6144 /* Debug */,
+				74B0EDA5A4E76F5259F8192DE253CC6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A1798E4BCB2D1C270BD392A715B9229 /* Build configuration list for PBXNativeTarget "Pods-Planda-PlandaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64957E43028D46140A8C1F84D2458F70 /* Debug */,
+				0FA9EBF47B771AE0BDA6C12D199ED4AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,16 +1,24 @@
 PODS:
+  - pop (1.0.12)
   - SkyFloatingLabelTextField (3.8.0)
+  - WYMaterialButton (2.0.2):
+    - pop (~> 1.0)
 
 DEPENDENCIES:
   - SkyFloatingLabelTextField (~> 3.0)
+  - WYMaterialButton
 
 SPEC REPOS:
   trunk:
+    - pop
     - SkyFloatingLabelTextField
+    - WYMaterialButton
 
 SPEC CHECKSUMS:
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  WYMaterialButton: e7834149d5a8e073ea4424162c2e7c922b7a25c0
 
-PODFILE CHECKSUM: 1b42b82a598d2e0ecdb6f49ea5cb9e3ecfdb6157
+PODFILE CHECKSUM: 4946c694ea0694c709530cbc95c9e86b76eb2c2c
 
 COCOAPODS: 1.8.4
