@@ -7,6 +7,7 @@ target 'Planda' do
 
   # Pods for Planda
   pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod "WYMaterialButton"
 
   target 'PlandaTests' do
     inherit! :search_paths

@@ -27,10 +27,10 @@ class HomeCollectionCell: UICollectionViewCell {
         
         let plandaColor = UIColor(rgb: 0xDB555A)
         
-        let origImage2 = UIImage(named: "filter")
-        let tintedImage2 = origImage2?.withRenderingMode(.alwaysTemplate)
-        filterButton.setImage(tintedImage2, for: .normal)
-        filterButton.tintColor = plandaColor
+//        let origImage2 = UIImage(named: "filter")
+//        let tintedImage2 = origImage2?.withRenderingMode(.alwaysTemplate)
+//        filterButton.setImage(tintedImage2, for: .normal)
+//        filterButton.tintColor = plandaColor
         
         bookButton.tintColor = .white
         bookButton.backgroundColor = plandaColor

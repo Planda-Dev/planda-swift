@@ -21,6 +21,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     
     let amountOfPeople = [Int.random(in: 1 ... 12), Int.random(in: 1 ... 12), Int.random(in: 1 ... 12), Int.random(in: 1 ... 12), Int.random(in: 1 ... 12)]
     
+    @IBOutlet weak var searchTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var locationTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var tripLocation: UILabel!
@@ -29,7 +30,9 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var headerBackgroundCover: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
 
+    @IBOutlet weak var userLocationLabelBackground: UIView!
     
+    @IBOutlet weak var searchPlandaLabelBackground: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -39,6 +42,12 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         searchField.delegate = self
         locationTextField.delegate = self
         
+        locationTextField.tintColor = plandaColor
+        locationTextField.titleFont = UIFont.boldSystemFont(ofSize: 10)
+        searchTextField.tintColor = plandaColor
+        searchTextField.titleFont = UIFont.boldSystemFont(ofSize: 10)
+        
+        
         let color = UIColor.systemGray6
   
 
@@ -47,6 +56,23 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         layout.itemSize = CGSize(width: view.frame.width, height: 500)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
+        
+        userLocationLabelBackground.layer.masksToBounds = false
+        userLocationLabelBackground.layer.shadowColor = UIColor.black.cgColor
+        userLocationLabelBackground.layer.shadowOpacity = 0.8
+        userLocationLabelBackground.layer.shadowOffset = CGSize(width: 5, height: 5)
+        userLocationLabelBackground.layer.shadowRadius = 5
+        
+        searchPlandaLabelBackground.layer.masksToBounds = false
+        searchPlandaLabelBackground.layer.shadowColor = UIColor.black.cgColor
+        searchPlandaLabelBackground.layer.shadowOpacity = 0.8
+        searchPlandaLabelBackground.layer.shadowOffset = CGSize(width: 5, height: 5)
+        searchPlandaLabelBackground.layer.shadowRadius = 5
+        
+        
+        
+        
+        
     
         collectionView.collectionViewLayout = layout
         collectionView.translatesAutoresizingMaskIntoConstraints = false
