@@ -6,5 +6,6 @@ target 'Planda' do
 
   # Pods for Planda
   pod 'MaterialComponents'
+  pod 'DropDown', '2.3.2'
 
 end
