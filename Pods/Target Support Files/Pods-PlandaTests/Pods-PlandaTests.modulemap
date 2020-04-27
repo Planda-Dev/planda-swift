@@ -1,6 +1,0 @@
-framework module Pods_PlandaTests {
-  umbrella header "Pods-PlandaTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "3.8.0",
+  "iOS" : [
+    {
+      "name" : "SkyFloatingLabelTextField",
+      "hash" : "529d3fa5ed075b18e2bc8c3d1a796b457a07e51ee580d34c71918a7c1921db90",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ]
+}
