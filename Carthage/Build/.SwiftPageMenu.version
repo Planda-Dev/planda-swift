@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "1.4.2",
+  "iOS" : [
+    {
+      "name" : "SwiftPageMenu",
+      "hash" : "7030aeaf0e8f7794aa9ddd0945991cb036a05e0e51ee2e957ef31ecd4824b9d3",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ]
+}

@@ -3,13 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2064EBE1B162290AC7DA5902 /* Pods_PlandaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF7F50E311EF43F3BB44E3E /* Pods_PlandaTests.framework */; };
-		955CC0E2352BB4D31A79C03B /* Pods_Planda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92E8CE9D3746FE4AE34A473 /* Pods_Planda.framework */; };
-		AA694EE81C9A3874BA653618 /* Pods_Planda_PlandaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143E266EAB1F196317BEA5B4 /* Pods_Planda_PlandaUITests.framework */; };
 		C820895C244FD8A9009E4C2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820895B244FD8A9009E4C2D /* AppDelegate.swift */; };
 		C820895E244FD8A9009E4C2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820895D244FD8A9009E4C2D /* SceneDelegate.swift */; };
 		C8208963244FD8A9009E4C2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8208961244FD8A9009E4C2D /* Main.storyboard */; };
@@ -18,14 +15,14 @@
 		C820896B244FD8AA009E4C2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8208969244FD8AA009E4C2D /* LaunchScreen.storyboard */; };
 		C8208976244FD8AA009E4C2D /* PlandaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8208975244FD8AA009E4C2D /* PlandaTests.swift */; };
 		C8208981244FD8AA009E4C2D /* PlandaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8208980244FD8AA009E4C2D /* PlandaUITests.swift */; };
-		C846D6CE24506E1E00656CFC /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C846D6CD24506E1E00656CFC /* PhotoCell.swift */; };
-		C846D6D0245081D000656CFC /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C846D6CF245081D000656CFC /* PinterestLayout.swift */; };
-		C864520E2451E3D40034984E /* PopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864520C2451E3D40034984E /* PopularCell.swift */; };
-		C86452122451E3F30034984E /* RecommendedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86452102451E3F30034984E /* RecommendedCell.swift */; };
-		C8645215245201D70034984E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8645214245201D70034984E /* HomeTableViewController.swift */; };
-		C871628424547D5700D371D8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = C871628324547D5700D371D8 /* SwiftPackageProductDependency */; };
+		C8647B5C2455F3E700D84749 /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5B2455F3E700D84749 /* SkyFloatingLabelTextField */; };
+		C8647B5D2455F3E700D84749 /* SkyFloatingLabelTextField in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5B2455F3E700D84749 /* SkyFloatingLabelTextField */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C8647B5F2455F40400D84749 /* SkyFloatingLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */; };
+		C8647B602455F40400D84749 /* SkyFloatingLabelTextField.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C8647B6524563B5400D84749 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8647B6324563B5400D84749 /* HomeCell.swift */; };
+		C8647B6624563B5400D84749 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8647B6424563B5400D84749 /* HomeCell.xib */; };
 		C873FF9A2453A502007FE2A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873FF992453A502007FE2A5 /* HomeViewController.swift */; };
-		C873FF9C2453AC41007FE2A5 /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873FF9B2453AC41007FE2A5 /* HomeCollectionCell.swift */; };
+		EFF537BE02D1052D79529567 /* Pods_Planda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C4010CBD0345AAE4096924 /* Pods_Planda.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,15 +42,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C889B6D52455F15D00FDBE36 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C8647B5D2455F3E700D84749 /* SkyFloatingLabelTextField in Embed Frameworks */,
+				C8647B602455F40400D84749 /* SkyFloatingLabelTextField.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		032C0720D807EFC5CD4ACFA5 /* Pods-PlandaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlandaTests.release.xcconfig"; path = "Target Support Files/Pods-PlandaTests/Pods-PlandaTests.release.xcconfig"; sourceTree = "<group>"; };
-		143E266EAB1F196317BEA5B4 /* Pods_Planda_PlandaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Planda_PlandaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D030ECF6AF742C6C55C37FD /* Pods-Planda-PlandaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda-PlandaUITests.release.xcconfig"; path = "Target Support Files/Pods-Planda-PlandaUITests/Pods-Planda-PlandaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		22FB56F9B1BDA001D77069F6 /* Pods-Planda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.release.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.release.xcconfig"; sourceTree = "<group>"; };
-		271BBDEDA7F6AC58DBF20D19 /* Pods-Planda-PlandaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda-PlandaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Planda-PlandaUITests/Pods-Planda-PlandaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3BF7F50E311EF43F3BB44E3E /* Pods_PlandaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlandaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B92E8CE9D3746FE4AE34A473 /* Pods_Planda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Planda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE787641364C192F2A370104 /* Pods-PlandaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlandaTests.debug.xcconfig"; path = "Target Support Files/Pods-PlandaTests/Pods-PlandaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		19C4010CBD0345AAE4096924 /* Pods_Planda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Planda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6E15A80C3D6CCE69D1D6A5 /* Pods-Planda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.debug.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.debug.xcconfig"; sourceTree = "<group>"; };
 		C8208958244FD8A9009E4C2D /* Planda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C820895B244FD8A9009E4C2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C820895D244FD8A9009E4C2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,14 +74,15 @@
 		C820897C244FD8AA009E4C2D /* PlandaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlandaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8208980244FD8AA009E4C2D /* PlandaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlandaUITests.swift; sourceTree = "<group>"; };
 		C8208982244FD8AA009E4C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C846D6CD24506E1E00656CFC /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
-		C846D6CF245081D000656CFC /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
-		C864520C2451E3D40034984E /* PopularCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCell.swift; sourceTree = "<group>"; };
-		C86452102451E3F30034984E /* RecommendedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCell.swift; sourceTree = "<group>"; };
-		C8645214245201D70034984E /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		C8647B5B2455F3E700D84749 /* SkyFloatingLabelTextField */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SkyFloatingLabelTextField; path = Carthage/Build/iOS/SkyFloatingLabelTextField.framework/SkyFloatingLabelTextField; sourceTree = "<group>"; };
+		C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyFloatingLabelTextField.framework; path = Carthage/Build/iOS/SkyFloatingLabelTextField.framework; sourceTree = "<group>"; };
+		C8647B6324563B5400D84749 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		C8647B6424563B5400D84749 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		C873FF992453A502007FE2A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		C873FF9B2453AC41007FE2A5 /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
-		E15567AF7A590F2654696566 /* Pods-Planda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.debug.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.debug.xcconfig"; sourceTree = "<group>"; };
+		C889B6C72455E71B00FDBE36 /* Swift_PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swift_PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C889B6C92455E7E800FDBE36 /* Swift_PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swift_PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C889B6CC2455EB1400FDBE36 /* SwiftPageMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftPageMenu.framework; path = Carthage/Build/iOS/SwiftPageMenu.framework; sourceTree = "<group>"; };
+		E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.release.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C871628424547D5700D371D8 /* BuildFile in Frameworks */,
-				955CC0E2352BB4D31A79C03B /* Pods_Planda.framework in Frameworks */,
+				C8647B5F2455F40400D84749 /* SkyFloatingLabelTextField.framework in Frameworks */,
+				C8647B5C2455F3E700D84749 /* SkyFloatingLabelTextField in Frameworks */,
+				EFF537BE02D1052D79529567 /* Pods_Planda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2064EBE1B162290AC7DA5902 /* Pods_PlandaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA694EE81C9A3874BA653618 /* Pods_Planda_PlandaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,17 +138,10 @@
 		C820895A244FD8A9009E4C2D /* Planda */ = {
 			isa = PBXGroup;
 			children = (
-				C8208961244FD8A9009E4C2D /* Main.storyboard */,
-				C873FF992453A502007FE2A5 /* HomeViewController.swift */,
-				C873FF9B2453AC41007FE2A5 /* HomeCollectionCell.swift */,
-				C8208969244FD8AA009E4C2D /* LaunchScreen.storyboard */,
-				C8645214245201D70034984E /* HomeTableViewController.swift */,
-				C864520C2451E3D40034984E /* PopularCell.swift */,
-				C86452102451E3F30034984E /* RecommendedCell.swift */,
-				C846D6CD24506E1E00656CFC /* PhotoCell.swift */,
+				C889B6C42455DE9300FDBE36 /* Storyboard */,
+				C889B6C32455DE6F00FDBE36 /* Home View */,
 				C820895B244FD8A9009E4C2D /* AppDelegate.swift */,
 				C820895D244FD8A9009E4C2D /* SceneDelegate.swift */,
-				C846D6CF245081D000656CFC /* PinterestLayout.swift */,
 				C820896C244FD8AA009E4C2D /* Info.plist */,
 				C8208964244FD8A9009E4C2D /* Planda.xcdatamodeld */,
 				C8208967244FD8AA009E4C2D /* Assets.xcassets */,
@@ -168,15 +167,30 @@
 			path = PlandaUITests;
 			sourceTree = "<group>";
 		};
+		C889B6C32455DE6F00FDBE36 /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				C873FF992453A502007FE2A5 /* HomeViewController.swift */,
+				C8647B6324563B5400D84749 /* HomeCell.swift */,
+				C8647B6424563B5400D84749 /* HomeCell.xib */,
+			);
+			path = "Home View";
+			sourceTree = "<group>";
+		};
+		C889B6C42455DE9300FDBE36 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C8208961244FD8A9009E4C2D /* Main.storyboard */,
+				C8208969244FD8AA009E4C2D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		D5998CAA8B54937F6414D19C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E15567AF7A590F2654696566 /* Pods-Planda.debug.xcconfig */,
-				22FB56F9B1BDA001D77069F6 /* Pods-Planda.release.xcconfig */,
-				271BBDEDA7F6AC58DBF20D19 /* Pods-Planda-PlandaUITests.debug.xcconfig */,
-				1D030ECF6AF742C6C55C37FD /* Pods-Planda-PlandaUITests.release.xcconfig */,
-				BE787641364C192F2A370104 /* Pods-PlandaTests.debug.xcconfig */,
-				032C0720D807EFC5CD4ACFA5 /* Pods-PlandaTests.release.xcconfig */,
+				8D6E15A80C3D6CCE69D1D6A5 /* Pods-Planda.debug.xcconfig */,
+				E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -184,9 +198,12 @@
 		E844B42B5CF3FAD833C5E623 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B92E8CE9D3746FE4AE34A473 /* Pods_Planda.framework */,
-				143E266EAB1F196317BEA5B4 /* Pods_Planda_PlandaUITests.framework */,
-				3BF7F50E311EF43F3BB44E3E /* Pods_PlandaTests.framework */,
+				C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */,
+				C8647B5B2455F3E700D84749 /* SkyFloatingLabelTextField */,
+				C889B6CC2455EB1400FDBE36 /* SwiftPageMenu.framework */,
+				C889B6C92455E7E800FDBE36 /* Swift_PageMenu.framework */,
+				C889B6C72455E71B00FDBE36 /* Swift_PageMenu.framework */,
+				19C4010CBD0345AAE4096924 /* Pods_Planda.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,11 +215,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8208985244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "Planda" */;
 			buildPhases = (
-				B2F143DD8A5B410A196BECE7 /* [CP] Check Pods Manifest.lock */,
+				1E9B19984AC99B9C7C611389 /* [CP] Check Pods Manifest.lock */,
 				C8208954244FD8A9009E4C2D /* Sources */,
 				C8208955244FD8A9009E4C2D /* Frameworks */,
 				C8208956244FD8A9009E4C2D /* Resources */,
-				AE2EFED746BA1C44BC0BA286 /* [CP] Embed Pods Frameworks */,
+				C889B6D52455F15D00FDBE36 /* Embed Frameworks */,
+				C8647B5A2455F3AB00D84749 /* ShellScript */,
+				0E5E2273ECE1CDAA1DE6047B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,7 +229,6 @@
 			);
 			name = Planda;
 			packageProductDependencies = (
-				C871628324547D5700D371D8 /* SwiftPackageProductDependency */,
 			);
 			productName = Planda;
 			productReference = C8208958244FD8A9009E4C2D /* Planda.app */;
@@ -220,7 +238,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8208988244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "PlandaTests" */;
 			buildPhases = (
-				3E262544F8E207AC624143A3 /* [CP] Check Pods Manifest.lock */,
 				C820896D244FD8AA009E4C2D /* Sources */,
 				C820896E244FD8AA009E4C2D /* Frameworks */,
 				C820896F244FD8AA009E4C2D /* Resources */,
@@ -239,11 +256,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C820898B244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "PlandaUITests" */;
 			buildPhases = (
-				349E7BBC4752A8B65226C324 /* [CP] Check Pods Manifest.lock */,
 				C8208978244FD8AA009E4C2D /* Sources */,
 				C8208979244FD8AA009E4C2D /* Frameworks */,
 				C820897A244FD8AA009E4C2D /* Resources */,
-				EF0B8AA8572A0BDF6CCECD8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,7 +303,6 @@
 			);
 			mainGroup = C820894F244FD8A9009E4C2D;
 			packageReferences = (
-				C871628224547D5700D371D8 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = C8208959244FD8A9009E4C2D /* Products */;
 			projectDirPath = "";
@@ -308,6 +322,7 @@
 			files = (
 				C820896B244FD8AA009E4C2D /* LaunchScreen.storyboard in Resources */,
 				C8208968244FD8AA009E4C2D /* Assets.xcassets in Resources */,
+				C8647B6624563B5400D84749 /* HomeCell.xib in Resources */,
 				C8208963244FD8A9009E4C2D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,51 +344,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		349E7BBC4752A8B65226C324 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Planda-PlandaUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3E262544F8E207AC624143A3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PlandaTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AE2EFED746BA1C44BC0BA286 /* [CP] Embed Pods Frameworks */ = {
+		0E5E2273ECE1CDAA1DE6047B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -390,7 +361,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B2F143DD8A5B410A196BECE7 /* [CP] Check Pods Manifest.lock */ = {
+		1E9B19984AC99B9C7C611389 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -412,22 +383,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF0B8AA8572A0BDF6CCECD8F /* [CP] Embed Pods Frameworks */ = {
+		C8647B5A2455F3AB00D84749 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Planda-PlandaUITests/Pods-Planda-PlandaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Planda-PlandaUITests/Pods-Planda-PlandaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Planda-PlandaUITests/Pods-Planda-PlandaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -436,16 +407,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C873FF9C2453AC41007FE2A5 /* HomeCollectionCell.swift in Sources */,
-				C846D6D0245081D000656CFC /* PinterestLayout.swift in Sources */,
-				C846D6CE24506E1E00656CFC /* PhotoCell.swift in Sources */,
-				C86452122451E3F30034984E /* RecommendedCell.swift in Sources */,
+				C8647B6524563B5400D84749 /* HomeCell.swift in Sources */,
 				C820895C244FD8A9009E4C2D /* AppDelegate.swift in Sources */,
 				C820895E244FD8A9009E4C2D /* SceneDelegate.swift in Sources */,
 				C873FF9A2453A502007FE2A5 /* HomeViewController.swift in Sources */,
-				C8645215245201D70034984E /* HomeTableViewController.swift in Sources */,
 				C8208966244FD8A9009E4C2D /* Planda.xcdatamodeld in Sources */,
-				C864520E2451E3D40034984E /* PopularCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,16 +582,28 @@
 		};
 		C8208986244FD8AA009E4C2D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E15567AF7A590F2654696566 /* Pods-Planda.debug.xcconfig */;
+			baseConfigurationReference = 8D6E15A80C3D6CCE69D1D6A5 /* Pods-Planda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LJB5Z8URN8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PROJECT_DIR}/Carthage/Build/",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Planda/Info.plist;
+				INSTALL_PATH = "$(LOCAL_PATH_DIR)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(inherited)",
+					"$@executable_path/Frameworks",
+					"$(SDKROOT)/Developer/Library/Frameworks",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/SkyFloatingLabelTextField.framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Planda.Planda3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -636,16 +614,28 @@
 		};
 		C8208987244FD8AA009E4C2D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22FB56F9B1BDA001D77069F6 /* Pods-Planda.release.xcconfig */;
+			baseConfigurationReference = E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LJB5Z8URN8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PROJECT_DIR}/Carthage/Build/",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Planda/Info.plist;
+				INSTALL_PATH = "$(LOCAL_PATH_DIR)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(inherited)",
+					"$@executable_path/Frameworks",
+					"$(SDKROOT)/Developer/Library/Frameworks",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/SkyFloatingLabelTextField.framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Planda.Planda3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -656,7 +646,6 @@
 		};
 		C8208989244FD8AA009E4C2D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE787641364C192F2A370104 /* Pods-PlandaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -679,7 +668,6 @@
 		};
 		C820898A244FD8AA009E4C2D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 032C0720D807EFC5CD4ACFA5 /* Pods-PlandaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -702,7 +690,6 @@
 		};
 		C820898C244FD8AA009E4C2D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 271BBDEDA7F6AC58DBF20D19 /* Pods-Planda-PlandaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -723,7 +710,6 @@
 		};
 		C820898D244FD8AA009E4C2D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D030ECF6AF742C6C55C37FD /* Pods-Planda-PlandaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -782,25 +768,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C871628224547D5700D371D8 /* RemoteSwiftPackageReference */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/theoriginalbit/BorderButton.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C871628324547D5700D371D8 /* SwiftPackageProductDependency */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C871628224547D5700D371D8 /* RemoteSwiftPackageReference */;
-			productName = BorderButton;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C8208964244FD8A9009E4C2D /* Planda.xcdatamodeld */ = {
