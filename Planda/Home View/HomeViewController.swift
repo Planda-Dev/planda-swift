@@ -45,7 +45,11 @@ let amountOfPeople = [Int.random(in: 1 ... 12),
                       Int.random(in: 1 ... 12),
                       Int.random(in: 1 ... 12)]
 
+<<<<<<< HEAD
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UITextFieldDelegate {
+=======
+class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
+>>>>>>> 1a31e3974c9a97d501b8df65403eb56bb37ef365
     
     /// Homepage Components
     var stackView   = UIStackView()
@@ -71,11 +75,14 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         setupConstraints()
     }
     
+<<<<<<< HEAD
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("Transitioning to sfjahdfhaslkf das")
         return true
     }
     
+=======
+>>>>>>> 1a31e3974c9a97d501b8df65403eb56bb37ef365
     func setupStackView() {
         setupDropDownBtn()
         setupDropDown()
@@ -134,7 +141,11 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             NSAttributedString(string: "Plan your next trip",
                                attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         searchBar.leadingAssistiveLabel.textColor = .white
+<<<<<<< HEAD
         searchBar.delegate = self
+=======
+        // searchBar.leadingAssistiveLabel.text = "Explore with Planda"
+>>>>>>> 1a31e3974c9a97d501b8df65403eb56bb37ef365
     }
     
     func setupTabbar() {
