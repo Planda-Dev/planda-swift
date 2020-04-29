@@ -22,6 +22,7 @@
 		C8647B6524563B5400D84749 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8647B6324563B5400D84749 /* HomeCell.swift */; };
 		C8647B6624563B5400D84749 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8647B6424563B5400D84749 /* HomeCell.xib */; };
 		C873FF9A2453A502007FE2A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873FF992453A502007FE2A5 /* HomeViewController.swift */; };
+		C8A997932459CEBA0052E53E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A997922459CEBA0052E53E /* SearchViewController.swift */; };
 		EFF537BE02D1052D79529567 /* Pods_Planda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C4010CBD0345AAE4096924 /* Pods_Planda.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		C889B6C72455E71B00FDBE36 /* Swift_PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swift_PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C889B6C92455E7E800FDBE36 /* Swift_PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swift_PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C889B6CC2455EB1400FDBE36 /* SwiftPageMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftPageMenu.framework; path = Carthage/Build/iOS/SwiftPageMenu.framework; sourceTree = "<group>"; };
+		C8A997922459CEBA0052E53E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.release.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				C873FF992453A502007FE2A5 /* HomeViewController.swift */,
+				C8A997922459CEBA0052E53E /* SearchViewController.swift */,
 				C8647B6324563B5400D84749 /* HomeCell.swift */,
 				C8647B6424563B5400D84749 /* HomeCell.xib */,
 			);
@@ -407,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8A997932459CEBA0052E53E /* SearchViewController.swift in Sources */,
 				C8647B6524563B5400D84749 /* HomeCell.swift in Sources */,
 				C820895C244FD8A9009E4C2D /* AppDelegate.swift in Sources */,
 				C820895E244FD8A9009E4C2D /* SceneDelegate.swift in Sources */,

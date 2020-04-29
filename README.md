@@ -1,5 +1,6 @@
 # Planda
 
+<<<<<<< HEAD
 Fly, Stay, Experience
 
 Planda is a traveling powerhouse. Whether you’re looking to spend your next vacation in Bali or take the kids to Disney World in the summer, Thrille makes it easy by aggregating your expenses and saving you money.
@@ -37,3 +38,14 @@ If you see this, you're good money. Now open go search for the project folder wh
 
 By now, this should have opened up Xcode. Run the project at the top of the page either using your own iPhone or the Simulator. 
 >>>>>>> 1a31e3974c9a97d501b8df65403eb56bb37ef365
+=======
+The all-in-one traveling app
+
+Planda is a traveling powerhouse. Whether you’re looking to spend your next vacation in Bali or take the kids to Disney World in the summer, Thrille makes it easy by aggregating your expenses and saving you money.
+
+With Planda’s machine learning(not yet built) algorithm, you can rest assure that you are getting the most bang for your buck on your next vacation. Planda finds the best housing, transportation, and activities deals on the market and adjusts them based on your preferences. 
+
+A money pool allows you and anyone else to contribute to the overall cost of the trip. Creating a trip opens up a money pool. As the trip host, you will be able to visually see the contributions made to the trip allowing you to deposit and withdrawal from the pool as long as funds are available. 
+
+Want your friends to see that beautiful beach you just went to? Planda allows you to take a picture on vacation and immediately upload it to your Instagram for your followers to see.
+>>>>>>> 20956d3893128a1df83f9774b16dcce710d4a0fc

@@ -10,42 +10,7 @@ import UIKit
 import MaterialComponents
 import DropDown
 
-
-///// Constants for testing
-let plandaColor = UIColor(rgb: 0xDB555A)
-
-let locations = ["Bali, Indonesia",
-                 "Miami, Florida",
-                 "Los Angeles, California",
-                 "Bali, Indonesia",
-                 "New York City, New York"]
-
-let images = [
-    UIImage(named: "bali"),
-    UIImage(named: "miami"),
-    UIImage(named: "venicebeach"),
-    UIImage(named: "indonesia"),
-    UIImage(named: "newyork")]
-
-let activities = ["Bali Hai Lembongan Island Reef Cruise",
-                  "South Beach Food & Art Deco Walking Tour",
-                  "Stroll the Venice Beach Boardwalk",
-                  "Mercure Bali Legian",
-                  "Dining at Hard Rock Cafe New York City with Priority Seating"]
-
-let prices = [Int.random(in: 200 ... 2000),
-              Int.random(in: 200 ... 2000),
-              Int.random(in: 200 ... 2000),
-              Int.random(in: 200 ... 2000),
-              Int.random(in: 200 ... 2000)]
-
-let amountOfPeople = [Int.random(in: 1 ... 12),
-                      Int.random(in: 1 ... 12),
-                      Int.random(in: 1 ... 12),
-                      Int.random(in: 1 ... 12),
-                      Int.random(in: 1 ... 12)]
-
-class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UITextFieldDelegate {
+class SearchViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UITextFieldDelegate {
 
     /// Homepage Components
     var stackView   = UIStackView()
@@ -60,24 +25,22 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = plandaColor
         setupHeaderBackgroundImg()
         setupHeaderBackgroundCover()
-        setupTabbar()
-        setupCollectionView()
+        //setupStackView()
+        //setupTabbar()
+        //setupCollectionView()
         setupBottomNavBar()
-        setupStackView()
         loadSubviews()
         setupConstraints()
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print("Transitioning")
-        let vc = SearchViewController()
-        self.present(vc, animated: true, completion: nil)
+        print("Transitioning to sfjahdfhaslkf das")
         return true
     }
     
-
     func setupStackView() {
         setupDropDownBtn()
         setupDropDown()
@@ -100,7 +63,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func setupDropDown() {
-        // The list of items to display. Can be changed dynamically
         userLocationDropDown = DropDown(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         userLocationDropDown.dataSource = ["New York", "New Jersey", "Pennsylvania"]
         userLocationDropDown.width = 200
@@ -108,7 +70,14 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func setupHeaderBackgroundImg() {
         headerBackgroundImg.image = UIImage(named: "bali")
-        headerBackgroundImg.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
+        headerBackgroundImg.autoresizingMask = [
+                                                    .flexibleWidth,
+                                                    .flexibleHeight,
+                                                    .flexibleBottomMargin,
+                                                    .flexibleRightMargin,
+                                                    .flexibleLeftMargin,
+                                                    .flexibleTopMargin
+                                                ]
         headerBackgroundImg.contentMode = .scaleAspectFill // OR .scaleAspectFill
         headerBackgroundImg.clipsToBounds = true
     }
@@ -126,9 +95,11 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         searchBar.setTextColor(.white, for: .editing)
         searchBar.setUnderlineColor(.clear, for: .normal)
         searchBar.setUnderlineColor(.clear, for: .editing)
-        searchBar.attributedPlaceholder = NSAttributedString(string: "Plan your next trip", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        searchBar.attributedPlaceholder = NSAttributedString(string: "Plan your next trip",
+                               attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         searchBar.leadingAssistiveLabel.textColor = .white
         searchBar.delegate = self
+
     }
     
     func setupTabbar() {
@@ -153,6 +124,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         layout.itemSize = CGSize(width: view.frame.width, height: collectionView.frame.height - 20)
         layout.minimumLineSpacing = 20
         layout.minimumInteritemSpacing = 5
+        
         /// Set up collectionView
         collectionView.register(UINib(nibName: "HomeCell", bundle: nil), forCellWithReuseIdentifier: "HomeCell")
         collectionView.collectionViewLayout = layout
@@ -179,13 +151,9 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func loadSubviews() {
         /// Load everything in the correct order
-        /// Annoying keyboard properties
         self.setupToHideKeyboardOnTapOnView()
         self.view.addSubview(headerBackgroundImg)
         self.view.addSubview(headerBackgroundCover)
-        self.view.addSubview(stackView)
-        self.view.addSubview(userLocationDropDown)
-        self.view.addSubview(collectionView)
         self.view.addSubview(tabBar)
         self.view.addSubview(bottomNavBar)
     }
@@ -197,13 +165,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         /// Dropdown constaints
         userLocationDropDown.bottomOffset = CGPoint(x: -60, y: -220)
-        
-        //Constraints
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 60).isActive = true
-        stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
-        stackView.heightAnchor.constraint(equalToConstant: 60).isActive = true
+
 
         /// Header background constraints
         headerBackgroundImg.translatesAutoresizingMaskIntoConstraints = false
@@ -218,20 +180,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         headerBackgroundCover.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
         headerBackgroundCover.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
         headerBackgroundCover.heightAnchor.constraint(equalToConstant: CGFloat(headerHeight)).isActive = true
-
-        /// Collection view constraints
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.topAnchor.constraint(equalTo: headerBackgroundImg.bottomAnchor).isActive = true
-        collectionView.bottomAnchor.constraint(equalTo: bottomNavBar.topAnchor).isActive = true
-        collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
-        collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-
-        /// Tab bar constraints
-        tabBar.translatesAutoresizingMaskIntoConstraints = false
-        tabBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10).isActive = true
-        tabBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -10).isActive = true
-        tabBar.bottomAnchor.constraint(equalTo: collectionView.topAnchor).isActive = true
-        tabBar.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         /// bottomNavBar constraints
         bottomNavBar.translatesAutoresizingMaskIntoConstraints = false
@@ -241,21 +189,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         bottomNavBar.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         
     }
-    
-    func customizeDropDown(_ sender: AnyObject) {
-        let appearance = DropDown.appearance()
-        appearance.cellHeight = 60
-        appearance.backgroundColor = UIColor(white: 1, alpha: 1)
-        appearance.selectionBackgroundColor = UIColor(red: 0.6494, green: 0.8155, blue: 1.0, alpha: 0.2)
-        appearance.separatorColor = UIColor(white: 0.7, alpha: 0.8)
-        appearance.cornerRadius = 10
-        appearance.shadowColor = UIColor(white: 0.6, alpha: 1)
-        appearance.shadowOpacity = 0.9
-        appearance.shadowRadius = 25
-        appearance.animationduration = 0.25
-        appearance.textColor = .darkGray
-    }
-    
+
     // Delegate methods for the homepage cards
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
@@ -283,38 +217,4 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         userLocationDropDown.show()
     }
     
-}
-
-// Extension to help color converting
-extension UIColor {
-   convenience init(red: Int, green: Int, blue: Int) {
-       assert(red >= 0 && red <= 255, "Invalid red component")
-       assert(green >= 0 && green <= 255, "Invalid green component")
-       assert(blue >= 0 && blue <= 255, "Invalid blue component")
-
-       self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
-   }
-
-   convenience init(rgb: Int) {
-       self.init(
-           red: (rgb >> 16) & 0xFF,
-           green: (rgb >> 8) & 0xFF,
-           blue: rgb & 0xFF
-       )
-   }
-}
-
-// Extension to take care of dismissing the keyboard
-extension UIViewController
-{
-    func setupToHideKeyboardOnTapOnView(){
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
-            target: self,
-            action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    @objc func dismissKeyboard(){
-        view.endEditing(true)
-    }
 }
