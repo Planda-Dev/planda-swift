@@ -2,7 +2,7 @@
 
 Fly, Stay, Experience
 
-Planda is a traveling powerhouse. Whether you’re looking to spend your next vacation in Bali or take the kids to Disney World in the summer, PLanda makes it easy by aggregating your expenses and saving you money.
+Planda is a traveling powerhouse. Whether you’re looking to spend your next vacation in Bali or take the kids to Disney World in the summer, Planda makes it easy by aggregating your expenses and saving you money.
 
 With Planda’s machine learning(not yet built) algorithm, you can rest assure that you are getting the most bang for your buck on your next vacation. Planda finds the best housing, transportation, and activities deals on the market and adjusts them based on your preferences.
 
