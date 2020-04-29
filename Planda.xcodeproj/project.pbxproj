@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C820895C244FD8A9009E4C2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820895B244FD8A9009E4C2D /* AppDelegate.swift */; };
+		C820895E244FD8A9009E4C2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820895D244FD8A9009E4C2D /* SceneDelegate.swift */; };
+		C8208963244FD8A9009E4C2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8208961244FD8A9009E4C2D /* Main.storyboard */; };
+		C8208966244FD8A9009E4C2D /* Planda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8208964244FD8A9009E4C2D /* Planda.xcdatamodeld */; };
+		C8208968244FD8AA009E4C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8208967244FD8AA009E4C2D /* Assets.xcassets */; };
+		C820896B244FD8AA009E4C2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8208969244FD8AA009E4C2D /* LaunchScreen.storyboard */; };
+		C8208976244FD8AA009E4C2D /* PlandaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8208975244FD8AA009E4C2D /* PlandaTests.swift */; };
+		C8208981244FD8AA009E4C2D /* PlandaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8208980244FD8AA009E4C2D /* PlandaUITests.swift */; };
+		C8647B5C2455F3E700D84749 /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5B2455F3E700D84749 /* SkyFloatingLabelTextField */; };
+		C8647B5D2455F3E700D84749 /* SkyFloatingLabelTextField in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5B2455F3E700D84749 /* SkyFloatingLabelTextField */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C8647B5F2455F40400D84749 /* SkyFloatingLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */; };
+		C8647B602455F40400D84749 /* SkyFloatingLabelTextField.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C8647B6524563B5400D84749 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8647B6324563B5400D84749 /* HomeCell.swift */; };
+		C8647B6624563B5400D84749 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8647B6424563B5400D84749 /* HomeCell.xib */; };
+		C873FF9A2453A502007FE2A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873FF992453A502007FE2A5 /* HomeViewController.swift */; };
+		EFF537BE02D1052D79529567 /* Pods_Planda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C4010CBD0345AAE4096924 /* Pods_Planda.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8208972244FD8AA009E4C2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8208950244FD8A9009E4C2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8208957244FD8A9009E4C2D;
+			remoteInfo = Planda;
+		};
+		C820897D244FD8AA009E4C2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8208950244FD8A9009E4C2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8208957244FD8A9009E4C2D;
+			remoteInfo = Planda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C889B6D52455F15D00FDBE36 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C8647B5D2455F3E700D84749 /* SkyFloatingLabelTextField in Embed Frameworks */,
+				C8647B602455F40400D84749 /* SkyFloatingLabelTextField.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19C4010CBD0345AAE4096924 /* Pods_Planda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Planda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6E15A80C3D6CCE69D1D6A5 /* Pods-Planda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.debug.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.debug.xcconfig"; sourceTree = "<group>"; };
+		C8208958244FD8A9009E4C2D /* Planda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C820895B244FD8A9009E4C2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C820895D244FD8A9009E4C2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C8208962244FD8A9009E4C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C8208965244FD8A9009E4C2D /* Planda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Planda.xcdatamodel; sourceTree = "<group>"; };
+		C8208967244FD8AA009E4C2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C820896A244FD8AA009E4C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C820896C244FD8AA009E4C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8208971244FD8AA009E4C2D /* PlandaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlandaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8208975244FD8AA009E4C2D /* PlandaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlandaTests.swift; sourceTree = "<group>"; };
+		C8208977244FD8AA009E4C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C820897C244FD8AA009E4C2D /* PlandaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlandaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8208980244FD8AA009E4C2D /* PlandaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlandaUITests.swift; sourceTree = "<group>"; };
+		C8208982244FD8AA009E4C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8647B5B2455F3E700D84749 /* SkyFloatingLabelTextField */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SkyFloatingLabelTextField; path = Carthage/Build/iOS/SkyFloatingLabelTextField.framework/SkyFloatingLabelTextField; sourceTree = "<group>"; };
+		C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyFloatingLabelTextField.framework; path = Carthage/Build/iOS/SkyFloatingLabelTextField.framework; sourceTree = "<group>"; };
+		C8647B6324563B5400D84749 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		C8647B6424563B5400D84749 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		C873FF992453A502007FE2A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C889B6C72455E71B00FDBE36 /* Swift_PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swift_PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C889B6C92455E7E800FDBE36 /* Swift_PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swift_PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C889B6CC2455EB1400FDBE36 /* SwiftPageMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftPageMenu.framework; path = Carthage/Build/iOS/SwiftPageMenu.framework; sourceTree = "<group>"; };
+		E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.release.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8208955244FD8A9009E4C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8647B5F2455F40400D84749 /* SkyFloatingLabelTextField.framework in Frameworks */,
+				C8647B5C2455F3E700D84749 /* SkyFloatingLabelTextField in Frameworks */,
+				EFF537BE02D1052D79529567 /* Pods_Planda.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C820896E244FD8AA009E4C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8208979244FD8AA009E4C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C820894F244FD8A9009E4C2D = {
+			isa = PBXGroup;
+			children = (
+				C820895A244FD8A9009E4C2D /* Planda */,
+				C8208974244FD8AA009E4C2D /* PlandaTests */,
+				C820897F244FD8AA009E4C2D /* PlandaUITests */,
+				C8208959244FD8A9009E4C2D /* Products */,
+				D5998CAA8B54937F6414D19C /* Pods */,
+				E844B42B5CF3FAD833C5E623 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C8208959244FD8A9009E4C2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8208958244FD8A9009E4C2D /* Planda.app */,
+				C8208971244FD8AA009E4C2D /* PlandaTests.xctest */,
+				C820897C244FD8AA009E4C2D /* PlandaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C820895A244FD8A9009E4C2D /* Planda */ = {
+			isa = PBXGroup;
+			children = (
+				C889B6C42455DE9300FDBE36 /* Storyboard */,
+				C889B6C32455DE6F00FDBE36 /* Home View */,
+				C820895B244FD8A9009E4C2D /* AppDelegate.swift */,
+				C820895D244FD8A9009E4C2D /* SceneDelegate.swift */,
+				C820896C244FD8AA009E4C2D /* Info.plist */,
+				C8208964244FD8A9009E4C2D /* Planda.xcdatamodeld */,
+				C8208967244FD8AA009E4C2D /* Assets.xcassets */,
+			);
+			path = Planda;
+			sourceTree = "<group>";
+		};
+		C8208974244FD8AA009E4C2D /* PlandaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8208975244FD8AA009E4C2D /* PlandaTests.swift */,
+				C8208977244FD8AA009E4C2D /* Info.plist */,
+			);
+			path = PlandaTests;
+			sourceTree = "<group>";
+		};
+		C820897F244FD8AA009E4C2D /* PlandaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8208980244FD8AA009E4C2D /* PlandaUITests.swift */,
+				C8208982244FD8AA009E4C2D /* Info.plist */,
+			);
+			path = PlandaUITests;
+			sourceTree = "<group>";
+		};
+		C889B6C32455DE6F00FDBE36 /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				C873FF992453A502007FE2A5 /* HomeViewController.swift */,
+				C8647B6324563B5400D84749 /* HomeCell.swift */,
+				C8647B6424563B5400D84749 /* HomeCell.xib */,
+			);
+			path = "Home View";
+			sourceTree = "<group>";
+		};
+		C889B6C42455DE9300FDBE36 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C8208961244FD8A9009E4C2D /* Main.storyboard */,
+				C8208969244FD8AA009E4C2D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D5998CAA8B54937F6414D19C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D6E15A80C3D6CCE69D1D6A5 /* Pods-Planda.debug.xcconfig */,
+				E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E844B42B5CF3FAD833C5E623 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */,
+				C8647B5B2455F3E700D84749 /* SkyFloatingLabelTextField */,
+				C889B6CC2455EB1400FDBE36 /* SwiftPageMenu.framework */,
+				C889B6C92455E7E800FDBE36 /* Swift_PageMenu.framework */,
+				C889B6C72455E71B00FDBE36 /* Swift_PageMenu.framework */,
+				19C4010CBD0345AAE4096924 /* Pods_Planda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8208957244FD8A9009E4C2D /* Planda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8208985244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "Planda" */;
+			buildPhases = (
+				1E9B19984AC99B9C7C611389 /* [CP] Check Pods Manifest.lock */,
+				C8208954244FD8A9009E4C2D /* Sources */,
+				C8208955244FD8A9009E4C2D /* Frameworks */,
+				C8208956244FD8A9009E4C2D /* Resources */,
+				C889B6D52455F15D00FDBE36 /* Embed Frameworks */,
+				C8647B5A2455F3AB00D84749 /* ShellScript */,
+				0E5E2273ECE1CDAA1DE6047B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Planda;
+			packageProductDependencies = (
+			);
+			productName = Planda;
+			productReference = C8208958244FD8A9009E4C2D /* Planda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8208970244FD8AA009E4C2D /* PlandaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8208988244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "PlandaTests" */;
+			buildPhases = (
+				C820896D244FD8AA009E4C2D /* Sources */,
+				C820896E244FD8AA009E4C2D /* Frameworks */,
+				C820896F244FD8AA009E4C2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8208973244FD8AA009E4C2D /* PBXTargetDependency */,
+			);
+			name = PlandaTests;
+			productName = PlandaTests;
+			productReference = C8208971244FD8AA009E4C2D /* PlandaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C820897B244FD8AA009E4C2D /* PlandaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C820898B244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "PlandaUITests" */;
+			buildPhases = (
+				C8208978244FD8AA009E4C2D /* Sources */,
+				C8208979244FD8AA009E4C2D /* Frameworks */,
+				C820897A244FD8AA009E4C2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C820897E244FD8AA009E4C2D /* PBXTargetDependency */,
+			);
+			name = PlandaUITests;
+			productName = PlandaUITests;
+			productReference = C820897C244FD8AA009E4C2D /* PlandaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8208950244FD8A9009E4C2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Planda;
+				TargetAttributes = {
+					C8208957244FD8A9009E4C2D = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					C8208970244FD8AA009E4C2D = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = C8208957244FD8A9009E4C2D;
+					};
+					C820897B244FD8AA009E4C2D = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = C8208957244FD8A9009E4C2D;
+					};
+				};
+			};
+			buildConfigurationList = C8208953244FD8A9009E4C2D /* Build configuration list for PBXProject "Planda" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C820894F244FD8A9009E4C2D;
+			packageReferences = (
+			);
+			productRefGroup = C8208959244FD8A9009E4C2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8208957244FD8A9009E4C2D /* Planda */,
+				C8208970244FD8AA009E4C2D /* PlandaTests */,
+				C820897B244FD8AA009E4C2D /* PlandaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8208956244FD8A9009E4C2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C820896B244FD8AA009E4C2D /* LaunchScreen.storyboard in Resources */,
+				C8208968244FD8AA009E4C2D /* Assets.xcassets in Resources */,
+				C8647B6624563B5400D84749 /* HomeCell.xib in Resources */,
+				C8208963244FD8A9009E4C2D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C820896F244FD8AA009E4C2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C820897A244FD8AA009E4C2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E5E2273ECE1CDAA1DE6047B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E9B19984AC99B9C7C611389 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Planda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8647B5A2455F3AB00D84749 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8208954244FD8A9009E4C2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8647B6524563B5400D84749 /* HomeCell.swift in Sources */,
+				C820895C244FD8A9009E4C2D /* AppDelegate.swift in Sources */,
+				C820895E244FD8A9009E4C2D /* SceneDelegate.swift in Sources */,
+				C873FF9A2453A502007FE2A5 /* HomeViewController.swift in Sources */,
+				C8208966244FD8A9009E4C2D /* Planda.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C820896D244FD8AA009E4C2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8208976244FD8AA009E4C2D /* PlandaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8208978244FD8AA009E4C2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8208981244FD8AA009E4C2D /* PlandaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8208973244FD8AA009E4C2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8208957244FD8A9009E4C2D /* Planda */;
+			targetProxy = C8208972244FD8AA009E4C2D /* PBXContainerItemProxy */;
+		};
+		C820897E244FD8AA009E4C2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8208957244FD8A9009E4C2D /* Planda */;
+			targetProxy = C820897D244FD8AA009E4C2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C8208961244FD8A9009E4C2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8208962244FD8A9009E4C2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C8208969244FD8AA009E4C2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C820896A244FD8AA009E4C2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8208983244FD8AA009E4C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8208984244FD8AA009E4C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8208986244FD8AA009E4C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D6E15A80C3D6CCE69D1D6A5 /* Pods-Planda.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJB5Z8URN8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PROJECT_DIR}/Carthage/Build/",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Planda/Info.plist;
+				INSTALL_PATH = "$(LOCAL_PATH_DIR)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"$@executable_path/Frameworks",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/SkyFloatingLabelTextField.framework",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Planda.Planda3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8208987244FD8AA009E4C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJB5Z8URN8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PROJECT_DIR}/Carthage/Build/",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Planda/Info.plist;
+				INSTALL_PATH = "$(LOCAL_PATH_DIR)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"$@executable_path/Frameworks",
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/SkyFloatingLabelTextField.framework",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Planda.Planda3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C8208989244FD8AA009E4C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJB5Z8URN8;
+				INFOPLIST_FILE = PlandaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Planda.PlandaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planda.app/Planda";
+			};
+			name = Debug;
+		};
+		C820898A244FD8AA009E4C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJB5Z8URN8;
+				INFOPLIST_FILE = PlandaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Planda.PlandaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planda.app/Planda";
+			};
+			name = Release;
+		};
+		C820898C244FD8AA009E4C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJB5Z8URN8;
+				INFOPLIST_FILE = PlandaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Planda.PlandaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Planda;
+			};
+			name = Debug;
+		};
+		C820898D244FD8AA009E4C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJB5Z8URN8;
+				INFOPLIST_FILE = PlandaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Planda.PlandaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Planda;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8208953244FD8A9009E4C2D /* Build configuration list for PBXProject "Planda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8208983244FD8AA009E4C2D /* Debug */,
+				C8208984244FD8AA009E4C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8208985244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "Planda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8208986244FD8AA009E4C2D /* Debug */,
+				C8208987244FD8AA009E4C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8208988244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "PlandaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8208989244FD8AA009E4C2D /* Debug */,
+				C820898A244FD8AA009E4C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C820898B244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "PlandaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C820898C244FD8AA009E4C2D /* Debug */,
+				C820898D244FD8AA009E4C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C8208964244FD8A9009E4C2D /* Planda.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C8208965244FD8A9009E4C2D /* Planda.xcdatamodel */,
+			);
+			currentVersion = C8208965244FD8A9009E4C2D /* Planda.xcdatamodel */;
+			path = Planda.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C8208950244FD8A9009E4C2D /* Project object */;
+}

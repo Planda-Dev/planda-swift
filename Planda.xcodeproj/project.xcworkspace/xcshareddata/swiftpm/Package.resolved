@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BorderButton",
+        "repositoryURL": "https://github.com/theoriginalbit/BorderButton.git",
+        "state": {
+          "branch": null,
+          "revision": "e4d809057f56eedef1a7b4c5d1e38cc6e588cb2e",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "ShapeButton",
+        "repositoryURL": "https://github.com/theoriginalbit/ShapeButton.git",
+        "state": {
+          "branch": null,
+          "revision": "af51bde6f46dd267dd1063f1b7cafbfaaf9c4483",
+          "version": "1.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
