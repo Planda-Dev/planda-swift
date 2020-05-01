@@ -29,14 +29,6 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="H2N-LH-YtU">
-                        <rect key="frame" x="20" y="149.5" width="480" height="57"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="10"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAC-iY-ugv" customClass="MDCButton">
                         <rect key="frame" x="350" y="360" width="150" height="50"/>
                         <color key="backgroundColor" red="0.85882352939999995" green="0.33333333329999998" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,7 +39,6 @@
                     </button>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="eg2-BF-6LR" secondAttribute="trailing" id="0FE-y5-YGC"/>
                 <constraint firstItem="9tf-gr-olN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7WL-ws-yVK"/>
@@ -55,14 +46,11 @@
                 <constraint firstItem="eg2-BF-6LR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="C3C-eZ-9rn"/>
                 <constraint firstAttribute="trailing" secondItem="oAC-iY-ugv" secondAttribute="trailing" constant="20" id="ETs-I3-i0R"/>
                 <constraint firstAttribute="bottom" secondItem="oAC-iY-ugv" secondAttribute="bottom" constant="20" id="Een-i7-Xtn"/>
-                <constraint firstAttribute="trailing" secondItem="H2N-LH-YtU" secondAttribute="trailing" constant="20" id="Icr-5c-ngd"/>
                 <constraint firstItem="XYb-pA-dcT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="QdE-P0-dCS"/>
                 <constraint firstAttribute="trailing" secondItem="XYb-pA-dcT" secondAttribute="trailing" constant="20" id="S1c-7d-jfR"/>
                 <constraint firstItem="9tf-gr-olN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZKu-NL-g0s"/>
-                <constraint firstItem="H2N-LH-YtU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="aBS-9g-Otp"/>
                 <constraint firstAttribute="trailing" secondItem="9tf-gr-olN" secondAttribute="trailing" id="aru-yM-8hQ"/>
                 <constraint firstItem="eg2-BF-6LR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hVz-sA-89n"/>
-                <constraint firstItem="H2N-LH-YtU" firstAttribute="top" secondItem="XYb-pA-dcT" secondAttribute="bottom" constant="10" id="lCI-EV-iSD"/>
                 <constraint firstItem="XYb-pA-dcT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="nNr-7O-Waa"/>
                 <constraint firstAttribute="bottom" secondItem="eg2-BF-6LR" secondAttribute="bottom" id="rgS-SZ-Bw0"/>
             </constraints>

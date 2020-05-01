@@ -1,17 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mx3-HX-QFy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q2d-8k-BNq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="9wD-9w-Trg">
             <objects>
-                <viewController id="Mx3-HX-QFy" customClass="HomeViewController" customModule="Planda" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mx3-HX-QFy" customClass="LoginViewController" customModule="Planda" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5sg-Es-M8A"/>
+                    <connections>
+                        <segue destination="TK2-6U-oqw" kind="show" identifier="loadSearchView" id="8Ci-ID-XHQ"/>
+                        <segue destination="oGX-e7-NOz" kind="show" identifier="loadHomeView" id="Xxj-Lp-gSk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3C-kI-3Uv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6381.1594202898559" y="900.66964285714278"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="l30-xI-l8F">
+            <objects>
+                <viewController id="oGX-e7-NOz" customClass="HomeViewController" customModule="Planda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fgN-Ti-ZjO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6eU-Er-Gxf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rdc-1n-WMo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jBC-Uz-UyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7425" y="443"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="cE6-Yo-Egf">
+            <objects>
+                <viewController id="TK2-6U-oqw" customClass="SearchViewController" customModule="Planda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o4B-aV-0Oo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aIU-SR-Hzl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kug-31-pYf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MbC-5c-Bm9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7425" y="1335"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ChY-oH-DQ9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Q2d-8k-BNq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BWY-fn-D9X">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mx3-HX-QFy" kind="relationship" relationship="rootViewController" id="LbR-yE-GT1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uxi-Mf-nRP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5471.0144927536239" y="900.66964285714278"/>
         </scene>

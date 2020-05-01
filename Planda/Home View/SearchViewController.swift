@@ -21,17 +21,17 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     var searchBar = MDCFilledTextField()
     var tabBar = MDCTabBar()
     var collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
-    var bottomNavBar = MDCBottomNavigationBar()
+    var snackBar = MDCSnackbarMessageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = plandaColor
+        view.backgroundColor = .white
         setupHeaderBackgroundImg()
         setupHeaderBackgroundCover()
-        //setupStackView()
-        //setupTabbar()
-        //setupCollectionView()
-        setupBottomNavBar()
+        setupStackView()
+        setupTabbar()
+        setupCollectionView()
+        setupSnackBar()
         loadSubviews()
         setupConstraints()
     }
@@ -40,36 +40,9 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         print("Transitioning to sfjahdfhaslkf das")
         return true
     }
-    
-    func setupStackView() {
-        setupDropDownBtn()
-        setupDropDown()
-        setupSearchbar()
-        stackView = UIStackView(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
-        stackView.axis  = NSLayoutConstraint.Axis.horizontal
-        stackView.distribution  = UIStackView.Distribution.fillProportionally
-        stackView.alignment = UIStackView.Alignment.center
-        stackView.spacing = 0
-        stackView.addArrangedSubview(userLocationBtn)
-        stackView.addArrangedSubview(searchBar)
-    }
-    
-    func setupDropDownBtn() {
-        userLocationBtn = MDCButton(frame: CGRect(x: 0, y: 0, width: 100, height: 120))
-        userLocationBtn.isUppercaseTitle = true
-        userLocationBtn.setTitle("New York", for: .normal)
-        userLocationBtn.addTarget(self, action: #selector(dropDown), for: .touchUpInside)
-        userLocationBtn.backgroundColor = .clear
-    }
-    
-    func setupDropDown() {
-        userLocationDropDown = DropDown(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        userLocationDropDown.dataSource = ["New York", "New Jersey", "Pennsylvania"]
-        userLocationDropDown.width = 200
-    }
-    
+
     func setupHeaderBackgroundImg() {
-        headerBackgroundImg.image = UIImage(named: "bali")
+        headerBackgroundImg.image = UIImage(named: "venicebeach")
         headerBackgroundImg.autoresizingMask = [
                                                     .flexibleWidth,
                                                     .flexibleHeight,
@@ -85,6 +58,20 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     func setupHeaderBackgroundCover() {
         headerBackgroundCover.backgroundColor = UIColor.black.withAlphaComponent(0.4)
     }
+    
+//    func setupDropDownBtn() {
+//        userLocationBtn = MDCButton(frame: CGRect(x: 0, y: 0, width: 100, height: 120))
+//        userLocationBtn.isUppercaseTitle = true
+//        userLocationBtn.setTitle("New York", for: .normal)
+//        userLocationBtn.addTarget(self, action: #selector(dropDown), for: .touchUpInside)
+//        userLocationBtn.backgroundColor = .clear
+//    }
+//
+//    func setupDropDown() {
+//        userLocationDropDown = DropDown(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+//        userLocationDropDown.dataSource = ["New York", "New Jersey", "Pennsylvania"]
+//        userLocationDropDown.width = 200
+//    }
     
     func setupSearchbar(){
         /// Search Bar Setup
@@ -102,6 +89,20 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
 
     }
     
+    func setupStackView() {
+//        setupDropDownBtn()
+//        setupDropDown()
+//        setupSearchbar()
+        stackView = UIStackView(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+        stackView.axis  = NSLayoutConstraint.Axis.horizontal
+        stackView.distribution  = UIStackView.Distribution.fillProportionally
+        stackView.alignment = UIStackView.Alignment.center
+        stackView.spacing = 0
+        stackView.addArrangedSubview(userLocationBtn)
+        stackView.addArrangedSubview(searchBar)
+    }
+    
+
     func setupTabbar() {
         /// Setup tabBar
         tabBar.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]
@@ -121,7 +122,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         //// Set up collectionView layout
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: view.frame.width, height: collectionView.frame.height - 20)
+        layout.itemSize = CGSize(width: view.frame.width - 200, height: collectionView.frame.height - 20)
         layout.minimumLineSpacing = 20
         layout.minimumInteritemSpacing = 5
         
@@ -135,18 +136,9 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         collectionView.showsHorizontalScrollIndicator = false
     }
     
-    func setupBottomNavBar() {
-        /// Helper to set up navbar, this is from Material Design docs
-      let size = bottomNavBar.sizeThatFits(view.bounds.size)
-      var bottomNavBarFrame = CGRect(x: 0, y: view.bounds.height - size.height, width: size.width,  height: size.height)
-        
-      if #available(iOS 11.0, *) {
-        bottomNavBarFrame.size.height += view.safeAreaInsets.bottom
-        bottomNavBarFrame.origin.y -= view.safeAreaInsets.bottom
-      }
-        
-      bottomNavBar.backgroundColor = plandaColor
-      bottomNavBar.frame = bottomNavBarFrame
+    func setupSnackBar() {
+        snackBar.setButtonTitleColor(.white, for: .normal)
+        snackBar.backgroundColor = plandaColor
     }
     
     func loadSubviews() {
@@ -155,17 +147,16 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         self.view.addSubview(headerBackgroundImg)
         self.view.addSubview(headerBackgroundCover)
         self.view.addSubview(tabBar)
-        self.view.addSubview(bottomNavBar)
+        self.view.addSubview(snackBar)
     }
     
     func setupConstraints() {
         
         /// Function to setup constraints for all components
-        let headerHeight = 170
+        let headerHeight = 220
         
         /// Dropdown constaints
         userLocationDropDown.bottomOffset = CGPoint(x: -60, y: -220)
-
 
         /// Header background constraints
         headerBackgroundImg.translatesAutoresizingMaskIntoConstraints = false
@@ -182,11 +173,11 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         headerBackgroundCover.heightAnchor.constraint(equalToConstant: CGFloat(headerHeight)).isActive = true
         
         /// bottomNavBar constraints
-        bottomNavBar.translatesAutoresizingMaskIntoConstraints = false
-        bottomNavBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
-        bottomNavBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-        bottomNavBar.heightAnchor.constraint(equalToConstant: 80).isActive = true
-        bottomNavBar.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        snackBar.translatesAutoresizingMaskIntoConstraints = false
+        snackBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        snackBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
+        snackBar.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        snackBar.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         
     }
 

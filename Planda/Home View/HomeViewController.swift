@@ -10,7 +10,6 @@ import UIKit
 import MaterialComponents
 import DropDown
 
-
 ///// Constants for testing
 let plandaColor = UIColor(rgb: 0xDB555A)
 
@@ -45,7 +44,7 @@ let amountOfPeople = [Int.random(in: 1 ... 12),
                       Int.random(in: 1 ... 12),
                       Int.random(in: 1 ... 12)]
 
-class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UITextFieldDelegate {
+class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UITextFieldDelegate, MDCBottomNavigationBarDelegate {
 
     /// Homepage Components
     var stackView   = UIStackView()
@@ -53,19 +52,23 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     var headerBackgroundImg = UIImageView()
     var userLocationBtn = MDCButton()
     var userLocationDropDown = DropDown()
-    var searchBar = MDCFilledTextField()
+    var searchBar = MDCOutlinedTextField()
+    var searchBtn = MDCButton()
     var tabBar = MDCTabBar()
     var collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
     var bottomNavBar = MDCBottomNavigationBar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         setupHeaderBackgroundImg()
         setupHeaderBackgroundCover()
+        setupDropDownBtn()
+        setupDropDown()
+        setupSearchbar()
         setupTabbar()
         setupCollectionView()
         setupBottomNavBar()
-        setupStackView()
         loadSubviews()
         setupConstraints()
     }
@@ -76,40 +79,14 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         self.present(vc, animated: true, completion: nil)
         return true
     }
-    
 
-    func setupStackView() {
-        setupDropDownBtn()
-        setupDropDown()
-        setupSearchbar()
-        stackView = UIStackView(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
-        stackView.axis  = NSLayoutConstraint.Axis.horizontal
-        stackView.distribution  = UIStackView.Distribution.fillProportionally
-        stackView.alignment = UIStackView.Alignment.center
-        stackView.spacing = 0
-        stackView.addArrangedSubview(userLocationBtn)
-        stackView.addArrangedSubview(searchBar)
-    }
-    
-    func setupDropDownBtn() {
-        userLocationBtn = MDCButton(frame: CGRect(x: 0, y: 0, width: 100, height: 120))
-        userLocationBtn.isUppercaseTitle = true
-        userLocationBtn.setTitle("New York", for: .normal)
-        userLocationBtn.addTarget(self, action: #selector(dropDown), for: .touchUpInside)
-        userLocationBtn.backgroundColor = .clear
-    }
-    
-    func setupDropDown() {
-        // The list of items to display. Can be changed dynamically
-        userLocationDropDown = DropDown(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        userLocationDropDown.dataSource = ["New York", "New Jersey", "Pennsylvania"]
-        userLocationDropDown.width = 200
-    }
-    
     func setupHeaderBackgroundImg() {
         headerBackgroundImg.image = UIImage(named: "bali")
-        headerBackgroundImg.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
-        headerBackgroundImg.contentMode = .scaleAspectFill // OR .scaleAspectFill
+        headerBackgroundImg.autoresizingMask = [
+            .flexibleWidth, .flexibleHeight,
+            .flexibleBottomMargin, .flexibleRightMargin,
+            .flexibleLeftMargin, .flexibleTopMargin]
+        headerBackgroundImg.contentMode = .scaleAspectFill
         headerBackgroundImg.clipsToBounds = true
     }
     
@@ -117,16 +94,34 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         headerBackgroundCover.backgroundColor = UIColor.black.withAlphaComponent(0.4)
     }
     
+    func setupDropDownBtn() {
+        userLocationBtn = MDCButton(frame: CGRect(x: 0, y: 0, width: 100, height: 300))
+        userLocationBtn.isUppercaseTitle = false
+        userLocationBtn.setTitle("New York", for: .normal)
+        userLocationBtn.sizeToFit()
+        userLocationBtn.setTitleFont(UIFont.boldSystemFont(ofSize: 20), for: .normal)
+        userLocationBtn.addTarget(self, action: #selector(dropDown), for: .touchUpInside)
+        userLocationBtn.backgroundColor = .clear
+    }
+    
+    func setupDropDown() {
+        userLocationDropDown = DropDown(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        userLocationDropDown.dataSource = ["New York", "New Jersey", "Pennsylvania"]
+        userLocationDropDown.width = 200
+    }
+    
     func setupSearchbar(){
         /// Search Bar Setup
-        searchBar = MDCFilledTextField(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        searchBar.setFilledBackgroundColor(UIColor.black.withAlphaComponent(0.3), for: .normal)
-        searchBar.setFilledBackgroundColor(UIColor.white.withAlphaComponent(0.3), for: .editing)
-        searchBar.setTextColor(UIColor.white.withAlphaComponent(0.8), for: .normal)
+        searchBar = MDCOutlinedTextField(frame: CGRect(x: 0, y: 0, width: 50, height: 300))
+        searchBar.setOutlineColor(.clear, for: .normal)
+        searchBar.setOutlineColor(.white, for: .editing)
+        searchBar.setTextColor(.white, for: .normal)
         searchBar.setTextColor(.white, for: .editing)
-        searchBar.setUnderlineColor(.clear, for: .normal)
-        searchBar.setUnderlineColor(.clear, for: .editing)
-        searchBar.attributedPlaceholder = NSAttributedString(string: "Plan your next trip", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        searchBar.font = UIFont.boldSystemFont(ofSize: 20)
+        searchBar.attributedPlaceholder = NSAttributedString(string: "So, where to?", attributes:[
+            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)
+        ])
         searchBar.leadingAssistiveLabel.textColor = .white
         searchBar.delegate = self
     }
@@ -137,12 +132,14 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         tabBar.sizeToFit()
         tabBar.backgroundColor = .clear
         tabBar.itemAppearance = .titles
+        tabBar.setTitleColor(plandaColor, for: .normal)
+        tabBar.setTitleColor(plandaColor, for: .selected)
         tabBar.tintColor = plandaColor
         tabBar.items = [
             UITabBarItem(title: "Recent", image: UIImage(named: "bali"), tag: 0),
-            UITabBarItem(title: "Popular", image: UIImage(named: "bali"), tag: 0),
-            UITabBarItem(title: "Recommended", image: UIImage(named: "bali"), tag: 0),
-            UITabBarItem(title: "Saved", image: UIImage(named: "bali"), tag: 0),
+            UITabBarItem(title: "Popular", image: UIImage(named: "bali"), tag: 1),
+            UITabBarItem(title: "Recommended", image: UIImage(named: "bali"), tag: 2),
+            UITabBarItem(title: "Saved", image: UIImage(named: "bali"), tag: 3),
         ]
     }
     
@@ -156,7 +153,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         /// Set up collectionView
         collectionView.register(UINib(nibName: "HomeCell", bundle: nil), forCellWithReuseIdentifier: "HomeCell")
         collectionView.collectionViewLayout = layout
-        collectionView.backgroundColor = .systemGray6
+        collectionView.backgroundColor = .clear
         collectionView.isPagingEnabled = true
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -164,17 +161,14 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func setupBottomNavBar() {
-        /// Helper to set up navbar, this is from Material Design docs
-      let size = bottomNavBar.sizeThatFits(view.bounds.size)
-      var bottomNavBarFrame = CGRect(x: 0, y: view.bounds.height - size.height, width: size.width,  height: size.height)
-        
-      if #available(iOS 11.0, *) {
-        bottomNavBarFrame.size.height += view.safeAreaInsets.bottom
-        bottomNavBarFrame.origin.y -= view.safeAreaInsets.bottom
-      }
-        
-      bottomNavBar.backgroundColor = plandaColor
-      bottomNavBar.frame = bottomNavBarFrame
+        // Add items to the bottom navigation bar.
+        let tabBarItem1 = UITabBarItem( title: "",   image: nil, tag: 0 )
+        let tabBarItem2 = UITabBarItem( title: "",   image: nil, tag: 1 )
+        let tabBarItem3 = UITabBarItem( title: "", image: nil, tag: 2 )
+        bottomNavBar.items = [ tabBarItem1, tabBarItem2, tabBarItem3 ]
+        bottomNavBar.backgroundColor = plandaColor
+        bottomNavBar.selectedItem = tabBarItem1;
+        bottomNavBar.delegate = self
     }
     
     func loadSubviews() {
@@ -183,8 +177,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         self.setupToHideKeyboardOnTapOnView()
         self.view.addSubview(headerBackgroundImg)
         self.view.addSubview(headerBackgroundCover)
-        self.view.addSubview(stackView)
-        self.view.addSubview(userLocationDropDown)
+        self.view.addSubview(userLocationBtn)
+        self.view.addSubview(searchBar)
         self.view.addSubview(collectionView)
         self.view.addSubview(tabBar)
         self.view.addSubview(bottomNavBar)
@@ -193,18 +187,10 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     func setupConstraints() {
         
         /// Function to setup constraints for all components
-        let headerHeight = 170
+        let headerHeight = 140
+        let bottomNavBarHeight = 80
         
-        /// Dropdown constaints
-        userLocationDropDown.bottomOffset = CGPoint(x: -60, y: -220)
-        
-        //Constraints
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 60).isActive = true
-        stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
-        stackView.heightAnchor.constraint(equalToConstant: 60).isActive = true
-
+        /// Constraints
         /// Header background constraints
         headerBackgroundImg.translatesAutoresizingMaskIntoConstraints = false
         headerBackgroundImg.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
@@ -218,26 +204,42 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         headerBackgroundCover.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
         headerBackgroundCover.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
         headerBackgroundCover.heightAnchor.constraint(equalToConstant: CGFloat(headerHeight)).isActive = true
-
+        
+        /// Search bar constaints
+        searchBar.translatesAutoresizingMaskIntoConstraints = false
+        searchBar.leadingAnchor.constraint(equalTo: userLocationBtn.trailingAnchor).isActive = true
+        searchBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
+        searchBar.bottomAnchor.constraint(equalTo: headerBackgroundImg.bottomAnchor, constant: -20).isActive = true
+        
+        /// Dropdown constaints
+        userLocationBtn.translatesAutoresizingMaskIntoConstraints = false
+        userLocationBtn.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10).isActive = true
+        userLocationBtn.trailingAnchor.constraint(equalTo: searchBar.leadingAnchor, constant: -10).isActive = true
+        userLocationBtn.topAnchor.constraint(equalTo: searchBar.topAnchor).isActive = true
+        userLocationBtn.bottomAnchor.constraint(equalTo: searchBar.bottomAnchor).isActive = true
+        userLocationBtn.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        
+        /// User location dropdown offset
+        userLocationDropDown.bottomOffset = CGPoint(x: -77, y: -220)
+        
+        /// Tab bar constaints
+        tabBar.translatesAutoresizingMaskIntoConstraints = false
+        tabBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        tabBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
+        tabBar.topAnchor.constraint(equalTo: headerBackgroundImg.bottomAnchor).isActive = true
+        
         /// Collection view constraints
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.topAnchor.constraint(equalTo: headerBackgroundImg.bottomAnchor).isActive = true
+        collectionView.topAnchor.constraint(equalTo: tabBar.bottomAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: bottomNavBar.topAnchor).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-
-        /// Tab bar constraints
-        tabBar.translatesAutoresizingMaskIntoConstraints = false
-        tabBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10).isActive = true
-        tabBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -10).isActive = true
-        tabBar.bottomAnchor.constraint(equalTo: collectionView.topAnchor).isActive = true
-        tabBar.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         /// bottomNavBar constraints
         bottomNavBar.translatesAutoresizingMaskIntoConstraints = false
         bottomNavBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
         bottomNavBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-        bottomNavBar.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        bottomNavBar.heightAnchor.constraint(equalToConstant: CGFloat(bottomNavBarHeight)).isActive = true
         bottomNavBar.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         
     }
@@ -256,7 +258,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         appearance.textColor = .darkGray
     }
     
-    // Delegate methods for the homepage cards
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }
@@ -279,7 +280,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     @objc fileprivate func dropDown(_ sender: AnyObject) {
-        print("Dropping down...")
         userLocationDropDown.show()
     }
     

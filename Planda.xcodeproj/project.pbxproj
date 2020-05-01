@@ -23,6 +23,8 @@
 		C8647B6624563B5400D84749 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8647B6424563B5400D84749 /* HomeCell.xib */; };
 		C873FF9A2453A502007FE2A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873FF992453A502007FE2A5 /* HomeViewController.swift */; };
 		C8A997932459CEBA0052E53E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A997922459CEBA0052E53E /* SearchViewController.swift */; };
+		C8B88473245BAD6A009DCA6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B88472245BAD6A009DCA6D /* LoginViewController.swift */; };
+		C8B88475245BB866009DCA6D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B88474245BB866009DCA6D /* SignUpViewController.swift */; };
 		EFF537BE02D1052D79529567 /* Pods_Planda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C4010CBD0345AAE4096924 /* Pods_Planda.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,8 @@
 		C889B6C92455E7E800FDBE36 /* Swift_PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swift_PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C889B6CC2455EB1400FDBE36 /* SwiftPageMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftPageMenu.framework; path = Carthage/Build/iOS/SwiftPageMenu.framework; sourceTree = "<group>"; };
 		C8A997922459CEBA0052E53E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C8B88472245BAD6A009DCA6D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C8B88474245BB866009DCA6D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.release.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				C889B6C42455DE9300FDBE36 /* Storyboard */,
+				C8B88471245BACF9009DCA6D /* Login View */,
+				C8B88476245BB86B009DCA6D /* Sign Up Views */,
 				C889B6C32455DE6F00FDBE36 /* Home View */,
 				C820895B244FD8A9009E4C2D /* AppDelegate.swift */,
 				C820895D244FD8A9009E4C2D /* SceneDelegate.swift */,
@@ -187,6 +193,22 @@
 				C8208969244FD8AA009E4C2D /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		C8B88471245BACF9009DCA6D /* Login View */ = {
+			isa = PBXGroup;
+			children = (
+				C8B88472245BAD6A009DCA6D /* LoginViewController.swift */,
+			);
+			path = "Login View";
+			sourceTree = "<group>";
+		};
+		C8B88476245BB86B009DCA6D /* Sign Up Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8B88474245BB866009DCA6D /* SignUpViewController.swift */,
+			);
+			path = "Sign Up Views";
 			sourceTree = "<group>";
 		};
 		D5998CAA8B54937F6414D19C /* Pods */ = {
@@ -349,7 +371,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		0E5E2273ECE1CDAA1DE6047B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -410,7 +432,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B88473245BAD6A009DCA6D /* LoginViewController.swift in Sources */,
 				C8A997932459CEBA0052E53E /* SearchViewController.swift in Sources */,
+				C8B88475245BB866009DCA6D /* SignUpViewController.swift in Sources */,
 				C8647B6524563B5400D84749 /* HomeCell.swift in Sources */,
 				C820895C244FD8A9009E4C2D /* AppDelegate.swift in Sources */,
 				C820895E244FD8A9009E4C2D /* SceneDelegate.swift in Sources */,
