@@ -13,7 +13,7 @@
                 <viewController id="Mx3-HX-QFy" customClass="LoginViewController" customModule="Planda" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5sg-Es-M8A"/>
                     <connections>
-                        <segue destination="TK2-6U-oqw" kind="show" identifier="loadSearchView" id="8Ci-ID-XHQ"/>
+                        <segue destination="TK2-6U-oqw" kind="show" id="8Ci-ID-XHQ"/>
                         <segue destination="oGX-e7-NOz" kind="show" identifier="loadHomeView" id="Xxj-Lp-gSk"/>
                     </connections>
                 </viewController>
@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="7425" y="443"/>
         </scene>
-        <!--Search View Controller-->
+        <!--View Controller-->
         <scene sceneID="cE6-Yo-Egf">
             <objects>
-                <viewController id="TK2-6U-oqw" customClass="SearchViewController" customModule="Planda" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TK2-6U-oqw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o4B-aV-0Oo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbC-5c-Bm9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7425" y="1335"/>
+            <point key="canvasLocation" x="7426" y="1103"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ChY-oH-DQ9">

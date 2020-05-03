@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintLocationsKey" : {
+    "5BC0710469D81E4C80E94D3B746A28DCC6BE6C79" : {
+      "DVTSourceControlBranchIdentifierKey" : "master",
+      "DVTSourceControlLocationRevisionKey" : "a0af9e4b96da4490903c91bbcf2127aba8eb2ae9",
+      "DVTSourceControlBranchOptionsKey" : 0,
+      "DVTSourceControlWorkspaceBlueprintLocationTypeKey" : "DVTSourceControlBranch"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5BC0710469D81E4C80E94D3B746A28DCC6BE6C79",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E758EC0E-2E7C-4974-BFB4-4834423D2B37",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5BC0710469D81E4C80E94D3B746A28DCC6BE6C79" : "planda-master%202\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Planda",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Planda.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PrinceCarter\/planda.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5BC0710469D81E4C80E94D3B746A28DCC6BE6C79"
+    }
+  ]
+}

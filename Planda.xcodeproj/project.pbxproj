@@ -20,7 +20,6 @@
 		C8647B5F2455F40400D84749 /* SkyFloatingLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */; };
 		C8647B602455F40400D84749 /* SkyFloatingLabelTextField.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C8647B6524563B5400D84749 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8647B6324563B5400D84749 /* HomeCell.swift */; };
-		C8647B6624563B5400D84749 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8647B6424563B5400D84749 /* HomeCell.xib */; };
 		C873FF9A2453A502007FE2A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873FF992453A502007FE2A5 /* HomeViewController.swift */; };
 		C8A997932459CEBA0052E53E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A997922459CEBA0052E53E /* SearchViewController.swift */; };
 		C8B88473245BAD6A009DCA6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B88472245BAD6A009DCA6D /* LoginViewController.swift */; };
@@ -80,7 +79,6 @@
 		C8647B5B2455F3E700D84749 /* SkyFloatingLabelTextField */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SkyFloatingLabelTextField; path = Carthage/Build/iOS/SkyFloatingLabelTextField.framework/SkyFloatingLabelTextField; sourceTree = "<group>"; };
 		C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyFloatingLabelTextField.framework; path = Carthage/Build/iOS/SkyFloatingLabelTextField.framework; sourceTree = "<group>"; };
 		C8647B6324563B5400D84749 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
-		C8647B6424563B5400D84749 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		C873FF992453A502007FE2A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C889B6C72455E71B00FDBE36 /* Swift_PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swift_PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C889B6C92455E7E800FDBE36 /* Swift_PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swift_PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,9 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				C873FF992453A502007FE2A5 /* HomeViewController.swift */,
-				C8A997922459CEBA0052E53E /* SearchViewController.swift */,
 				C8647B6324563B5400D84749 /* HomeCell.swift */,
-				C8647B6424563B5400D84749 /* HomeCell.xib */,
+				C8A997922459CEBA0052E53E /* SearchViewController.swift */,
 			);
 			path = "Home View";
 			sourceTree = "<group>";
@@ -347,7 +344,6 @@
 			files = (
 				C820896B244FD8AA009E4C2D /* LaunchScreen.storyboard in Resources */,
 				C8208968244FD8AA009E4C2D /* Assets.xcassets in Resources */,
-				C8647B6624563B5400D84749 /* HomeCell.xib in Resources */,
 				C8208963244FD8A9009E4C2D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,7 +609,9 @@
 			baseConfigurationReference = 8D6E15A80C3D6CCE69D1D6A5 /* Pods-Planda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = LJB5Z8URN8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -633,8 +631,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/SkyFloatingLabelTextField.framework",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Planda.Planda3;
+				MARKETING_VERSION = 0.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.planda.planda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -645,7 +645,9 @@
 			baseConfigurationReference = E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = LJB5Z8URN8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -665,8 +667,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/SkyFloatingLabelTextField.framework",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Planda.Planda3;
+				MARKETING_VERSION = 0.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.planda.planda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -8,18 +8,25 @@
 
 import UIKit
 import MaterialComponents
+import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
     
     var loginBtn = MDCButton()
     var welcomeText = UILabel()
     var plandaLogo = UIImageView()
-    var signupWithFBBtn = MDCButton()
+    var fbLoginBtn = FBLoginButton()
     var signupBtn = MDCButton()
     var agreementText = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let token = AccessToken.current,
+            !token.isExpired {
+            // User is logged in, do work such as go to next view controller.
+        }
+    
         view.backgroundColor = plandaColor
         setupWelcomeMessage()
         setupLoginBtn()
@@ -41,7 +48,7 @@ class LoginViewController: UIViewController {
         welcomeText.numberOfLines = 0
         welcomeText.sizeToFit()
         welcomeText.lineBreakMode = .byClipping;
-        welcomeText.text = "Thank you, for choosing Planda."
+        welcomeText.text = "Welcome To Planda."
     }
     
     func setupLoginBtn(){
@@ -58,11 +65,8 @@ class LoginViewController: UIViewController {
     }
     
     func setupFBBtn(){
-        signupWithFBBtn = MDCButton(frame: CGRect(x: 0, y: 0, width: 100, height: 120))
-        signupWithFBBtn.isUppercaseTitle = true
-        signupWithFBBtn.setTitle("Log In with Facebook", for: .normal)
-        signupWithFBBtn.setBackgroundColor(.white)
-        signupWithFBBtn.setTitleColor(plandaColor, for: .init())
+        fbLoginBtn.permissions = ["public_profile", "email"]
+        fbLoginBtn.center = view.center
     }
     
     func setupSignupBtn(){
@@ -85,7 +89,7 @@ class LoginViewController: UIViewController {
         self.view.addSubview(welcomeText)
         self.view.addSubview(loginBtn)
         self.view.addSubview(plandaLogo)
-        self.view.addSubview(signupWithFBBtn)
+        self.view.addSubview(fbLoginBtn)
         self.view.addSubview(signupBtn)
         self.view.addSubview(agreementText)
     }
@@ -93,7 +97,6 @@ class LoginViewController: UIViewController {
     func setupConstraints() {
         
         //Constraints
-
         /// Login button constraints
         loginBtn.translatesAutoresizingMaskIntoConstraints = false
         loginBtn.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -10).isActive = true
@@ -103,7 +106,7 @@ class LoginViewController: UIViewController {
         /// Welcome message constraints
         welcomeText.translatesAutoresizingMaskIntoConstraints = false
         welcomeText.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20).isActive = true
-        welcomeText.topAnchor.constraint(equalTo: loginBtn.bottomAnchor, constant: 10).isActive = true
+        welcomeText.topAnchor.constraint(equalTo: loginBtn.bottomAnchor, constant: 60).isActive = true
         welcomeText.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
         
         /// User Agreement constraints
@@ -115,15 +118,16 @@ class LoginViewController: UIViewController {
         
         /// Sign up button constraints
         signupBtn.translatesAutoresizingMaskIntoConstraints = false
-        signupBtn.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20).isActive = true
+        signupBtn.leadingAnchor.constraint(equalTo: fbLoginBtn.leadingAnchor, constant: 0).isActive = true
         signupBtn.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
         signupBtn.bottomAnchor.constraint(equalTo: agreementText.topAnchor, constant: 10).isActive = true
         
-        /// Sign up with Facebook button constraints
-        signupWithFBBtn.translatesAutoresizingMaskIntoConstraints = false
-        signupWithFBBtn.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20).isActive = true
-        signupWithFBBtn.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
-        signupWithFBBtn.bottomAnchor.constraint(equalTo: signupBtn.topAnchor, constant: -20).isActive = true
+//        /// Sign up with Facebook button constraints
+        fbLoginBtn.translatesAutoresizingMaskIntoConstraints = false
+        fbLoginBtn.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20).isActive = true
+        fbLoginBtn.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
+        fbLoginBtn.bottomAnchor.constraint(equalTo: signupBtn.topAnchor, constant: -20).isActive = true
+        fbLoginBtn.heightAnchor.constraint(equalToConstant: 800).isActive = true
         
     }
 

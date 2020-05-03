@@ -24,7 +24,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Los Angeles, California" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYb-pA-dcT">
-                        <rect key="frame" x="20" y="20" width="480" height="119.5"/>
+                        <rect key="frame" x="20" y="20" width="425" height="119.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -44,10 +44,10 @@
                 <constraint firstItem="9tf-gr-olN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7WL-ws-yVK"/>
                 <constraint firstAttribute="bottom" secondItem="9tf-gr-olN" secondAttribute="bottom" id="9Fm-ni-ANB"/>
                 <constraint firstItem="eg2-BF-6LR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="C3C-eZ-9rn"/>
-                <constraint firstAttribute="trailing" secondItem="oAC-iY-ugv" secondAttribute="trailing" constant="20" id="ETs-I3-i0R"/>
-                <constraint firstAttribute="bottom" secondItem="oAC-iY-ugv" secondAttribute="bottom" constant="20" id="Een-i7-Xtn"/>
-                <constraint firstItem="XYb-pA-dcT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="QdE-P0-dCS"/>
-                <constraint firstAttribute="trailing" secondItem="XYb-pA-dcT" secondAttribute="trailing" constant="20" id="S1c-7d-jfR"/>
+                <constraint firstItem="9tf-gr-olN" firstAttribute="trailing" secondItem="oAC-iY-ugv" secondAttribute="trailing" constant="20" id="ETs-I3-i0R"/>
+                <constraint firstItem="9tf-gr-olN" firstAttribute="bottom" secondItem="oAC-iY-ugv" secondAttribute="bottom" constant="20" id="Een-i7-Xtn"/>
+                <constraint firstItem="XYb-pA-dcT" firstAttribute="leading" secondItem="9tf-gr-olN" secondAttribute="leading" constant="20" id="QdE-P0-dCS"/>
+                <constraint firstAttribute="trailing" secondItem="XYb-pA-dcT" secondAttribute="trailing" constant="75" id="S1c-7d-jfR"/>
                 <constraint firstItem="9tf-gr-olN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZKu-NL-g0s"/>
                 <constraint firstAttribute="trailing" secondItem="9tf-gr-olN" secondAttribute="trailing" id="aru-yM-8hQ"/>
                 <constraint firstItem="eg2-BF-6LR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hVz-sA-89n"/>
