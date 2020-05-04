@@ -148,10 +148,11 @@
 				C8B88471245BACF9009DCA6D /* Login View */,
 				C8B88476245BB86B009DCA6D /* Sign Up Views */,
 				C889B6C32455DE6F00FDBE36 /* Home View */,
-				C820895B244FD8A9009E4C2D /* AppDelegate.swift */,
-				C820895D244FD8A9009E4C2D /* SceneDelegate.swift */,
+				C8BD5CBA2460857600679EDF /* Search View */,
 				C820896C244FD8AA009E4C2D /* Info.plist */,
 				C8208964244FD8A9009E4C2D /* Planda.xcdatamodeld */,
+				C820895B244FD8A9009E4C2D /* AppDelegate.swift */,
+				C820895D244FD8A9009E4C2D /* SceneDelegate.swift */,
 				C8208967244FD8AA009E4C2D /* Assets.xcassets */,
 			);
 			path = Planda;
@@ -180,8 +181,6 @@
 			children = (
 				C873FF992453A502007FE2A5 /* HomeViewController.swift */,
 				C8647B6324563B5400D84749 /* HomeCell.swift */,
-				C8BD5CB8246054C300679EDF /* SearchCell.swift */,
-				C8A997922459CEBA0052E53E /* SearchViewController.swift */,
 			);
 			path = "Home View";
 			sourceTree = "<group>";
@@ -209,6 +208,15 @@
 				C8B88474245BB866009DCA6D /* SignUpViewController.swift */,
 			);
 			path = "Sign Up Views";
+			sourceTree = "<group>";
+		};
+		C8BD5CBA2460857600679EDF /* Search View */ = {
+			isa = PBXGroup;
+			children = (
+				C8BD5CB8246054C300679EDF /* SearchCell.swift */,
+				C8A997922459CEBA0052E53E /* SearchViewController.swift */,
+			);
+			path = "Search View";
 			sourceTree = "<group>";
 		};
 		D5998CAA8B54937F6414D19C /* Pods */ = {
