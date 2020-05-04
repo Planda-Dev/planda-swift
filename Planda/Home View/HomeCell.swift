@@ -39,15 +39,13 @@ class HomeCell: MDCCardCollectionCell, TagListViewDelegate {
                                                     .flexibleTopMargin
                                                 ]
         }
-
     }
     
     func setupBackgroundPhotoCover() {
         if onVar == 0 {
-            backgroundPhotoCover.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+            backgroundPhotoCover.backgroundColor = UIColor.black.withAlphaComponent(0.2)
             backgroundPhotoCover.layer.cornerRadius = 10
         }
-
     }
     
     func setupLocationTitle() {
@@ -58,8 +56,8 @@ class HomeCell: MDCCardCollectionCell, TagListViewDelegate {
             tripTitle.font = .boldSystemFont(ofSize: 40)
             tripTitle.sizeToFit()
         }
-
     }
+    
     
     func setupTagView() {
         if onVar == 0 {
@@ -76,7 +74,14 @@ class HomeCell: MDCCardCollectionCell, TagListViewDelegate {
             tagListView.textFont = UIFont.systemFont(ofSize: 14)
             tagListView.borderWidth = 1.0
             tagListView.borderColor = .white
-            tagListView.addTags(["Trip For 2", "Great For Students", "Fun and Cheap", "72 Flights", "41 Stays", "103 Experiences"])
+            let amountOfPeople = Int.random(in: 1 ... 12)
+            let amountOfFlights = Int.random(in: 5 ... 36)
+            let amountOfStays = Int.random(in: 12 ... 48)
+            let amountOfExperiences = Int.random(in: 25 ... 80)
+            tagListView.addTags(["Trip For " + String(amountOfPeople),
+                                 String(amountOfFlights) + " Flights",
+                                 String(amountOfStays) + " Stays",
+                                 String(amountOfExperiences) + " Experiences"])
         }
     }
     
@@ -123,7 +128,6 @@ class HomeCell: MDCCardCollectionCell, TagListViewDelegate {
         tagListView.topAnchor.constraint(equalTo: tripTitle.bottomAnchor, constant: 10).isActive = true
         tagListView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
         tagListView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
-        tagListView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20).isActive = true
         
         /// Book Now button constraints
         bookBtn.translatesAutoresizingMaskIntoConstraints = false

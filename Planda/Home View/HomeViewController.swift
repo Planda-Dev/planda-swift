@@ -17,7 +17,7 @@ let plandaColor = UIColor(rgb: 0xDB555A)
 let locations = ["Bali, Indonesia",
                  "Miami, Florida",
                  "Los Angeles, California",
-                 "New York, New York",
+                 "New York City, New York",
                  "Paris, France"
 ]
 
@@ -95,7 +95,7 @@ MDCBottomNavigationBarDelegate {
     }
     
     func setupHeaderBackgroundCover() {
-        headerBackgroundCover.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+        headerBackgroundCover.backgroundColor = UIColor.black.withAlphaComponent(0.2)
     }
     
     func setupWhereFromTF(){
@@ -301,19 +301,22 @@ MDCBottomNavigationBarDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
-        cell.loadSubviews()
+        
+        cell.setShadowElevation(ShadowElevation(rawValue: 10), for: .normal)
+        cell.cornerRadius = 10
+        cell.isSelectable = false
+        
         cell.setupBackgroundPhoto()
         cell.setupBackgroundPhotoCover()
         cell.setupLocationTitle()
         cell.setupTagView()
         cell.setupBookBtn()
-        cell.setShadowElevation(ShadowElevation(rawValue: 10), for: .normal)
-        cell.cornerRadius = 10
-        cell.isSelectable = false
+        cell.loadSubviews()
+        cell.setupConstraints()
+        
         cell.backgroundPhoto.image = images[indexPath.item]
         cell.tripTitle.text = locations[indexPath.item]
-        print("The Background Image Is: ", images[indexPath.item]!)
-        print("The Location Title Is: ", locations[indexPath.item])
+        
         return cell
     }
     
