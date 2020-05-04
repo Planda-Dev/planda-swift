@@ -58,6 +58,7 @@ UICollectionViewDelegate,
 UITextFieldDelegate,
 MDCTabBarDelegate,
 MDCBottomNavigationBarDelegate {
+
     /// Homepage Components
     var headerBackgroundCover = UIView()
     var headerBackgroundImg = UIImageView()
@@ -141,7 +142,7 @@ MDCBottomNavigationBarDelegate {
         whereToTF.delegate = self
         whereToTF.attributedPlaceholder = NSAttributedString(string: "Where to?", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
     }
-    
+
     func setupStartBtn() {
         startBtn = MDCButton(frame: CGRect(x: 10, y: 10, width: 200, height: 45))
         startBtn.titleLabel?.text = "Start"
