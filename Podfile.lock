@@ -1,105 +1,417 @@
 PODS:
+  - abseil/algorithm (0.20200225.0):
+    - abseil/algorithm/algorithm (= 0.20200225.0)
+    - abseil/algorithm/container (= 0.20200225.0)
+  - abseil/algorithm/algorithm (0.20200225.0):
+    - abseil/base/config
+  - abseil/algorithm/container (0.20200225.0):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+  - abseil/base (0.20200225.0):
+    - abseil/base/atomic_hook (= 0.20200225.0)
+    - abseil/base/base (= 0.20200225.0)
+    - abseil/base/base_internal (= 0.20200225.0)
+    - abseil/base/bits (= 0.20200225.0)
+    - abseil/base/config (= 0.20200225.0)
+    - abseil/base/core_headers (= 0.20200225.0)
+    - abseil/base/dynamic_annotations (= 0.20200225.0)
+    - abseil/base/endian (= 0.20200225.0)
+    - abseil/base/errno_saver (= 0.20200225.0)
+    - abseil/base/exponential_biased (= 0.20200225.0)
+    - abseil/base/log_severity (= 0.20200225.0)
+    - abseil/base/malloc_internal (= 0.20200225.0)
+    - abseil/base/periodic_sampler (= 0.20200225.0)
+    - abseil/base/pretty_function (= 0.20200225.0)
+    - abseil/base/raw_logging_internal (= 0.20200225.0)
+    - abseil/base/spinlock_wait (= 0.20200225.0)
+    - abseil/base/throw_delegate (= 0.20200225.0)
+  - abseil/base/atomic_hook (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/base (0.20200225.0):
+    - abseil/base/atomic_hook
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/log_severity
+    - abseil/base/raw_logging_internal
+    - abseil/base/spinlock_wait
+    - abseil/meta/type_traits
+  - abseil/base/base_internal (0.20200225.0):
+    - abseil/base/config
+    - abseil/meta/type_traits
+  - abseil/base/bits (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/config (0.20200225.0)
+  - abseil/base/core_headers (0.20200225.0):
+    - abseil/base/config
+  - abseil/base/dynamic_annotations (0.20200225.0)
+  - abseil/base/endian (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/errno_saver (0.20200225.0):
+    - abseil/base/config
+  - abseil/base/exponential_biased (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/log_severity (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/malloc_internal (0.20200225.0):
+    - abseil/base/base
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/raw_logging_internal
+  - abseil/base/periodic_sampler (0.20200225.0):
+    - abseil/base/core_headers
+    - abseil/base/exponential_biased
+  - abseil/base/pretty_function (0.20200225.0)
+  - abseil/base/raw_logging_internal (0.20200225.0):
+    - abseil/base/atomic_hook
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/log_severity
+  - abseil/base/spinlock_wait (0.20200225.0):
+    - abseil/base/base_internal
+    - abseil/base/core_headers
+    - abseil/base/errno_saver
+  - abseil/base/throw_delegate (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/container/compressed_tuple (0.20200225.0):
+    - abseil/utility/utility
+  - abseil/container/inlined_vector (0.20200225.0):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/base/throw_delegate
+    - abseil/container/inlined_vector_internal
+    - abseil/memory/memory
+  - abseil/container/inlined_vector_internal (0.20200225.0):
+    - abseil/base/core_headers
+    - abseil/container/compressed_tuple
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/types/span
+  - abseil/memory (0.20200225.0):
+    - abseil/memory/memory (= 0.20200225.0)
+  - abseil/memory/memory (0.20200225.0):
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+  - abseil/meta (0.20200225.0):
+    - abseil/meta/type_traits (= 0.20200225.0)
+  - abseil/meta/type_traits (0.20200225.0):
+    - abseil/base/config
+  - abseil/numeric/int128 (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/strings/internal (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/raw_logging_internal
+    - abseil/meta/type_traits
+  - abseil/strings/str_format (0.20200225.0):
+    - abseil/strings/str_format_internal
+  - abseil/strings/str_format_internal (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+    - abseil/numeric/int128
+    - abseil/strings/strings
+    - abseil/types/span
+  - abseil/strings/strings (0.20200225.0):
+    - abseil/base/base
+    - abseil/base/bits
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/raw_logging_internal
+    - abseil/base/throw_delegate
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/numeric/int128
+    - abseil/strings/internal
+  - abseil/time (0.20200225.0):
+    - abseil/time/internal (= 0.20200225.0)
+    - abseil/time/time (= 0.20200225.0)
+  - abseil/time/internal (0.20200225.0):
+    - abseil/time/internal/cctz (= 0.20200225.0)
+  - abseil/time/internal/cctz (0.20200225.0):
+    - abseil/time/internal/cctz/civil_time (= 0.20200225.0)
+    - abseil/time/internal/cctz/time_zone (= 0.20200225.0)
+  - abseil/time/internal/cctz/civil_time (0.20200225.0):
+    - abseil/base/config
+  - abseil/time/internal/cctz/time_zone (0.20200225.0):
+    - abseil/base/config
+    - abseil/time/internal/cctz/civil_time
+  - abseil/time/time (0.20200225.0):
+    - abseil/base/base
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/numeric/int128
+    - abseil/strings/strings
+    - abseil/time/internal/cctz/civil_time
+    - abseil/time/internal/cctz/time_zone
+  - abseil/types (0.20200225.0):
+    - abseil/types/any (= 0.20200225.0)
+    - abseil/types/bad_any_cast (= 0.20200225.0)
+    - abseil/types/bad_any_cast_impl (= 0.20200225.0)
+    - abseil/types/bad_optional_access (= 0.20200225.0)
+    - abseil/types/bad_variant_access (= 0.20200225.0)
+    - abseil/types/compare (= 0.20200225.0)
+    - abseil/types/optional (= 0.20200225.0)
+    - abseil/types/span (= 0.20200225.0)
+    - abseil/types/variant (= 0.20200225.0)
+  - abseil/types/any (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+    - abseil/types/bad_any_cast
+    - abseil/utility/utility
+  - abseil/types/bad_any_cast (0.20200225.0):
+    - abseil/base/config
+    - abseil/types/bad_any_cast_impl
+  - abseil/types/bad_any_cast_impl (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/types/bad_optional_access (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/types/bad_variant_access (0.20200225.0):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/types/compare (0.20200225.0):
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+  - abseil/types/optional (0.20200225.0):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/types/bad_optional_access
+    - abseil/utility/utility
+  - abseil/types/span (0.20200225.0):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/base/throw_delegate
+    - abseil/meta/type_traits
+  - abseil/types/variant (0.20200225.0):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+    - abseil/types/bad_variant_access
+    - abseil/utility/utility
+  - abseil/utility/utility (0.20200225.0):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/meta/type_traits
+  - Alamofire (5.1.0)
+  - BoringSSL-GRPC (0.0.7):
+    - BoringSSL-GRPC/Implementation (= 0.0.7)
+    - BoringSSL-GRPC/Interface (= 0.0.7)
+  - BoringSSL-GRPC/Implementation (0.0.7):
+    - BoringSSL-GRPC/Interface (= 0.0.7)
+  - BoringSSL-GRPC/Interface (0.0.7)
   - DropDown (2.3.2)
-  - FBSDKCoreKit (6.5.2):
-    - FBSDKCoreKit/Basics (= 6.5.2)
-    - FBSDKCoreKit/Core (= 6.5.2)
-  - FBSDKCoreKit/Basics (6.5.2)
-  - FBSDKCoreKit/Core (6.5.2):
+  - FBSDKCoreKit (7.0.0):
+    - FBSDKCoreKit/Basics (= 7.0.0)
+    - FBSDKCoreKit/Core (= 7.0.0)
+  - FBSDKCoreKit/Basics (7.0.0)
+  - FBSDKCoreKit/Core (7.0.0):
     - FBSDKCoreKit/Basics
-  - FBSDKLoginKit (6.5.2):
-    - FBSDKLoginKit/Login (= 6.5.2)
-  - FBSDKLoginKit/Login (6.5.2):
-    - FBSDKCoreKit (~> 6.5.2)
-  - MaterialComponents (109.1.0):
-    - MaterialComponents/ActionSheet (= 109.1.0)
-    - "MaterialComponents/ActionSheet+Theming (= 109.1.0)"
-    - MaterialComponents/ActivityIndicator (= 109.1.0)
-    - MaterialComponents/AnimationTiming (= 109.1.0)
-    - MaterialComponents/AppBar (= 109.1.0)
-    - "MaterialComponents/AppBar+ColorThemer (= 109.1.0)"
-    - "MaterialComponents/AppBar+Theming (= 109.1.0)"
-    - "MaterialComponents/AppBar+TypographyThemer (= 109.1.0)"
-    - MaterialComponents/Availability (= 109.1.0)
-    - MaterialComponents/Banner (= 109.1.0)
-    - "MaterialComponents/Banner+Theming (= 109.1.0)"
-    - MaterialComponents/BottomAppBar (= 109.1.0)
-    - MaterialComponents/BottomNavigation (= 109.1.0)
-    - "MaterialComponents/BottomNavigation+Theming (= 109.1.0)"
-    - MaterialComponents/BottomSheet (= 109.1.0)
-    - "MaterialComponents/BottomSheet+ShapeThemer (= 109.1.0)"
-    - MaterialComponents/ButtonBar (= 109.1.0)
-    - MaterialComponents/Buttons (= 109.1.0)
-    - "MaterialComponents/Buttons+ButtonThemer (= 109.1.0)"
-    - "MaterialComponents/Buttons+ColorThemer (= 109.1.0)"
-    - "MaterialComponents/Buttons+ShapeThemer (= 109.1.0)"
-    - "MaterialComponents/Buttons+Theming (= 109.1.0)"
-    - "MaterialComponents/Buttons+TitleColorAccessibilityMutator (= 109.1.0)"
-    - "MaterialComponents/Buttons+TypographyThemer (= 109.1.0)"
-    - MaterialComponents/Cards (= 109.1.0)
-    - "MaterialComponents/Cards+Theming (= 109.1.0)"
-    - MaterialComponents/Chips (= 109.1.0)
-    - "MaterialComponents/Chips+Theming (= 109.1.0)"
-    - MaterialComponents/CollectionCells (= 109.1.0)
-    - MaterialComponents/CollectionLayoutAttributes (= 109.1.0)
-    - MaterialComponents/Collections (= 109.1.0)
-    - MaterialComponents/Dialogs (= 109.1.0)
-    - "MaterialComponents/Dialogs+ColorThemer (= 109.1.0)"
-    - "MaterialComponents/Dialogs+Theming (= 109.1.0)"
-    - "MaterialComponents/Dialogs+TypographyThemer (= 109.1.0)"
-    - MaterialComponents/Elevation (= 109.1.0)
-    - MaterialComponents/FeatureHighlight (= 109.1.0)
-    - "MaterialComponents/FeatureHighlight+ColorThemer (= 109.1.0)"
-    - "MaterialComponents/FeatureHighlight+FeatureHighlightAccessibilityMutator (= 109.1.0)"
-    - MaterialComponents/FlexibleHeader (= 109.1.0)
-    - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight (= 109.1.0)"
-    - MaterialComponents/HeaderStackView (= 109.1.0)
-    - "MaterialComponents/HeaderStackView+ColorThemer (= 109.1.0)"
-    - MaterialComponents/Ink (= 109.1.0)
-    - MaterialComponents/LibraryInfo (= 109.1.0)
-    - MaterialComponents/List (= 109.1.0)
-    - "MaterialComponents/List+Theming (= 109.1.0)"
-    - MaterialComponents/NavigationBar (= 109.1.0)
-    - "MaterialComponents/NavigationBar+ColorThemer (= 109.1.0)"
-    - "MaterialComponents/NavigationBar+TypographyThemer (= 109.1.0)"
-    - MaterialComponents/NavigationDrawer (= 109.1.0)
-    - "MaterialComponents/NavigationDrawer+ColorThemer (= 109.1.0)"
-    - MaterialComponents/OverlayWindow (= 109.1.0)
-    - MaterialComponents/PageControl (= 109.1.0)
-    - MaterialComponents/Palettes (= 109.1.0)
-    - MaterialComponents/private (= 109.1.0)
-    - MaterialComponents/ProgressView (= 109.1.0)
-    - "MaterialComponents/ProgressView+Theming (= 109.1.0)"
-    - MaterialComponents/Ripple (= 109.1.0)
-    - MaterialComponents/schemes (= 109.1.0)
-    - MaterialComponents/ShadowElevations (= 109.1.0)
-    - MaterialComponents/ShadowLayer (= 109.1.0)
-    - MaterialComponents/ShapeLibrary (= 109.1.0)
-    - MaterialComponents/Shapes (= 109.1.0)
-    - MaterialComponents/Slider (= 109.1.0)
-    - "MaterialComponents/Slider+ColorThemer (= 109.1.0)"
-    - MaterialComponents/Snackbar (= 109.1.0)
-    - "MaterialComponents/Snackbar+FontThemer (= 109.1.0)"
-    - "MaterialComponents/Snackbar+TypographyThemer (= 109.1.0)"
-    - MaterialComponents/Tabs (= 109.1.0)
-    - "MaterialComponents/Tabs+Theming (= 109.1.0)"
-    - "MaterialComponents/Tabs+TypographyThemer (= 109.1.0)"
-    - "MaterialComponents/TextControls+BaseTextAreas (= 109.1.0)"
-    - "MaterialComponents/TextControls+BaseTextFields (= 109.1.0)"
-    - "MaterialComponents/TextControls+Enums (= 109.1.0)"
-    - "MaterialComponents/TextControls+FilledTextAreas (= 109.1.0)"
-    - "MaterialComponents/TextControls+FilledTextAreasTheming (= 109.1.0)"
-    - "MaterialComponents/TextControls+FilledTextFields (= 109.1.0)"
-    - "MaterialComponents/TextControls+FilledTextFieldsTheming (= 109.1.0)"
-    - "MaterialComponents/TextControls+OutlinedTextAreas (= 109.1.0)"
-    - "MaterialComponents/TextControls+OutlinedTextAreasTheming (= 109.1.0)"
-    - "MaterialComponents/TextControls+OutlinedTextFields (= 109.1.0)"
-    - "MaterialComponents/TextControls+OutlinedTextFieldsTheming (= 109.1.0)"
-    - MaterialComponents/TextFields (= 109.1.0)
-    - "MaterialComponents/TextFields+ColorThemer (= 109.1.0)"
-    - "MaterialComponents/TextFields+Theming (= 109.1.0)"
-    - MaterialComponents/Themes (= 109.1.0)
-    - MaterialComponents/Typography (= 109.1.0)
-  - MaterialComponents/ActionSheet (109.1.0):
+  - FBSDKLoginKit (7.0.0):
+    - FBSDKLoginKit/Login (= 7.0.0)
+  - FBSDKLoginKit/Login (7.0.0):
+    - FBSDKCoreKit (~> 7.0.0)
+  - Firebase/Auth (6.24.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 6.5.3)
+  - Firebase/CoreOnly (6.24.0):
+    - FirebaseCore (= 6.7.0)
+  - Firebase/Database (6.24.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 6.2.1)
+  - Firebase/Firestore (6.24.0):
+    - Firebase/CoreOnly
+    - FirebaseFirestore (~> 1.13.0)
+  - FirebaseAuth (6.5.3):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.6)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.5)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.1.0)
+  - FirebaseCore (6.7.0):
+    - FirebaseCoreDiagnostics (~> 1.3)
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+  - FirebaseCoreDiagnostics (1.3.0):
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleDataTransportCCTSupport (~> 3.1)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+    - nanopb (~> 1.30905.0)
+  - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - FirebaseDatabase (6.2.1):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - leveldb-library (~> 1.22)
+  - FirebaseFirestore (1.13.0):
+    - abseil/algorithm (= 0.20200225.0)
+    - abseil/base (= 0.20200225.0)
+    - abseil/memory (= 0.20200225.0)
+    - abseil/meta (= 0.20200225.0)
+    - abseil/strings/strings (= 0.20200225.0)
+    - abseil/time (= 0.20200225.0)
+    - abseil/types (= 0.20200225.0)
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.2)
+    - "gRPC-C++ (~> 1.28.0)"
+    - leveldb-library (~> 1.22)
+    - nanopb (~> 1.30905.0)
+  - GoogleDataTransport (6.1.0)
+  - GoogleDataTransportCCTSupport (3.1.0):
+    - GoogleDataTransport (~> 6.1)
+    - nanopb (~> 1.30905.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.6.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.6.0):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.6.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Network (6.6.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.6.0)"
+  - GoogleUtilities/Reachability (6.6.0):
+    - GoogleUtilities/Logger
+  - "gRPC-C++ (1.28.0)":
+    - "gRPC-C++/Implementation (= 1.28.0)"
+    - "gRPC-C++/Interface (= 1.28.0)"
+  - "gRPC-C++/Implementation (1.28.0)":
+    - abseil/container/inlined_vector (= 0.20200225.0)
+    - abseil/memory/memory (= 0.20200225.0)
+    - abseil/strings/str_format (= 0.20200225.0)
+    - abseil/strings/strings (= 0.20200225.0)
+    - abseil/types/optional (= 0.20200225.0)
+    - "gRPC-C++/Interface (= 1.28.0)"
+    - gRPC-Core (= 1.28.0)
+  - "gRPC-C++/Interface (1.28.0)"
+  - gRPC-Core (1.28.0):
+    - gRPC-Core/Implementation (= 1.28.0)
+    - gRPC-Core/Interface (= 1.28.0)
+  - gRPC-Core/Implementation (1.28.0):
+    - abseil/container/inlined_vector (= 0.20200225.0)
+    - abseil/memory/memory (= 0.20200225.0)
+    - abseil/strings/str_format (= 0.20200225.0)
+    - abseil/strings/strings (= 0.20200225.0)
+    - abseil/types/optional (= 0.20200225.0)
+    - BoringSSL-GRPC (= 0.0.7)
+    - gRPC-Core/Interface (= 1.28.0)
+  - gRPC-Core/Interface (1.28.0)
+  - GTMSessionFetcher/Core (1.4.0)
+  - leveldb-library (1.22)
+  - MaterialComponents (109.2.0):
+    - MaterialComponents/ActionSheet (= 109.2.0)
+    - "MaterialComponents/ActionSheet+Theming (= 109.2.0)"
+    - MaterialComponents/ActivityIndicator (= 109.2.0)
+    - MaterialComponents/AnimationTiming (= 109.2.0)
+    - MaterialComponents/AppBar (= 109.2.0)
+    - "MaterialComponents/AppBar+ColorThemer (= 109.2.0)"
+    - "MaterialComponents/AppBar+Theming (= 109.2.0)"
+    - "MaterialComponents/AppBar+TypographyThemer (= 109.2.0)"
+    - MaterialComponents/Availability (= 109.2.0)
+    - MaterialComponents/Banner (= 109.2.0)
+    - "MaterialComponents/Banner+Theming (= 109.2.0)"
+    - MaterialComponents/BottomAppBar (= 109.2.0)
+    - MaterialComponents/BottomNavigation (= 109.2.0)
+    - "MaterialComponents/BottomNavigation+Theming (= 109.2.0)"
+    - MaterialComponents/BottomSheet (= 109.2.0)
+    - "MaterialComponents/BottomSheet+ShapeThemer (= 109.2.0)"
+    - MaterialComponents/ButtonBar (= 109.2.0)
+    - MaterialComponents/Buttons (= 109.2.0)
+    - "MaterialComponents/Buttons+ButtonThemer (= 109.2.0)"
+    - "MaterialComponents/Buttons+ColorThemer (= 109.2.0)"
+    - "MaterialComponents/Buttons+ShapeThemer (= 109.2.0)"
+    - "MaterialComponents/Buttons+Theming (= 109.2.0)"
+    - "MaterialComponents/Buttons+TitleColorAccessibilityMutator (= 109.2.0)"
+    - "MaterialComponents/Buttons+TypographyThemer (= 109.2.0)"
+    - MaterialComponents/Cards (= 109.2.0)
+    - "MaterialComponents/Cards+Theming (= 109.2.0)"
+    - MaterialComponents/Chips (= 109.2.0)
+    - "MaterialComponents/Chips+Theming (= 109.2.0)"
+    - MaterialComponents/CollectionCells (= 109.2.0)
+    - MaterialComponents/CollectionLayoutAttributes (= 109.2.0)
+    - MaterialComponents/Collections (= 109.2.0)
+    - MaterialComponents/Dialogs (= 109.2.0)
+    - "MaterialComponents/Dialogs+ColorThemer (= 109.2.0)"
+    - "MaterialComponents/Dialogs+Theming (= 109.2.0)"
+    - "MaterialComponents/Dialogs+TypographyThemer (= 109.2.0)"
+    - MaterialComponents/Elevation (= 109.2.0)
+    - MaterialComponents/FeatureHighlight (= 109.2.0)
+    - "MaterialComponents/FeatureHighlight+ColorThemer (= 109.2.0)"
+    - "MaterialComponents/FeatureHighlight+FeatureHighlightAccessibilityMutator (= 109.2.0)"
+    - MaterialComponents/FlexibleHeader (= 109.2.0)
+    - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight (= 109.2.0)"
+    - MaterialComponents/HeaderStackView (= 109.2.0)
+    - "MaterialComponents/HeaderStackView+ColorThemer (= 109.2.0)"
+    - MaterialComponents/Ink (= 109.2.0)
+    - MaterialComponents/LibraryInfo (= 109.2.0)
+    - MaterialComponents/List (= 109.2.0)
+    - "MaterialComponents/List+Theming (= 109.2.0)"
+    - MaterialComponents/NavigationBar (= 109.2.0)
+    - "MaterialComponents/NavigationBar+ColorThemer (= 109.2.0)"
+    - "MaterialComponents/NavigationBar+TypographyThemer (= 109.2.0)"
+    - MaterialComponents/NavigationDrawer (= 109.2.0)
+    - "MaterialComponents/NavigationDrawer+ColorThemer (= 109.2.0)"
+    - MaterialComponents/OverlayWindow (= 109.2.0)
+    - MaterialComponents/PageControl (= 109.2.0)
+    - MaterialComponents/Palettes (= 109.2.0)
+    - MaterialComponents/private (= 109.2.0)
+    - MaterialComponents/ProgressView (= 109.2.0)
+    - "MaterialComponents/ProgressView+Theming (= 109.2.0)"
+    - MaterialComponents/Ripple (= 109.2.0)
+    - MaterialComponents/schemes (= 109.2.0)
+    - MaterialComponents/ShadowElevations (= 109.2.0)
+    - MaterialComponents/ShadowLayer (= 109.2.0)
+    - MaterialComponents/ShapeLibrary (= 109.2.0)
+    - MaterialComponents/Shapes (= 109.2.0)
+    - MaterialComponents/Slider (= 109.2.0)
+    - "MaterialComponents/Slider+ColorThemer (= 109.2.0)"
+    - MaterialComponents/Snackbar (= 109.2.0)
+    - "MaterialComponents/Snackbar+FontThemer (= 109.2.0)"
+    - "MaterialComponents/Snackbar+TypographyThemer (= 109.2.0)"
+    - MaterialComponents/Tabs (= 109.2.0)
+    - "MaterialComponents/Tabs+Theming (= 109.2.0)"
+    - "MaterialComponents/Tabs+TypographyThemer (= 109.2.0)"
+    - "MaterialComponents/TextControls+BaseTextAreas (= 109.2.0)"
+    - "MaterialComponents/TextControls+BaseTextFields (= 109.2.0)"
+    - "MaterialComponents/TextControls+Enums (= 109.2.0)"
+    - "MaterialComponents/TextControls+FilledTextAreas (= 109.2.0)"
+    - "MaterialComponents/TextControls+FilledTextAreasTheming (= 109.2.0)"
+    - "MaterialComponents/TextControls+FilledTextFields (= 109.2.0)"
+    - "MaterialComponents/TextControls+FilledTextFieldsTheming (= 109.2.0)"
+    - "MaterialComponents/TextControls+OutlinedTextAreas (= 109.2.0)"
+    - "MaterialComponents/TextControls+OutlinedTextAreasTheming (= 109.2.0)"
+    - "MaterialComponents/TextControls+OutlinedTextFields (= 109.2.0)"
+    - "MaterialComponents/TextControls+OutlinedTextFieldsTheming (= 109.2.0)"
+    - MaterialComponents/TextFields (= 109.2.0)
+    - "MaterialComponents/TextFields+ColorThemer (= 109.2.0)"
+    - "MaterialComponents/TextFields+Theming (= 109.2.0)"
+    - MaterialComponents/Themes (= 109.2.0)
+    - MaterialComponents/Typography (= 109.2.0)
+  - MaterialComponents/ActionSheet (109.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/BottomSheet
     - MaterialComponents/Elevation
@@ -108,20 +420,20 @@ PODS:
     - MaterialComponents/Ripple
     - MaterialComponents/ShadowElevations
     - MaterialComponents/Typography
-  - "MaterialComponents/ActionSheet+Theming (109.1.0)":
+  - "MaterialComponents/ActionSheet+Theming (109.2.0)":
     - MaterialComponents/ActionSheet
     - MaterialComponents/Availability
     - MaterialComponents/Elevation
     - MaterialComponents/private/Color
     - MaterialComponents/schemes/Container
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/ActivityIndicator (109.1.0):
+  - MaterialComponents/ActivityIndicator (109.2.0):
     - MaterialComponents/Palettes
     - MaterialComponents/private/Application
     - MDFInternationalization
     - MotionAnimator (~> 2.0)
-  - MaterialComponents/AnimationTiming (109.1.0)
-  - MaterialComponents/AppBar (109.1.0):
+  - MaterialComponents/AnimationTiming (109.2.0)
+  - MaterialComponents/AppBar (109.2.0):
     - MaterialComponents/FlexibleHeader
     - MaterialComponents/HeaderStackView
     - MaterialComponents/NavigationBar
@@ -132,35 +444,35 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - "MaterialComponents/AppBar+ColorThemer (109.1.0)":
+  - "MaterialComponents/AppBar+ColorThemer (109.2.0)":
     - MaterialComponents/AppBar
     - "MaterialComponents/NavigationBar+ColorThemer"
     - MaterialComponents/Themes
-  - "MaterialComponents/AppBar+Theming (109.1.0)":
+  - "MaterialComponents/AppBar+Theming (109.2.0)":
     - MaterialComponents/AppBar
     - MaterialComponents/schemes/Container
-  - "MaterialComponents/AppBar+TypographyThemer (109.1.0)":
+  - "MaterialComponents/AppBar+TypographyThemer (109.2.0)":
     - MaterialComponents/AppBar
     - "MaterialComponents/NavigationBar+TypographyThemer"
-  - MaterialComponents/Availability (109.1.0)
-  - MaterialComponents/Banner (109.1.0):
+  - MaterialComponents/Availability (109.2.0)
+  - MaterialComponents/Banner (109.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/Buttons
     - MaterialComponents/Elevation
     - MaterialComponents/Typography
-  - "MaterialComponents/Banner+Theming (109.1.0)":
+  - "MaterialComponents/Banner+Theming (109.2.0)":
     - MaterialComponents/Banner
     - MaterialComponents/Buttons
     - "MaterialComponents/Buttons+Theming"
     - MaterialComponents/Elevation
     - MaterialComponents/schemes/Container
     - MaterialComponents/Typography
-  - MaterialComponents/BottomAppBar (109.1.0):
+  - MaterialComponents/BottomAppBar (109.2.0):
     - MaterialComponents/Buttons
     - MaterialComponents/NavigationBar
     - MaterialComponents/private/Math
     - MDFInternationalization
-  - MaterialComponents/BottomNavigation (109.1.0):
+  - MaterialComponents/BottomNavigation (109.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
@@ -171,13 +483,13 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - "MaterialComponents/BottomNavigation+Theming (109.1.0)":
+  - "MaterialComponents/BottomNavigation+Theming (109.2.0)":
     - MaterialComponents/BottomNavigation
     - MaterialComponents/schemes/Color
     - MaterialComponents/schemes/Container
     - MaterialComponents/schemes/Typography
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/BottomSheet (109.1.0):
+  - MaterialComponents/BottomSheet (109.2.0):
     - MaterialComponents/Elevation
     - MaterialComponents/private/KeyboardWatcher
     - MaterialComponents/private/Math
@@ -185,14 +497,14 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/ShapeLibrary
     - MaterialComponents/Shapes
-  - "MaterialComponents/BottomSheet+ShapeThemer (109.1.0)":
+  - "MaterialComponents/BottomSheet+ShapeThemer (109.2.0)":
     - MaterialComponents/BottomSheet
     - MaterialComponents/schemes/Shape
-  - MaterialComponents/ButtonBar (109.1.0):
+  - MaterialComponents/ButtonBar (109.2.0):
     - MaterialComponents/Buttons
     - MaterialComponents/private/Application
     - MDFInternationalization
-  - MaterialComponents/Buttons (109.1.0):
+  - MaterialComponents/Buttons (109.2.0):
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
@@ -203,32 +515,32 @@ PODS:
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
-  - "MaterialComponents/Buttons+ButtonThemer (109.1.0)":
+  - "MaterialComponents/Buttons+ButtonThemer (109.2.0)":
     - MaterialComponents/Buttons
     - "MaterialComponents/Buttons+ColorThemer"
     - "MaterialComponents/Buttons+ShapeThemer"
     - "MaterialComponents/Buttons+TypographyThemer"
     - MaterialComponents/Palettes
-  - "MaterialComponents/Buttons+ColorThemer (109.1.0)":
+  - "MaterialComponents/Buttons+ColorThemer (109.2.0)":
     - MaterialComponents/Buttons
     - MaterialComponents/schemes/Color
-  - "MaterialComponents/Buttons+ShapeThemer (109.1.0)":
+  - "MaterialComponents/Buttons+ShapeThemer (109.2.0)":
     - MaterialComponents/Buttons
     - MaterialComponents/schemes/Shape
-  - "MaterialComponents/Buttons+Theming (109.1.0)":
+  - "MaterialComponents/Buttons+Theming (109.2.0)":
     - MaterialComponents/Buttons
     - "MaterialComponents/Buttons+ColorThemer"
     - "MaterialComponents/Buttons+ShapeThemer"
     - "MaterialComponents/Buttons+TypographyThemer"
     - MaterialComponents/schemes/Container
     - MaterialComponents/ShadowElevations
-  - "MaterialComponents/Buttons+TitleColorAccessibilityMutator (109.1.0)":
+  - "MaterialComponents/Buttons+TitleColorAccessibilityMutator (109.2.0)":
     - MaterialComponents/Buttons
     - MDFTextAccessibility
-  - "MaterialComponents/Buttons+TypographyThemer (109.1.0)":
+  - "MaterialComponents/Buttons+TypographyThemer (109.2.0)":
     - MaterialComponents/Buttons
     - MaterialComponents/schemes/Typography
-  - MaterialComponents/Cards (109.1.0):
+  - MaterialComponents/Cards (109.2.0):
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/private/Icons/ic_check_circle
@@ -236,10 +548,10 @@ PODS:
     - MaterialComponents/Ripple
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Shapes
-  - "MaterialComponents/Cards+Theming (109.1.0)":
+  - "MaterialComponents/Cards+Theming (109.2.0)":
     - MaterialComponents/Cards
     - MaterialComponents/schemes/Container
-  - MaterialComponents/Chips (109.1.0):
+  - MaterialComponents/Chips (109.2.0):
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
@@ -251,11 +563,11 @@ PODS:
     - MaterialComponents/TextFields
     - MaterialComponents/Typography
     - MDFInternationalization
-  - "MaterialComponents/Chips+Theming (109.1.0)":
+  - "MaterialComponents/Chips+Theming (109.2.0)":
     - MaterialComponents/Chips
     - MaterialComponents/schemes/Container
     - MaterialComponents/Typography
-  - MaterialComponents/CollectionCells (109.1.0):
+  - MaterialComponents/CollectionCells (109.2.0):
     - MaterialComponents/CollectionLayoutAttributes
     - MaterialComponents/Ink
     - MaterialComponents/Palettes
@@ -268,8 +580,8 @@ PODS:
     - MaterialComponents/private/Math
     - MaterialComponents/Typography
     - MDFInternationalization
-  - MaterialComponents/CollectionLayoutAttributes (109.1.0)
-  - MaterialComponents/Collections (109.1.0):
+  - MaterialComponents/CollectionLayoutAttributes (109.2.0)
+  - MaterialComponents/Collections (109.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/CollectionCells
     - MaterialComponents/CollectionLayoutAttributes
@@ -278,7 +590,7 @@ PODS:
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
-  - MaterialComponents/Dialogs (109.1.0):
+  - MaterialComponents/Dialogs (109.2.0):
     - MaterialComponents/Buttons
     - MaterialComponents/Elevation
     - MaterialComponents/private/KeyboardWatcher
@@ -287,37 +599,37 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - "MaterialComponents/Dialogs+ColorThemer (109.1.0)":
+  - "MaterialComponents/Dialogs+ColorThemer (109.2.0)":
     - "MaterialComponents/Buttons+ColorThemer"
     - MaterialComponents/Dialogs
     - MaterialComponents/Themes
-  - "MaterialComponents/Dialogs+Theming (109.1.0)":
+  - "MaterialComponents/Dialogs+Theming (109.2.0)":
     - "MaterialComponents/Buttons+Theming"
     - MaterialComponents/Dialogs
     - "MaterialComponents/Dialogs+ColorThemer"
     - "MaterialComponents/Dialogs+TypographyThemer"
     - MaterialComponents/schemes/Container
     - MaterialComponents/ShadowElevations
-  - "MaterialComponents/Dialogs+TypographyThemer (109.1.0)":
+  - "MaterialComponents/Dialogs+TypographyThemer (109.2.0)":
     - "MaterialComponents/Buttons+TypographyThemer"
     - MaterialComponents/Dialogs
     - MaterialComponents/schemes/Typography
-  - MaterialComponents/Elevation (109.1.0):
+  - MaterialComponents/Elevation (109.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/FeatureHighlight (109.1.0):
+  - MaterialComponents/FeatureHighlight (109.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Math
     - MaterialComponents/Typography
     - MDFTextAccessibility
-  - "MaterialComponents/FeatureHighlight+ColorThemer (109.1.0)":
+  - "MaterialComponents/FeatureHighlight+ColorThemer (109.2.0)":
     - MaterialComponents/FeatureHighlight
     - MaterialComponents/Themes
-  - "MaterialComponents/FeatureHighlight+FeatureHighlightAccessibilityMutator (109.1.0)":
+  - "MaterialComponents/FeatureHighlight+FeatureHighlightAccessibilityMutator (109.2.0)":
     - MaterialComponents/FeatureHighlight
     - MDFTextAccessibility
-  - MaterialComponents/FlexibleHeader (109.1.0):
+  - MaterialComponents/FlexibleHeader (109.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/Elevation
     - MaterialComponents/private/Application
@@ -326,18 +638,18 @@ PODS:
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
     - MDFTextAccessibility
-  - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight (109.1.0)":
+  - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight (109.2.0)":
     - MaterialComponents/FlexibleHeader
-  - MaterialComponents/HeaderStackView (109.1.0)
-  - "MaterialComponents/HeaderStackView+ColorThemer (109.1.0)":
+  - MaterialComponents/HeaderStackView (109.2.0)
+  - "MaterialComponents/HeaderStackView+ColorThemer (109.2.0)":
     - MaterialComponents/HeaderStackView
     - MaterialComponents/Themes
-  - MaterialComponents/Ink (109.1.0):
+  - MaterialComponents/Ink (109.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/LibraryInfo (109.1.0)
-  - MaterialComponents/List (109.1.0):
+  - MaterialComponents/LibraryInfo (109.2.0)
+  - MaterialComponents/List (109.2.0):
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
@@ -346,112 +658,112 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - "MaterialComponents/List+Theming (109.1.0)":
+  - "MaterialComponents/List+Theming (109.2.0)":
     - MaterialComponents/List
     - MaterialComponents/schemes/Container
-  - MaterialComponents/NavigationBar (109.1.0):
+  - MaterialComponents/NavigationBar (109.2.0):
     - MaterialComponents/ButtonBar
     - MaterialComponents/Elevation
     - MaterialComponents/private/Math
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
-  - "MaterialComponents/NavigationBar+ColorThemer (109.1.0)":
+  - "MaterialComponents/NavigationBar+ColorThemer (109.2.0)":
     - MaterialComponents/NavigationBar
     - MaterialComponents/schemes/Color
-  - "MaterialComponents/NavigationBar+TypographyThemer (109.1.0)":
+  - "MaterialComponents/NavigationBar+TypographyThemer (109.2.0)":
     - MaterialComponents/NavigationBar
     - MaterialComponents/schemes/Typography
-  - MaterialComponents/NavigationDrawer (109.1.0):
+  - MaterialComponents/NavigationDrawer (109.2.0):
     - MaterialComponents/Elevation
     - MaterialComponents/Palettes
     - MaterialComponents/private/Math
     - MaterialComponents/private/UIMetrics
     - MaterialComponents/ShadowLayer
-  - "MaterialComponents/NavigationDrawer+ColorThemer (109.1.0)":
+  - "MaterialComponents/NavigationDrawer+ColorThemer (109.2.0)":
     - MaterialComponents/NavigationDrawer
     - MaterialComponents/schemes/Color
-  - MaterialComponents/OverlayWindow (109.1.0):
+  - MaterialComponents/OverlayWindow (109.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Application
-  - MaterialComponents/PageControl (109.1.0):
+  - MaterialComponents/PageControl (109.2.0):
     - MDFInternationalization
-  - MaterialComponents/Palettes (109.1.0)
-  - MaterialComponents/private (109.1.0):
-    - MaterialComponents/private/Application (= 109.1.0)
-    - MaterialComponents/private/Color (= 109.1.0)
-    - MaterialComponents/private/Icons (= 109.1.0)
-    - MaterialComponents/private/KeyboardWatcher (= 109.1.0)
-    - MaterialComponents/private/Math (= 109.1.0)
-    - MaterialComponents/private/Overlay (= 109.1.0)
-    - "MaterialComponents/private/TextControlsPrivate+BaseStyle (= 109.1.0)"
-    - "MaterialComponents/private/TextControlsPrivate+FilledStyle (= 109.1.0)"
-    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (= 109.1.0)"
-    - "MaterialComponents/private/TextControlsPrivate+Shared (= 109.1.0)"
-    - MaterialComponents/private/ThumbTrack (= 109.1.0)
-    - MaterialComponents/private/UIMetrics (= 109.1.0)
-  - MaterialComponents/private/Application (109.1.0)
-  - MaterialComponents/private/Color (109.1.0):
+  - MaterialComponents/Palettes (109.2.0)
+  - MaterialComponents/private (109.2.0):
+    - MaterialComponents/private/Application (= 109.2.0)
+    - MaterialComponents/private/Color (= 109.2.0)
+    - MaterialComponents/private/Icons (= 109.2.0)
+    - MaterialComponents/private/KeyboardWatcher (= 109.2.0)
+    - MaterialComponents/private/Math (= 109.2.0)
+    - MaterialComponents/private/Overlay (= 109.2.0)
+    - "MaterialComponents/private/TextControlsPrivate+BaseStyle (= 109.2.0)"
+    - "MaterialComponents/private/TextControlsPrivate+FilledStyle (= 109.2.0)"
+    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (= 109.2.0)"
+    - "MaterialComponents/private/TextControlsPrivate+Shared (= 109.2.0)"
+    - MaterialComponents/private/ThumbTrack (= 109.2.0)
+    - MaterialComponents/private/UIMetrics (= 109.2.0)
+  - MaterialComponents/private/Application (109.2.0)
+  - MaterialComponents/private/Color (109.2.0):
     - MaterialComponents/Availability
-  - MaterialComponents/private/Icons (109.1.0):
-    - MaterialComponents/private/Icons/Base (= 109.1.0)
-    - MaterialComponents/private/Icons/ic_arrow_back (= 109.1.0)
-    - MaterialComponents/private/Icons/ic_check (= 109.1.0)
-    - MaterialComponents/private/Icons/ic_check_circle (= 109.1.0)
-    - MaterialComponents/private/Icons/ic_chevron_right (= 109.1.0)
-    - MaterialComponents/private/Icons/ic_color_lens (= 109.1.0)
-    - MaterialComponents/private/Icons/ic_help_outline (= 109.1.0)
-    - MaterialComponents/private/Icons/ic_info (= 109.1.0)
-    - MaterialComponents/private/Icons/ic_more_horiz (= 109.1.0)
-    - MaterialComponents/private/Icons/ic_radio_button_unchecked (= 109.1.0)
-    - MaterialComponents/private/Icons/ic_reorder (= 109.1.0)
-    - MaterialComponents/private/Icons/ic_settings (= 109.1.0)
-  - MaterialComponents/private/Icons/Base (109.1.0)
-  - MaterialComponents/private/Icons/ic_arrow_back (109.1.0):
+  - MaterialComponents/private/Icons (109.2.0):
+    - MaterialComponents/private/Icons/Base (= 109.2.0)
+    - MaterialComponents/private/Icons/ic_arrow_back (= 109.2.0)
+    - MaterialComponents/private/Icons/ic_check (= 109.2.0)
+    - MaterialComponents/private/Icons/ic_check_circle (= 109.2.0)
+    - MaterialComponents/private/Icons/ic_chevron_right (= 109.2.0)
+    - MaterialComponents/private/Icons/ic_color_lens (= 109.2.0)
+    - MaterialComponents/private/Icons/ic_help_outline (= 109.2.0)
+    - MaterialComponents/private/Icons/ic_info (= 109.2.0)
+    - MaterialComponents/private/Icons/ic_more_horiz (= 109.2.0)
+    - MaterialComponents/private/Icons/ic_radio_button_unchecked (= 109.2.0)
+    - MaterialComponents/private/Icons/ic_reorder (= 109.2.0)
+    - MaterialComponents/private/Icons/ic_settings (= 109.2.0)
+  - MaterialComponents/private/Icons/Base (109.2.0)
+  - MaterialComponents/private/Icons/ic_arrow_back (109.2.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/Icons/ic_check (109.1.0):
+  - MaterialComponents/private/Icons/ic_check (109.2.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/Icons/ic_check_circle (109.1.0):
+  - MaterialComponents/private/Icons/ic_check_circle (109.2.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/Icons/ic_chevron_right (109.1.0):
+  - MaterialComponents/private/Icons/ic_chevron_right (109.2.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/Icons/ic_color_lens (109.1.0):
+  - MaterialComponents/private/Icons/ic_color_lens (109.2.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/Icons/ic_help_outline (109.1.0):
+  - MaterialComponents/private/Icons/ic_help_outline (109.2.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/Icons/ic_info (109.1.0):
+  - MaterialComponents/private/Icons/ic_info (109.2.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/Icons/ic_more_horiz (109.1.0):
+  - MaterialComponents/private/Icons/ic_more_horiz (109.2.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/Icons/ic_radio_button_unchecked (109.1.0):
+  - MaterialComponents/private/Icons/ic_radio_button_unchecked (109.2.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/Icons/ic_reorder (109.1.0):
+  - MaterialComponents/private/Icons/ic_reorder (109.2.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/Icons/ic_settings (109.1.0):
+  - MaterialComponents/private/Icons/ic_settings (109.2.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/KeyboardWatcher (109.1.0):
+  - MaterialComponents/private/KeyboardWatcher (109.2.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (109.1.0)
-  - MaterialComponents/private/Overlay (109.1.0)
-  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (109.1.0)":
+  - MaterialComponents/private/Math (109.2.0)
+  - MaterialComponents/private/Overlay (109.2.0)
+  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (109.2.0)":
     - MaterialComponents/AnimationTiming
     - MaterialComponents/private/Math
     - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/private/TextControlsPrivate+FilledStyle (109.1.0)":
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Math
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (109.1.0)":
+  - "MaterialComponents/private/TextControlsPrivate+FilledStyle (109.2.0)":
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
     - MaterialComponents/private/Math
     - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/private/TextControlsPrivate+Shared (109.1.0)":
+  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (109.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+Shared (109.2.0)":
     - MaterialComponents/AnimationTiming
     - MaterialComponents/private/Math
     - "MaterialComponents/TextControls+Enums"
-  - MaterialComponents/private/ThumbTrack (109.1.0):
+  - MaterialComponents/private/ThumbTrack (109.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
@@ -460,64 +772,64 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - MaterialComponents/private/UIMetrics (109.1.0):
+  - MaterialComponents/private/UIMetrics (109.2.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/ProgressView (109.1.0):
+  - MaterialComponents/ProgressView (109.2.0):
     - MaterialComponents/Palettes
     - MaterialComponents/private/Math
     - MDFInternationalization
-  - "MaterialComponents/ProgressView+Theming (109.1.0)":
+  - "MaterialComponents/ProgressView+Theming (109.2.0)":
     - MaterialComponents/ProgressView
     - MaterialComponents/schemes/Container
-  - MaterialComponents/Ripple (109.1.0):
+  - MaterialComponents/Ripple (109.2.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/schemes (109.1.0):
-    - MaterialComponents/schemes/Color (= 109.1.0)
-    - MaterialComponents/schemes/Container (= 109.1.0)
-    - MaterialComponents/schemes/Shape (= 109.1.0)
-    - MaterialComponents/schemes/Typography (= 109.1.0)
-    - "MaterialComponents/schemes/Typography+BasicFontScheme (= 109.1.0)"
-    - "MaterialComponents/schemes/Typography+Scheming (= 109.1.0)"
-  - MaterialComponents/schemes/Color (109.1.0):
+  - MaterialComponents/schemes (109.2.0):
+    - MaterialComponents/schemes/Color (= 109.2.0)
+    - MaterialComponents/schemes/Container (= 109.2.0)
+    - MaterialComponents/schemes/Shape (= 109.2.0)
+    - MaterialComponents/schemes/Typography (= 109.2.0)
+    - "MaterialComponents/schemes/Typography+BasicFontScheme (= 109.2.0)"
+    - "MaterialComponents/schemes/Typography+Scheming (= 109.2.0)"
+  - MaterialComponents/schemes/Color (109.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
-  - MaterialComponents/schemes/Container (109.1.0):
+  - MaterialComponents/schemes/Container (109.2.0):
     - MaterialComponents/schemes/Color
     - MaterialComponents/schemes/Shape
     - MaterialComponents/schemes/Typography
-  - MaterialComponents/schemes/Shape (109.1.0):
+  - MaterialComponents/schemes/Shape (109.2.0):
     - MaterialComponents/ShapeLibrary
     - MaterialComponents/Shapes
-  - MaterialComponents/schemes/Typography (109.1.0):
+  - MaterialComponents/schemes/Typography (109.2.0):
     - "MaterialComponents/schemes/Typography+BasicFontScheme"
     - "MaterialComponents/schemes/Typography+Scheming"
     - MaterialComponents/Typography
-  - "MaterialComponents/schemes/Typography+BasicFontScheme (109.1.0)"
-  - "MaterialComponents/schemes/Typography+Scheming (109.1.0)"
-  - MaterialComponents/ShadowElevations (109.1.0)
-  - MaterialComponents/ShadowLayer (109.1.0):
+  - "MaterialComponents/schemes/Typography+BasicFontScheme (109.2.0)"
+  - "MaterialComponents/schemes/Typography+Scheming (109.2.0)"
+  - MaterialComponents/ShadowElevations (109.2.0)
+  - MaterialComponents/ShadowLayer (109.2.0):
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/ShapeLibrary (109.1.0):
+  - MaterialComponents/ShapeLibrary (109.2.0):
     - MaterialComponents/private/Math
     - MaterialComponents/Shapes
-  - MaterialComponents/Shapes (109.1.0):
+  - MaterialComponents/Shapes (109.2.0):
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
-  - MaterialComponents/Slider (109.1.0):
+  - MaterialComponents/Slider (109.2.0):
     - MaterialComponents/Elevation
     - MaterialComponents/Palettes
     - MaterialComponents/private/Math
     - MaterialComponents/private/ThumbTrack
     - MaterialComponents/ShadowElevations
-  - "MaterialComponents/Slider+ColorThemer (109.1.0)":
+  - "MaterialComponents/Slider+ColorThemer (109.2.0)":
     - MaterialComponents/Palettes
     - MaterialComponents/schemes/Color
     - MaterialComponents/Slider
-  - MaterialComponents/Snackbar (109.1.0):
+  - MaterialComponents/Snackbar (109.2.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
     - MaterialComponents/Buttons
@@ -530,13 +842,13 @@ PODS:
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
-  - "MaterialComponents/Snackbar+FontThemer (109.1.0)":
+  - "MaterialComponents/Snackbar+FontThemer (109.2.0)":
     - MaterialComponents/Snackbar
     - MaterialComponents/Themes
-  - "MaterialComponents/Snackbar+TypographyThemer (109.1.0)":
+  - "MaterialComponents/Snackbar+TypographyThemer (109.2.0)":
     - MaterialComponents/schemes/Typography
     - MaterialComponents/Snackbar
-  - MaterialComponents/Tabs (109.1.0):
+  - MaterialComponents/Tabs (109.2.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
@@ -547,51 +859,51 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - "MaterialComponents/Tabs+Theming (109.1.0)":
+  - "MaterialComponents/Tabs+Theming (109.2.0)":
     - MaterialComponents/schemes/Container
     - MaterialComponents/Tabs
     - "MaterialComponents/Tabs+TypographyThemer"
-  - "MaterialComponents/Tabs+TypographyThemer (109.1.0)":
+  - "MaterialComponents/Tabs+TypographyThemer (109.2.0)":
     - MaterialComponents/schemes/Typography
     - MaterialComponents/Tabs
-  - "MaterialComponents/TextControls+BaseTextAreas (109.1.0)":
+  - "MaterialComponents/TextControls+BaseTextAreas (109.2.0)":
     - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
     - "MaterialComponents/private/TextControlsPrivate+Shared"
     - MDFInternationalization
-  - "MaterialComponents/TextControls+BaseTextFields (109.1.0)":
+  - "MaterialComponents/TextControls+BaseTextFields (109.2.0)":
     - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
     - "MaterialComponents/private/TextControlsPrivate+Shared"
     - MDFInternationalization
-  - "MaterialComponents/TextControls+Enums (109.1.0)"
-  - "MaterialComponents/TextControls+FilledTextAreas (109.1.0)":
+  - "MaterialComponents/TextControls+Enums (109.2.0)"
+  - "MaterialComponents/TextControls+FilledTextAreas (109.2.0)":
     - MaterialComponents/Availability
     - "MaterialComponents/private/TextControlsPrivate+FilledStyle"
     - "MaterialComponents/TextControls+BaseTextAreas"
-  - "MaterialComponents/TextControls+FilledTextAreasTheming (109.1.0)":
+  - "MaterialComponents/TextControls+FilledTextAreasTheming (109.2.0)":
     - MaterialComponents/schemes/Container
     - "MaterialComponents/TextControls+FilledTextAreas"
-  - "MaterialComponents/TextControls+FilledTextFields (109.1.0)":
+  - "MaterialComponents/TextControls+FilledTextFields (109.2.0)":
     - MaterialComponents/Availability
     - "MaterialComponents/private/TextControlsPrivate+FilledStyle"
     - "MaterialComponents/TextControls+BaseTextFields"
-  - "MaterialComponents/TextControls+FilledTextFieldsTheming (109.1.0)":
+  - "MaterialComponents/TextControls+FilledTextFieldsTheming (109.2.0)":
     - MaterialComponents/schemes/Container
     - "MaterialComponents/TextControls+FilledTextFields"
-  - "MaterialComponents/TextControls+OutlinedTextAreas (109.1.0)":
+  - "MaterialComponents/TextControls+OutlinedTextAreas (109.2.0)":
     - MaterialComponents/Availability
     - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
     - "MaterialComponents/TextControls+BaseTextAreas"
-  - "MaterialComponents/TextControls+OutlinedTextAreasTheming (109.1.0)":
+  - "MaterialComponents/TextControls+OutlinedTextAreasTheming (109.2.0)":
     - MaterialComponents/schemes/Container
     - "MaterialComponents/TextControls+OutlinedTextAreas"
-  - "MaterialComponents/TextControls+OutlinedTextFields (109.1.0)":
+  - "MaterialComponents/TextControls+OutlinedTextFields (109.2.0)":
     - MaterialComponents/Availability
     - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
     - "MaterialComponents/TextControls+BaseTextFields"
-  - "MaterialComponents/TextControls+OutlinedTextFieldsTheming (109.1.0)":
+  - "MaterialComponents/TextControls+OutlinedTextFieldsTheming (109.2.0)":
     - MaterialComponents/schemes/Container
     - "MaterialComponents/TextControls+OutlinedTextFields"
-  - MaterialComponents/TextFields (109.1.0):
+  - MaterialComponents/TextFields (109.2.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Buttons
     - MaterialComponents/Elevation
@@ -599,17 +911,17 @@ PODS:
     - MaterialComponents/private/Math
     - MaterialComponents/Typography
     - MDFInternationalization
-  - "MaterialComponents/TextFields+ColorThemer (109.1.0)":
+  - "MaterialComponents/TextFields+ColorThemer (109.2.0)":
     - MaterialComponents/TextFields
     - MaterialComponents/Themes
-  - "MaterialComponents/TextFields+Theming (109.1.0)":
+  - "MaterialComponents/TextFields+Theming (109.2.0)":
     - MaterialComponents/schemes/Container
     - MaterialComponents/TextFields
     - "MaterialComponents/TextFields+ColorThemer"
-  - MaterialComponents/Themes (109.1.0):
+  - MaterialComponents/Themes (109.2.0):
     - MaterialComponents/schemes/Color
     - MaterialComponents/schemes/Typography
-  - MaterialComponents/Typography (109.1.0):
+  - MaterialComponents/Typography (109.2.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
   - MDFInternationalization (2.0.0)
@@ -617,37 +929,95 @@ PODS:
   - MotionAnimator (2.8.1):
     - MotionInterchange (~> 1.6)
   - MotionInterchange (1.6.0)
+  - nanopb (1.30905.0):
+    - nanopb/decode (= 1.30905.0)
+    - nanopb/encode (= 1.30905.0)
+  - nanopb/decode (1.30905.0)
+  - nanopb/encode (1.30905.0)
+  - PromisesObjC (1.2.8)
+  - SkyFloatingLabelTextField (3.8.0)
+  - SwiftyJSON (5.0.0)
   - TagListView (1.4.0)
 
 DEPENDENCIES:
+  - Alamofire
   - DropDown (= 2.3.2)
   - FBSDKLoginKit
+  - Firebase/Auth
+  - Firebase/Database
+  - Firebase/Firestore
   - MaterialComponents
+  - SkyFloatingLabelTextField
+  - SwiftyJSON
   - TagListView (~> 1.0)
 
 SPEC REPOS:
   trunk:
+    - abseil
+    - Alamofire
+    - BoringSSL-GRPC
     - DropDown
     - FBSDKCoreKit
     - FBSDKLoginKit
+    - Firebase
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseDatabase
+    - FirebaseFirestore
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - "gRPC-C++"
+    - gRPC-Core
+    - GTMSessionFetcher
+    - leveldb-library
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
     - MotionAnimator
     - MotionInterchange
+    - nanopb
+    - PromisesObjC
+    - SkyFloatingLabelTextField
+    - SwiftyJSON
     - TagListView
 
 SPEC CHECKSUMS:
+  abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
-  FBSDKCoreKit: ada5c8a05188daefc9addb985c52b8a1b26da519
-  FBSDKLoginKit: caa165495afa29a12324cb2307fe6e5b33783142
-  MaterialComponents: 194731e6041c0f05798867af15389f261332c330
+  FBSDKCoreKit: 8ad31cd09f793d1d7e84cf20fd6cebfe80ad318d
+  FBSDKLoginKit: 5d1e321dc45ab1fa09198b77fc17c32a06f008c0
+  Firebase: b28e55c60efd98963cd9011fe2fac5a10c2ba124
+  FirebaseAuth: 7047aec89c0b17ecd924a550c853f0c27ac6015e
+  FirebaseAuthInterop: a0f37ae05833af156e72028f648d313f7e7592e9
+  FirebaseCore: e610482f64097b0e9f056cd97bc6b33dfabcbb6a
+  FirebaseCoreDiagnostics: 4a773a47bd83bbd5a9b1ccf1ce7caa8b2d535e67
+  FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  FirebaseDatabase: 4e99c0c475d1ee0aa64ae2b53c93f80b7b60d7d9
+  FirebaseFirestore: 35f8f67d7b25e4743c62ea6e46c38cafa8dc32b5
+  GoogleDataTransport: f6f8eba931df03ebd2232ff4645aa85f8f47b5ab
+  GoogleDataTransportCCTSupport: d70a561f7d236af529fee598835caad5e25f6d3d
+  GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
+  "gRPC-C++": 2ea13a2e14f0b89991a0b4b0151e7c6a56319516
+  gRPC-Core: 325ba201411619a7302c621a1c8ee787719d4b9b
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
+  MaterialComponents: 59bfbfe08fc1ac204b21ba69100beabb932e3699
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
   MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
+  nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
 
-PODFILE CHECKSUM: 10dac5a98406fd128ccb8f29993ff707b19bef76
+PODFILE CHECKSUM: f4ee074586ab55c1d5e4ea476026753b561d8831
 
 COCOAPODS: 1.9.1

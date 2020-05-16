@@ -11,7 +11,7 @@ import MaterialComponents
 import TagListView
 
 class HomeCell: MDCCardCollectionCell, TagListViewDelegate {
-    
+
     let plandaColor = UIColor(rgb: 0xDB555A)
     
     var backgroundPhotoCover = UIView()
@@ -90,7 +90,7 @@ class HomeCell: MDCCardCollectionCell, TagListViewDelegate {
         bookBtn.isUppercaseTitle = true
         bookBtn.setTitle("Book Now", for: .normal)
         bookBtn.setBackgroundColor(plandaColor)
-        bookBtn.layer.cornerRadius = 5
+        bookBtn.layer.cornerRadius = 10
     }
     
     func loadSubviews() {
@@ -134,6 +134,6 @@ class HomeCell: MDCCardCollectionCell, TagListViewDelegate {
         bookBtn.rightAnchor.constraint(equalTo: backgroundPhoto.rightAnchor, constant: -20).isActive = true
         bookBtn.bottomAnchor.constraint(equalTo: backgroundPhoto.bottomAnchor, constant: -20).isActive = true
         bookBtn.widthAnchor.constraint(equalToConstant: 120).isActive = true
-        bookBtn.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        bookBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
 }

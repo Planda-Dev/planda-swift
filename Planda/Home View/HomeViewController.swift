@@ -14,14 +14,14 @@ import SkyFloatingLabelTextField
 ///// Constants for testing
 let plandaColor = UIColor(rgb: 0xDB555A)
 
-let locations = ["Bali, Indonesia",
+var locations = ["Bali, Indonesia",
                  "Miami, Florida",
                  "Los Angeles, California",
                  "New York City, New York",
                  "Paris, France"
 ]
 
-let images = [
+var images = [
     UIImage(named: "bali"),
     UIImage(named: "miami"),
     UIImage(named: "venicebeach"),
@@ -29,21 +29,21 @@ let images = [
     UIImage(named: "paris")
 ]
 
-let activities = ["Bali Hai Lembongan Island Reef Cruise",
+var activities = ["Bali Hai Lembongan Island Reef Cruise",
                   "South Beach Food & Art Deco Walking Tour",
                   "Stroll the Venice Beach Boardwalk",
                   "Mercure Bali Legian",
                   "Dining at Hard Rock Cafe New York City with Priority Seating"
 ]
 
-let prices = [Int.random(in: 200 ... 2000),
+var prices = [Int.random(in: 200 ... 2000),
               Int.random(in: 200 ... 2000),
               Int.random(in: 200 ... 2000),
               Int.random(in: 200 ... 2000),
               Int.random(in: 200 ... 2000)
 ]
 
-let amountOfPeople = [Int.random(in: 1 ... 12),
+var amountOfPeople = [Int.random(in: 1 ... 12),
                       Int.random(in: 1 ... 12),
                       Int.random(in: 1 ... 12),
                       Int.random(in: 1 ... 12),
@@ -57,7 +57,8 @@ UICollectionViewDelegateFlowLayout,
 UICollectionViewDelegate,
 UITextFieldDelegate,
 MDCTabBarDelegate,
-MDCBottomNavigationBarDelegate {
+MDCBottomNavigationBarDelegate
+{
 
     /// Homepage Components
     var headerBackgroundCover = UIView()
@@ -110,7 +111,7 @@ MDCBottomNavigationBarDelegate {
         whereFromTF.lineColor = .white
         whereFromTF.textColor = .white
         whereFromTF.disabledColor = .white
-        whereFromTF.font = .systemFont(ofSize: 20)
+        whereFromTF.font = .boldSystemFont(ofSize: 20)
         whereFromTF.delegate = self
         whereFromTF.attributedPlaceholder = NSAttributedString(string: "Where from?", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
     }
@@ -138,9 +139,9 @@ MDCBottomNavigationBarDelegate {
         whereToTF.lineColor = .white
         whereToTF.textColor = .white
         whereToTF.disabledColor = .white
-        whereToTF.font = .systemFont(ofSize: 20)
+        whereToTF.font = .boldSystemFont(ofSize: 20)
         whereToTF.delegate = self
-        whereToTF.attributedPlaceholder = NSAttributedString(string: "Where to?", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        whereToTF.attributedPlaceholder = NSAttributedString(string: "Where to?", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)])
     }
 
     func setupStartBtn() {
@@ -152,6 +153,7 @@ MDCBottomNavigationBarDelegate {
     
     func setupTabbar() {
         /// Setup Tabbar
+        tabBar.delegate = self
         tabBar.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]
         tabBar.sizeToFit()
         tabBar.backgroundColor = .clear
@@ -160,9 +162,9 @@ MDCBottomNavigationBarDelegate {
         tabBar.setTitleColor(plandaColor, for: .selected)
         tabBar.tintColor = plandaColor
         tabBar.items = [
-            UITabBarItem(title: "Recent", image: UIImage(named: "bali"), tag: 0),
+//            UITabBarItem(title: "Recent", image: UIImage(named: "bali"), tag: 0),
             UITabBarItem(title: "Popular", image: UIImage(named: "bali"), tag: 1),
-            UITabBarItem(title: "Recommended", image: UIImage(named: "bali"), tag: 2),
+//            UITabBarItem(title: "Recommended", image: UIImage(named: "bali"), tag: 2),
             UITabBarItem(title: "Saved", image: UIImage(named: "bali"), tag: 3),
         ]
     }
@@ -186,20 +188,29 @@ MDCBottomNavigationBarDelegate {
     }
     
     func setupBottomNavBar() {
+        let searchIcon = UIImage(named: "search")
+        let planIcon = UIImage(named: "itinerary")
+        let poolIcon = UIImage(named: "pool")
         /// Add items to the bottom navigation bar.
-        let tabBarItem1 = UITabBarItem( title: "Home",   image: nil, tag: 0 )
-        let tabBarItem2 = UITabBarItem( title: "Explore",   image: nil, tag: 1 )
-        let tabBarItem3 = UITabBarItem( title: "Pools", image: nil, tag: 2 )
+        let tabBarItem1 = UITabBarItem(title: "SEARCH",   image: searchIcon, tag: 0 )
+        let tabBarItem2 = UITabBarItem(title: "PLAN",   image: planIcon, tag: 1 )
+        let tabBarItem3 = UITabBarItem(title: "POOLS", image: poolIcon, tag: 2 )
         
-        tabBarItem2.badgeColor = .white
+        tabBarItem2.badgeColor = .systemGray2
+        bottomNavBar.backgroundBlurEffectStyle = .dark
+        bottomNavBar.isBackgroundBlurEnabled = true
+        bottomNavBar.titleVisibility = MDCBottomNavigationBarTitleVisibility.always
+        bottomNavBar.elevation = ShadowElevation(rawValue: 10)
         bottomNavBar.items = [ tabBarItem1, tabBarItem2, tabBarItem3 ]
-        bottomNavBar.selectedItemTitleColor = .white
-        bottomNavBar.unselectedItemTintColor = .white
+        bottomNavBar.selectedItemTitleColor = .systemGray2
+        bottomNavBar.unselectedItemTintColor = .systemGray2
         bottomNavBar.itemBadgeTextColor = .white
-        bottomNavBar.itemTitleFont = UIFont.boldSystemFont(ofSize: 24)
-        bottomNavBar.backgroundColor = plandaColor
-        bottomNavBar.selectedItem = tabBarItem1;
+        bottomNavBar.itemTitleFont = UIFont.boldSystemFont(ofSize: 12)
+        bottomNavBar.backgroundColor = .systemGray5
+        bottomNavBar.selectedItem = tabBarItem1
+        bottomNavBar.selectedItemTintColor = plandaColor
         bottomNavBar.delegate = self
+
     }
     
     func loadSubviews() {
@@ -221,7 +232,7 @@ MDCBottomNavigationBarDelegate {
         /// Function to setup constraints for all components
         let headerHeight = 150
         let airplaneSize = 30
-        let bottomNavBarHeight = 100
+        let bottomNavBarHeight = 80
         
         /// Constraints
         /// Header background constraints
@@ -274,7 +285,7 @@ MDCBottomNavigationBarDelegate {
         /// Collection view constraints
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.topAnchor.constraint(equalTo: tabBar.bottomAnchor).isActive = true
-        collectionView.bottomAnchor.constraint(equalTo: bottomNavBar.topAnchor).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: bottomNavBar.topAnchor, constant: -20).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
         
@@ -302,22 +313,40 @@ MDCBottomNavigationBarDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
-        
-        cell.setShadowElevation(ShadowElevation(rawValue: 10), for: .normal)
-        cell.cornerRadius = 10
-        cell.isSelectable = false
-        
-        cell.setupBackgroundPhoto()
-        cell.setupBackgroundPhotoCover()
-        cell.setupLocationTitle()
-        cell.setupTagView()
-        cell.setupBookBtn()
-        cell.loadSubviews()
-        cell.setupConstraints()
-        
-        cell.backgroundPhoto.image = images[indexPath.item]
-        cell.tripTitle.text = locations[indexPath.item]
-        
+        if !(tabBar.selectedItem?.title == "Saved") {
+            cell.bookBtn.setTitle("Book Now", for: .normal)
+            cell.setShadowElevation(ShadowElevation(rawValue: 10), for: .normal)
+            cell.cornerRadius = 10
+            cell.isSelectable = false
+            
+            cell.setupBackgroundPhoto()
+            cell.setupBackgroundPhotoCover()
+            cell.setupLocationTitle()
+            cell.setupTagView()
+            cell.setupBookBtn()
+            cell.loadSubviews()
+            cell.setupConstraints()
+            
+            cell.backgroundPhoto.image = images[indexPath.item]
+            cell.tripTitle.text = locations[indexPath.item]
+        } else {
+//            cell.bookBtn.setTitle("Plan Now", for: .normal)
+            cell.setShadowElevation(ShadowElevation(rawValue: 10), for: .normal)
+            cell.cornerRadius = 10
+            cell.isSelectable = false
+            
+            cell.setupBackgroundPhoto()
+            cell.setupBackgroundPhotoCover()
+            cell.setupLocationTitle()
+            cell.setupTagView()
+            cell.setupBookBtn()
+            cell.loadSubviews()
+            cell.setupConstraints()
+            
+            cell.backgroundPhoto.image = images[indexPath.item]
+            cell.tripTitle.text = locations[indexPath.item]
+        }
+
         return cell
     }
     
@@ -339,6 +368,32 @@ MDCBottomNavigationBarDelegate {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    }
+    
+    func tabBar(_ tabBar: MDCTabBar, didSelect item: UITabBarItem) {
+//        if (item.title == "Recent"){
+//            images.shuffle()
+//            locations.shuffle()
+//            self.collectionView.reloadData()
+//        }
+        
+        if (item.title == "Popular"){
+            images.shuffle()
+            locations.shuffle()
+            self.collectionView.reloadData()
+        }
+        
+//        if (item.title == "Recommended"){
+//            images.shuffle()
+//            locations.shuffle()
+//            self.collectionView.reloadData()
+//        }
+        
+        if (item.title == "Saved"){
+            images.shuffle()
+            locations.shuffle()
+            self.collectionView.reloadData()
+        }
     }
     
 }

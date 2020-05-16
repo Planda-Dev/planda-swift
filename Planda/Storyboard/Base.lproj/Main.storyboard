@@ -13,13 +13,34 @@
                 <viewController id="Mx3-HX-QFy" customClass="LoginViewController" customModule="Planda" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5sg-Es-M8A"/>
                     <connections>
-                        <segue destination="TK2-6U-oqw" kind="show" id="8Ci-ID-XHQ"/>
-                        <segue destination="oGX-e7-NOz" kind="show" identifier="loadHomeView" id="Xxj-Lp-gSk"/>
+                        <segue destination="TK2-6U-oqw" kind="show" identifier="goToSignUpView" id="8Ci-ID-XHQ"/>
+                        <segue destination="Jd1-zP-mdc" kind="show" identifier="loadLoginView" id="rSQ-en-ibP"/>
+                        <segue destination="oGX-e7-NOz" kind="show" identifier="showHome" id="H7G-xb-MGt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3C-kI-3Uv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6381.1594202898559" y="900.66964285714278"/>
+        </scene>
+        <!--Login View Controller2-->
+        <scene sceneID="bpO-KX-LAC">
+            <objects>
+                <viewController id="Jd1-zP-mdc" customClass="LoginViewController2" customModule="Planda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tU1-lo-Cqw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3gD-hW-9gv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yez-Z6-lzn"/>
+                    <connections>
+                        <segue destination="TK2-6U-oqw" kind="show" id="OUC-XF-O48"/>
+                        <segue destination="oGX-e7-NOz" kind="show" identifier="loginAndGoHome" id="3M3-XS-OtA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yOy-Dn-ZKj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7335" y="445"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="l30-xI-l8F">
@@ -35,12 +56,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBC-Uz-UyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7425" y="443"/>
+            <point key="canvasLocation" x="8338" y="901"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="cE6-Yo-Egf">
             <objects>
-                <viewController id="TK2-6U-oqw" sceneMemberID="viewController">
+                <viewController id="TK2-6U-oqw" customClass="SignUpViewController" customModule="Planda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o4B-aV-0Oo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,10 +69,13 @@
                         <viewLayoutGuide key="safeArea" id="aIU-SR-Hzl"/>
                     </view>
                     <navigationItem key="navigationItem" id="kug-31-pYf"/>
+                    <connections>
+                        <segue destination="qGW-cS-v67" kind="show" identifier="goToNextSignUp" id="Zfi-Ev-srX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbC-5c-Bm9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7426" y="1103"/>
+            <point key="canvasLocation" x="7335" y="1222"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ChY-oH-DQ9">
@@ -70,5 +94,28 @@
             </objects>
             <point key="canvasLocation" x="5471.0144927536239" y="900.66964285714278"/>
         </scene>
+        <!--Sign Up View Controller2-->
+        <scene sceneID="CTD-gG-TS8">
+            <objects>
+                <viewController id="qGW-cS-v67" customClass="SignUpViewController2" customModule="Planda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xpP-6Y-B02">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tON-RZ-ohd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="86X-Yh-c9c"/>
+                    <connections>
+                        <segue destination="oGX-e7-NOz" kind="show" identifier="showHomeView" id="vpc-QV-i4O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXv-PM-GEJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7335" y="1950"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="OUC-XF-O48"/>
+        <segue reference="3M3-XS-OtA"/>
+    </inferredMetricsTieBreakers>
 </document>
