@@ -13,52 +13,19 @@
 		C8208966244FD8A9009E4C2D /* Planda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8208964244FD8A9009E4C2D /* Planda.xcdatamodeld */; };
 		C8208968244FD8AA009E4C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8208967244FD8AA009E4C2D /* Assets.xcassets */; };
 		C820896B244FD8AA009E4C2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8208969244FD8AA009E4C2D /* LaunchScreen.storyboard */; };
-		C8208976244FD8AA009E4C2D /* PlandaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8208975244FD8AA009E4C2D /* PlandaTests.swift */; };
-		C8208981244FD8AA009E4C2D /* PlandaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8208980244FD8AA009E4C2D /* PlandaUITests.swift */; };
-		C8647B5C2455F3E700D84749 /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5B2455F3E700D84749 /* SkyFloatingLabelTextField */; };
-		C8647B5D2455F3E700D84749 /* SkyFloatingLabelTextField in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5B2455F3E700D84749 /* SkyFloatingLabelTextField */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C82377192465DC5500EA2104 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C82377182465DC5500EA2104 /* GoogleService-Info.plist */; };
 		C8647B5F2455F40400D84749 /* SkyFloatingLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */; };
-		C8647B602455F40400D84749 /* SkyFloatingLabelTextField.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C8647B6524563B5400D84749 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8647B6324563B5400D84749 /* HomeCell.swift */; };
 		C873FF9A2453A502007FE2A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873FF992453A502007FE2A5 /* HomeViewController.swift */; };
 		C8A997932459CEBA0052E53E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A997922459CEBA0052E53E /* SearchViewController.swift */; };
 		C8B88473245BAD6A009DCA6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B88472245BAD6A009DCA6D /* LoginViewController.swift */; };
 		C8B88475245BB866009DCA6D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B88474245BB866009DCA6D /* SignUpViewController.swift */; };
 		C8BD5CB9246054C300679EDF /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD5CB8246054C300679EDF /* SearchCell.swift */; };
+		C8BD5CC02460B6F500679EDF /* FinalizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD5CBF2460B6F500679EDF /* FinalizeViewController.swift */; };
+		C8BD5CC22462E99400679EDF /* SignUpViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD5CC12462E99400679EDF /* SignUpViewController2.swift */; };
+		C8FA0F56246C57B300767252 /* LoginViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA0F55246C57B300767252 /* LoginViewController2.swift */; };
 		EFF537BE02D1052D79529567 /* Pods_Planda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C4010CBD0345AAE4096924 /* Pods_Planda.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C8208972244FD8AA009E4C2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C8208950244FD8A9009E4C2D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C8208957244FD8A9009E4C2D;
-			remoteInfo = Planda;
-		};
-		C820897D244FD8AA009E4C2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C8208950244FD8A9009E4C2D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C8208957244FD8A9009E4C2D;
-			remoteInfo = Planda;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C889B6D52455F15D00FDBE36 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C8647B5D2455F3E700D84749 /* SkyFloatingLabelTextField in Embed Frameworks */,
-				C8647B602455F40400D84749 /* SkyFloatingLabelTextField.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		19C4010CBD0345AAE4096924 /* Pods_Planda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Planda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,12 +38,11 @@
 		C8208967244FD8AA009E4C2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C820896A244FD8AA009E4C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C820896C244FD8AA009E4C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8208971244FD8AA009E4C2D /* PlandaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlandaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8208975244FD8AA009E4C2D /* PlandaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlandaTests.swift; sourceTree = "<group>"; };
 		C8208977244FD8AA009E4C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C820897C244FD8AA009E4C2D /* PlandaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlandaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8208980244FD8AA009E4C2D /* PlandaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlandaUITests.swift; sourceTree = "<group>"; };
 		C8208982244FD8AA009E4C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C82377182465DC5500EA2104 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8647B5B2455F3E700D84749 /* SkyFloatingLabelTextField */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SkyFloatingLabelTextField; path = Carthage/Build/iOS/SkyFloatingLabelTextField.framework/SkyFloatingLabelTextField; sourceTree = "<group>"; };
 		C8647B5E2455F40400D84749 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyFloatingLabelTextField.framework; path = Carthage/Build/iOS/SkyFloatingLabelTextField.framework; sourceTree = "<group>"; };
 		C8647B6324563B5400D84749 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
@@ -88,6 +54,9 @@
 		C8B88472245BAD6A009DCA6D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8B88474245BB866009DCA6D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C8BD5CB8246054C300679EDF /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		C8BD5CBF2460B6F500679EDF /* FinalizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalizeViewController.swift; sourceTree = "<group>"; };
+		C8BD5CC12462E99400679EDF /* SignUpViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController2.swift; sourceTree = "<group>"; };
+		C8FA0F55246C57B300767252 /* LoginViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController2.swift; sourceTree = "<group>"; };
 		E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.release.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,22 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8647B5F2455F40400D84749 /* SkyFloatingLabelTextField.framework in Frameworks */,
-				C8647B5C2455F3E700D84749 /* SkyFloatingLabelTextField in Frameworks */,
 				EFF537BE02D1052D79529567 /* Pods_Planda.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C820896E244FD8AA009E4C2D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C8208979244FD8AA009E4C2D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				C8208958244FD8A9009E4C2D /* Planda.app */,
-				C8208971244FD8AA009E4C2D /* PlandaTests.xctest */,
-				C820897C244FD8AA009E4C2D /* PlandaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,13 +96,15 @@
 		C820895A244FD8A9009E4C2D /* Planda */ = {
 			isa = PBXGroup;
 			children = (
+				C82377182465DC5500EA2104 /* GoogleService-Info.plist */,
 				C889B6C42455DE9300FDBE36 /* Storyboard */,
 				C8B88471245BACF9009DCA6D /* Login View */,
 				C8B88476245BB86B009DCA6D /* Sign Up Views */,
 				C889B6C32455DE6F00FDBE36 /* Home View */,
 				C8BD5CBA2460857600679EDF /* Search View */,
-				C820896C244FD8AA009E4C2D /* Info.plist */,
+				C8BD5CBE2460B6A400679EDF /* Plan View */,
 				C8208964244FD8A9009E4C2D /* Planda.xcdatamodeld */,
+				C820896C244FD8AA009E4C2D /* Info.plist */,
 				C820895B244FD8A9009E4C2D /* AppDelegate.swift */,
 				C820895D244FD8A9009E4C2D /* SceneDelegate.swift */,
 				C8208967244FD8AA009E4C2D /* Assets.xcassets */,
@@ -198,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				C8B88472245BAD6A009DCA6D /* LoginViewController.swift */,
+				C8FA0F55246C57B300767252 /* LoginViewController2.swift */,
 			);
 			path = "Login View";
 			sourceTree = "<group>";
@@ -206,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				C8B88474245BB866009DCA6D /* SignUpViewController.swift */,
+				C8BD5CC12462E99400679EDF /* SignUpViewController2.swift */,
 			);
 			path = "Sign Up Views";
 			sourceTree = "<group>";
@@ -215,8 +171,16 @@
 			children = (
 				C8BD5CB8246054C300679EDF /* SearchCell.swift */,
 				C8A997922459CEBA0052E53E /* SearchViewController.swift */,
+				C8BD5CBF2460B6F500679EDF /* FinalizeViewController.swift */,
 			);
 			path = "Search View";
+			sourceTree = "<group>";
+		};
+		C8BD5CBE2460B6A400679EDF /* Plan View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Plan View";
 			sourceTree = "<group>";
 		};
 		D5998CAA8B54937F6414D19C /* Pods */ = {
@@ -252,7 +216,6 @@
 				C8208954244FD8A9009E4C2D /* Sources */,
 				C8208955244FD8A9009E4C2D /* Frameworks */,
 				C8208956244FD8A9009E4C2D /* Resources */,
-				C889B6D52455F15D00FDBE36 /* Embed Frameworks */,
 				C8647B5A2455F3AB00D84749 /* ShellScript */,
 				0E5E2273ECE1CDAA1DE6047B /* [CP] Embed Pods Frameworks */,
 			);
@@ -267,42 +230,6 @@
 			productReference = C8208958244FD8A9009E4C2D /* Planda.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C8208970244FD8AA009E4C2D /* PlandaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C8208988244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "PlandaTests" */;
-			buildPhases = (
-				C820896D244FD8AA009E4C2D /* Sources */,
-				C820896E244FD8AA009E4C2D /* Frameworks */,
-				C820896F244FD8AA009E4C2D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C8208973244FD8AA009E4C2D /* PBXTargetDependency */,
-			);
-			name = PlandaTests;
-			productName = PlandaTests;
-			productReference = C8208971244FD8AA009E4C2D /* PlandaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C820897B244FD8AA009E4C2D /* PlandaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C820898B244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "PlandaUITests" */;
-			buildPhases = (
-				C8208978244FD8AA009E4C2D /* Sources */,
-				C8208979244FD8AA009E4C2D /* Frameworks */,
-				C820897A244FD8AA009E4C2D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C820897E244FD8AA009E4C2D /* PBXTargetDependency */,
-			);
-			name = PlandaUITests;
-			productName = PlandaUITests;
-			productReference = C820897C244FD8AA009E4C2D /* PlandaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -315,14 +242,6 @@
 				TargetAttributes = {
 					C8208957244FD8A9009E4C2D = {
 						CreatedOnToolsVersion = 11.4.1;
-					};
-					C8208970244FD8AA009E4C2D = {
-						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = C8208957244FD8A9009E4C2D;
-					};
-					C820897B244FD8AA009E4C2D = {
-						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = C8208957244FD8A9009E4C2D;
 					};
 				};
 			};
@@ -342,8 +261,6 @@
 			projectRoot = "";
 			targets = (
 				C8208957244FD8A9009E4C2D /* Planda */,
-				C8208970244FD8AA009E4C2D /* PlandaTests */,
-				C820897B244FD8AA009E4C2D /* PlandaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -354,22 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C820896B244FD8AA009E4C2D /* LaunchScreen.storyboard in Resources */,
+				C82377192465DC5500EA2104 /* GoogleService-Info.plist in Resources */,
 				C8208968244FD8AA009E4C2D /* Assets.xcassets in Resources */,
 				C8208963244FD8A9009E4C2D /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C820896F244FD8AA009E4C2D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C820897A244FD8AA009E4C2D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +335,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -440,9 +345,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8B88473245BAD6A009DCA6D /* LoginViewController.swift in Sources */,
+				C8BD5CC02460B6F500679EDF /* FinalizeViewController.swift in Sources */,
 				C8A997932459CEBA0052E53E /* SearchViewController.swift in Sources */,
+				C8FA0F56246C57B300767252 /* LoginViewController2.swift in Sources */,
 				C8B88475245BB866009DCA6D /* SignUpViewController.swift in Sources */,
 				C8647B6524563B5400D84749 /* HomeCell.swift in Sources */,
+				C8BD5CC22462E99400679EDF /* SignUpViewController2.swift in Sources */,
 				C8BD5CB9246054C300679EDF /* SearchCell.swift in Sources */,
 				C820895C244FD8A9009E4C2D /* AppDelegate.swift in Sources */,
 				C820895E244FD8A9009E4C2D /* SceneDelegate.swift in Sources */,
@@ -451,36 +359,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C820896D244FD8AA009E4C2D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C8208976244FD8AA009E4C2D /* PlandaTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C8208978244FD8AA009E4C2D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C8208981244FD8AA009E4C2D /* PlandaUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C8208973244FD8AA009E4C2D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C8208957244FD8A9009E4C2D /* Planda */;
-			targetProxy = C8208972244FD8AA009E4C2D /* PBXContainerItemProxy */;
-		};
-		C820897E244FD8AA009E4C2D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C8208957244FD8A9009E4C2D /* Planda */;
-			targetProxy = C820897D244FD8AA009E4C2D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C8208961244FD8A9009E4C2D /* Main.storyboard */ = {
@@ -552,11 +431,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -606,10 +486,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -621,6 +502,7 @@
 			baseConfigurationReference = 8D6E15A80C3D6CCE69D1D6A5 /* Pods-Planda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Planda/Planda.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
@@ -631,7 +513,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Planda/Info.plist;
-				INSTALL_PATH = "$(LOCAL_PATH_DIR)";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(inherited)",
@@ -643,10 +525,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/SkyFloatingLabelTextField.framework",
 				);
-				MARKETING_VERSION = 0.0.3;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.planda.planda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -657,6 +540,7 @@
 			baseConfigurationReference = E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Planda/Planda.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
@@ -667,7 +551,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Planda/Info.plist;
-				INSTALL_PATH = "$(LOCAL_PATH_DIR)";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(inherited)",
@@ -679,96 +563,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS/SkyFloatingLabelTextField.framework",
 				);
-				MARKETING_VERSION = 0.0.3;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.planda.planda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C8208989244FD8AA009E4C2D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LJB5Z8URN8;
-				INFOPLIST_FILE = PlandaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Planda.PlandaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planda.app/Planda";
-			};
-			name = Debug;
-		};
-		C820898A244FD8AA009E4C2D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LJB5Z8URN8;
-				INFOPLIST_FILE = PlandaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Planda.PlandaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planda.app/Planda";
-			};
-			name = Release;
-		};
-		C820898C244FD8AA009E4C2D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LJB5Z8URN8;
-				INFOPLIST_FILE = PlandaUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Planda.PlandaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Planda;
-			};
-			name = Debug;
-		};
-		C820898D244FD8AA009E4C2D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LJB5Z8URN8;
-				INFOPLIST_FILE = PlandaUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Planda.PlandaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Planda;
 			};
 			name = Release;
 		};
@@ -789,24 +590,6 @@
 			buildConfigurations = (
 				C8208986244FD8AA009E4C2D /* Debug */,
 				C8208987244FD8AA009E4C2D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C8208988244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "PlandaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C8208989244FD8AA009E4C2D /* Debug */,
-				C820898A244FD8AA009E4C2D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C820898B244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "PlandaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C820898C244FD8AA009E4C2D /* Debug */,
-				C820898D244FD8AA009E4C2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

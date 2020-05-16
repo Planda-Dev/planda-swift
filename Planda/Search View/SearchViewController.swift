@@ -9,6 +9,8 @@
 import UIKit
 import MaterialComponents
 import SkyFloatingLabelTextField
+import Alamofire
+import SwiftyJSON
 
 class SearchViewController:
 UIViewController,
@@ -16,38 +18,49 @@ UITextFieldDelegate,
 UICollectionViewDataSource,
 UICollectionViewDelegateFlowLayout,
 UICollectionViewDelegate,
-UIGestureRecognizerDelegate {
-    
-    let flightNames = ["JetBlue Airlines",
+UIGestureRecognizerDelegate,
+UIPickerViewDelegate,
+MDCTabBarDelegate,
+UIPickerViewDataSource {
+
+    var flightNames = ["JetBlue Airlines",
                      "Delta Airlines",
                      "American Airlines",
                      "Frontier Airlines",
                      "Southwest Airlines",
-                     "Singapore Airlines"
+                     "United Airlines"
     ]
-
-    let images = [
+    var hotelNames = ["Four Seasons - Canada",
+                     "Hilton Hotel - Canada",
+                     "Brentwood Bay Resort",
+                     "Le Square Phillips Hotel & Suites",
+                     "Niagara Falls Marriott on the Falls",
+                     "Hilton Vancouver Metrotown"
+    ]
+    var images = [
         UIImage(named: "jetblue"),
         UIImage(named: "delta"),
         UIImage(named: "aa"),
         UIImage(named: "frontier"),
         UIImage(named: "southwest"),
-        UIImage(named: "singaporeairlines")
+        UIImage(named: "united")
     ]
-
-    
-    var picker = UIPickerView()
-
-    
-    // Input the data into the array
+    var hotelImages = [
+        UIImage(named: "fourseasons"),
+        UIImage(named: "fourseasons"),
+        UIImage(named: "fourseasons"),
+        UIImage(named: "fourseasons"),
+        UIImage(named: "fourseasons"),
+        UIImage(named: "fourseasons")
+    ]
     let flightClasses = ["Economy",
                          "Premium Economy",
                          "First",
-                         "Business"]
-    
-    
-    /// Search page Constants
+                         "Business"
+    ]
+
     let moneyColor = UIColor(rgb: 0x85BB65)
+    var flightsArray = [Dictionary<String,String>]()
     
     /// Search Variables
     var headerBackgroundCover = UIView()
@@ -55,6 +68,8 @@ UIGestureRecognizerDelegate {
     var headerLabel = UILabel()
     var destinationLabel = UILabel()
     var tabBar = MDCTabBar()
+    var picker = UIDatePicker()
+    var picker2 = UIDatePicker()
     var whenDepartureTF = SkyFloatingLabelTextField()
     var whenArrivalTF = SkyFloatingLabelTextField()
     var howManyTF = SkyFloatingLabelTextField()
@@ -66,6 +81,7 @@ UIGestureRecognizerDelegate {
     var tripCostLabel = UILabel()
     var tripDatesLabel = UILabel()
     var startPlanningBtn = MDCButton()
+    var classPicker = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +89,62 @@ UIGestureRecognizerDelegate {
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         view.backgroundColor = .white
         
+        let urlString = "https://test.api.amadeus.com/v1/security/oauth2/token"
+        let parameters: Parameters = ["grant_type": "client_credentials", "client_id": "dDAFO40tGXMwzqdvm0u78mV9ukPYtjNZ", "client_secret": "zrnO8TFXWwHJc3qw"]
+        AF.request(urlString, method: .post, parameters: parameters, encoding: URLEncoding.httpBody, headers:["Content-Type":" application/x-www-form-urlencoded"]).responseJSON { response in
+                switch response.result {
+                case .success(let value):
+                    let response = value as! NSDictionary
+                    let accessToken = response.object(forKey: "access_token")! as! String
+                    var urlRequest = URLRequest(url: URL(string: "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=NYC&destinationLocationCode=SFO&departureDate=2020-10-30&adults=1&nonStop=true&max=250")!)
+                    urlRequest.httpMethod = HTTPMethod.get.rawValue
+                    urlRequest = try! URLEncoding.default.encode(urlRequest, with: nil)
+                    urlRequest.setValue(" Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+
+                    (AF.request(urlRequest)).responseJSON(completionHandler: {
+                        response in
+                        switch response.result {
+                        case .success(let array):
+                            let json = JSON(array)
+                            _ = json["data"].arrayValue
+                            print(json)
+//                            let carriers = json["dictionaries"]["carriers"].dictionary!
+//                            for flight in data {
+//                                let priceAbbr = flight["price"]["total"].floatValue
+//                                let price = String(format: "%.2f", priceAbbr)
+//                                let flightDetails = flight["itineraries"][0]
+//                                let flightDetailsSegment = flightDetails["segments"][0]
+//                                let departureLocation = flightDetailsSegment["departure"]["iataCode"].string!
+//                                let departureTime = flightDetailsSegment["departure"]["at"].string?.components(separatedBy: "T")[1].components(separatedBy: ":")
+//                                let hour = departureTime?[0]
+//                                let minute = departureTime?[1]
+//                                let time = hour! + ":" + minute!
+//                                let arrivalLocation = flightDetailsSegment["arrival"]["iataCode"].string!
+//                                let arrivalTime = flightDetailsSegment["arrival"]["at"].string?.components(separatedBy: "T")[1].components(separatedBy: ":00")[0]
+//                                let carrierAbbr = flightDetailsSegment["operating"]["carrierCode"].string!
+//                                let carrier = carriers[carrierAbbr]?.string!
+//                                let duration = flightDetailsSegment["duration"].string!.components(separatedBy: "PT")[1]
+//                                let dict = ["price":price,
+//                                            "departureTime":time,
+//                                            "departureLocation":departureLocation,
+//                                            "arrivalTime": arrivalTime! ,
+//                                            "arrivalLocation":arrivalLocation,
+//                                            "carrier":carrier!,
+//                                            "duration":duration]
+//                                print(dict)
+//                                self.flightsArray.append(dict)
+//
+//                            }
+                        case .failure(let error):
+                            print(error)
+                        }
+                    })
+                    
+                case .failure(let error):
+                    print(error)
+                }
+            }
+
         setupToHideKeyboardOnTapOnView()
         setupHeader()
         setupTabbar()
@@ -125,6 +197,7 @@ UIGestureRecognizerDelegate {
         /// Setup Tabbar
         tabBar.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]
         tabBar.alignment = .center
+        tabBar.delegate = self
         tabBar.sizeToFit()
         tabBar.backgroundColor = .clear
         tabBar.itemAppearance = .titles
@@ -138,10 +211,47 @@ UIGestureRecognizerDelegate {
         ]
     }
     
+    /// Departure Text Field
+    @objc func doneDatePicker(){
+      let formatter = DateFormatter()
+      formatter.dateFormat = "MM/dd/yyyy"
+      whenDepartureTF.text = formatter.string(from: picker.date)
+      self.view.endEditing(true)
+    }
+    @objc func cancelDatePicker() {
+       self.view.endEditing(true)
+    }
+    
+    /// Arrival Text Field
+    @objc func doneDatePicker2(){
+      let formatter = DateFormatter()
+      formatter.dateFormat = "MM/dd/yyyy"
+      whenArrivalTF.text = formatter.string(from: picker2.date)
+      self.view.endEditing(true)
+    }
+    @objc func cancelDatePicker2() {
+       self.view.endEditing(true)
+    }
+    
+    /// How Many Text Field
+    @objc func doneDatePicker3(){
+      self.view.endEditing(true)
+    }
+    @objc func cancelDatePicker3() {
+       self.view.endEditing(true)
+    }
+    
+    /// Flight Class Text Field
+    @objc func doneDatePicker4(){
+      flightClassTF.text = String(classPicker.selectedRow(inComponent: 0))
+      self.view.endEditing(true)
+    }
+
+    @objc func cancelDatePicker4() {
+       self.view.endEditing(true)
+    }
+    
     func setupTextFields() {
-        
-        picker.delegate = self
-        picker.dataSource = self
         
         whenDepartureTF = SkyFloatingLabelTextField(frame: CGRect(x: 10, y: 10, width: 200, height: 45))
         whenDepartureTF.inputView = UIDatePicker.init()
@@ -158,6 +268,17 @@ UIGestureRecognizerDelegate {
         whenDepartureTF.attributedPlaceholder = NSAttributedString(string: "Departure", attributes: [NSAttributedString.Key.foregroundColor: plandaColor])
         
         
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.cancelDatePicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(self.doneDatePicker))
+        toolbar.setItems([cancelButton,spaceButton,doneButton], animated: false)
+    
+        whenDepartureTF.inputAccessoryView = toolbar
+        picker.datePickerMode = .date
+        whenDepartureTF.inputView = picker
+
         whenArrivalTF = SkyFloatingLabelTextField(frame: CGRect(x: 10, y: 10, width: 200, height: 45))
         whenArrivalTF.inputView = UIDatePicker.init()
         whenArrivalTF.selectedLineHeight = 2.0
@@ -171,6 +292,17 @@ UIGestureRecognizerDelegate {
         whenArrivalTF.font = .systemFont(ofSize: 20)
         whenArrivalTF.delegate = self
         whenArrivalTF.attributedPlaceholder = NSAttributedString(string: "Arrival", attributes: [NSAttributedString.Key.foregroundColor: plandaColor])
+        
+        let toolbar2 = UIToolbar()
+        toolbar2.sizeToFit()
+        let cancelButton2 = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.cancelDatePicker2))
+        let spaceButton2 = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let doneButton2 = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(self.doneDatePicker2))
+        toolbar2.setItems([cancelButton2,spaceButton2,doneButton2], animated: false)
+        
+        whenArrivalTF.inputAccessoryView = toolbar2
+        picker2.datePickerMode = .date
+        whenArrivalTF.inputView = picker2
         
         howManyTF = SkyFloatingLabelTextField(frame: CGRect(x: 10, y: 10, width: 200, height: 45))
         howManyTF.keyboardType = .asciiCapableNumberPad
@@ -186,9 +318,20 @@ UIGestureRecognizerDelegate {
         howManyTF.delegate = self
         howManyTF.attributedPlaceholder = NSAttributedString(string: "Travellers", attributes: [NSAttributedString.Key.foregroundColor: plandaColor])
         
-        flightClassTF = SkyFloatingLabelTextField(frame: CGRect(x: 10, y: 10, width: 200, height: 45))
+        let toolbar3 = UIToolbar()
+        toolbar3.sizeToFit()
+        let cancelButton3 = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.cancelDatePicker3))
+        let spaceButton3 = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let doneButton3 = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(self.doneDatePicker3))
+        toolbar3.setItems([cancelButton3,spaceButton3,doneButton3], animated: false)
         
-        flightClassTF.inputView = UIPickerView.init()
+        howManyTF.inputAccessoryView = toolbar3
+        
+        classPicker.delegate = self
+        classPicker.dataSource = self
+        
+        flightClassTF = SkyFloatingLabelTextField(frame: CGRect(x: 10, y: 10, width: 200, height: 45))
+        flightClassTF.inputView = classPicker
         flightClassTF.selectedLineHeight = 2.0
         flightClassTF.selectedLineColor = plandaColor
         flightClassTF.selectedTitleColor = plandaColor
@@ -200,6 +343,28 @@ UIGestureRecognizerDelegate {
         flightClassTF.font = .systemFont(ofSize: 20)
         flightClassTF.delegate = self
         flightClassTF.attributedPlaceholder = NSAttributedString(string: "Class", attributes: [NSAttributedString.Key.foregroundColor: plandaColor])
+        
+        let toolbar4 = UIToolbar()
+        toolbar4.sizeToFit()
+        let cancelButton4 = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.cancelDatePicker4))
+        let spaceButton4 = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let doneButton4 = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(self.doneDatePicker4))
+        toolbar4.setItems([cancelButton4,spaceButton4,doneButton4], animated: false)
+        
+        
+        flightClassTF.inputAccessoryView = toolbar4
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return flightClasses.count
+     }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return flightClasses[row]
     }
     
     func setupCollectionView() {
@@ -238,15 +403,6 @@ UIGestureRecognizerDelegate {
         tripCostLabel.text = "$340.20 / person"
     }
     
-    func setupTripDatesLabel() {
-        tripDatesLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        tripDatesLabel.numberOfLines = 0
-        tripDatesLabel.textColor = .white
-        tripDatesLabel.font = .boldSystemFont(ofSize: 18)
-        tripDatesLabel.sizeToFit()
-        tripDatesLabel.text = "Trip for 2"
-    }
-    
     func setupSnackBar() {
         setupTripTotalCostLabel()
         setupTripCostLabel()
@@ -255,12 +411,21 @@ UIGestureRecognizerDelegate {
         snackBar.backgroundColor = moneyColor
     }
     
+    @objc fileprivate func goToFinalizeView(_ sender: AnyObject) {
+        let vc = FinalizeViewController()
+        self.present(vc, animated: true, completion: nil)
+        //self.show(vc, sender: self)
+    }
+    
     func setupStartPlanningBtn() {
         startPlanningBtn = MDCButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         startPlanningBtn.isUppercaseTitle = true
-        startPlanningBtn.setTitle("Start", for: .normal)
+        startPlanningBtn.setTitle("Finish", for: .normal)
         startPlanningBtn.setBackgroundColor(plandaColor)
+        startPlanningBtn.setElevation(ShadowElevation.init(rawValue: 3), for: .normal)
+        startPlanningBtn.setElevation(ShadowElevation.init(rawValue: 0), for: .selected)
         startPlanningBtn.layer.cornerRadius = 5
+        startPlanningBtn.addTarget(self, action: #selector(goToFinalizeView), for: .touchUpInside)
     }
     
     func loadSubviews() {
@@ -388,6 +553,7 @@ UIGestureRecognizerDelegate {
         cell.setupBackgroundPhotoCover()
         cell.setupLocationTitle()
         cell.setupTagView()
+        cell.setupSelectBtn()
         cell.setupFlightInfoView()
         cell.loadSubviews()
         cell.setShadowElevation(ShadowElevation(rawValue: 10), for: .normal)
@@ -407,29 +573,61 @@ UIGestureRecognizerDelegate {
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width - 20, height: collectionView.frame.height - 40)
+        return CGSize(width: view.frame.width - 20, height: collectionView.frame.height - 20)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        return UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10)
     }
     
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
     
-}
+    func tabBar(_ tabBar: MDCTabBar, didSelect item: UITabBarItem) {
+        if (item.title == "Flights"){
+            
+            whenDepartureTF.isHidden = false
+            whenArrivalTF.isHidden = false
+            howManyTF.isHidden = false
+            flightClassTF.isHidden = false
+            whenDepartureTF.attributedPlaceholder = NSAttributedString(string: "Departure", attributes: [NSAttributedString.Key.foregroundColor: plandaColor])
+            whenArrivalTF.attributedPlaceholder = NSAttributedString(string: "Arrival", attributes: [NSAttributedString.Key.foregroundColor: plandaColor])
+            howManyTF.attributedPlaceholder = NSAttributedString(string: "Travellers", attributes: [NSAttributedString.Key.foregroundColor: plandaColor])
+            flightClassTF.attributedPlaceholder = NSAttributedString(string: "Class", attributes: [NSAttributedString.Key.foregroundColor: plandaColor])
+            collectionView.topAnchor.constraint(equalTo: flightClassTF.bottomAnchor, constant: 20).isActive = true
+        }
+        
+        if (item.title == "Stays"){
+            flightNames = hotelNames
+            images = hotelImages
+            collectionView.reloadData()
+            whenDepartureTF.isHidden = false
+            whenArrivalTF.isHidden = false
+            howManyTF.isHidden = false
+            flightClassTF.isHidden = false
+            whenDepartureTF.attributedPlaceholder = NSAttributedString(string: "Check In", attributes: [NSAttributedString.Key.foregroundColor: plandaColor])
+            whenArrivalTF.attributedPlaceholder = NSAttributedString(string: "Check Out", attributes: [NSAttributedString.Key.foregroundColor: plandaColor])
+            howManyTF.attributedPlaceholder = NSAttributedString(string: "Guests", attributes: [NSAttributedString.Key.foregroundColor: plandaColor])
+            flightClassTF.attributedPlaceholder = NSAttributedString(string: "Rooms", attributes: [NSAttributedString.Key.foregroundColor: plandaColor])
+        }
+        
+        if (item.title == "Activities"){
+            whenDepartureTF.isHidden = true
+            whenArrivalTF.isHidden = true
+            howManyTF.isHidden = true
+            flightClassTF.isHidden = true
+        }
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange,
+                           replacementString string: String) -> Bool
+    {
+        let maxLength = 2
+        let currentString: NSString = howManyTF.text! as NSString
+        let newString: NSString =
+            currentString.replacingCharacters(in: range, with: string) as NSString
+        return newString.length <= maxLength
+    }
 
-extension SearchViewController: UIPickerViewDelegate, UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        flightClasses.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        flightClassTF.text = flightClasses[row]
-    }
 }

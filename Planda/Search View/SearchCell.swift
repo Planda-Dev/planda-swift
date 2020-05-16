@@ -18,6 +18,7 @@ class SearchCell: MDCCardCollectionCell, TagListViewDelegate {
     var backgroundPhoto = UIImageView()
     var tripTitle = UILabel()
     var tagListView = TagListView()
+    var selectBtn = MDCButton()
     var flightInfoView = UIView()
     
     var fromToLabel = UILabel()
@@ -30,6 +31,7 @@ class SearchCell: MDCCardCollectionCell, TagListViewDelegate {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+
     }
     
     func setupBackgroundPhoto() {
@@ -65,7 +67,7 @@ class SearchCell: MDCCardCollectionCell, TagListViewDelegate {
             onVar = 1
             tagListView.delegate = self
             tagListView.textColor = plandaColor
-            tagListView.tagBackgroundColor = UIColor.white.withAlphaComponent(0.6)
+            tagListView.tagBackgroundColor = UIColor.white.withAlphaComponent(0.8)
             tagListView.alignment = .left
             tagListView.cornerRadius = 5
             tagListView.paddingX = 5
@@ -85,10 +87,20 @@ class SearchCell: MDCCardCollectionCell, TagListViewDelegate {
         }
     }
     
+    func setupSelectBtn() {
+        selectBtn = MDCButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        selectBtn.isUppercaseTitle = true
+        selectBtn.setTitle("Select", for: .normal)
+        selectBtn.setBackgroundColor(plandaColor)
+        selectBtn.setElevation(ShadowElevation.init(rawValue: 3), for: .normal)
+        selectBtn.setElevation(ShadowElevation.init(rawValue: 0), for: .selected)
+        selectBtn.layer.cornerRadius = 5
+    }
+    
     func setupFlightInfoView(){
         flightInfoView = UIView(frame: CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height))
-        flightInfoView.backgroundColor = UIColor.white.withAlphaComponent(0.0)
-        flightInfoView.round(corners: [.bottomLeft, .bottomRight], radius: 10.0)
+        flightInfoView.backgroundColor = UIColor.white.withAlphaComponent(1.0)
+        flightInfoView.layer.roundCorners([.leftBottom,.rightBottom], corner: 10)
         flightInfoView.clipsToBounds = true
         flightInfoView.layer.cornerRadius = 10
         flightInfoView.layer.borderWidth = 1.0
@@ -130,7 +142,8 @@ class SearchCell: MDCCardCollectionCell, TagListViewDelegate {
         addSubview(backgroundPhotoCover)
         addSubview(tripTitle)
         addSubview(tagListView)
-        addSubview(flightInfoView)
+        addSubview(selectBtn)
+  //      addSubview(flightInfoView)
         addSubview(fromToLabel)
         addSubview(flightDurationLabel)
         addSubview(flightDepartureLabel)
@@ -166,41 +179,53 @@ class SearchCell: MDCCardCollectionCell, TagListViewDelegate {
         tagListView.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
         tagListView.rightAnchor.constraint(equalTo: rightAnchor, constant: -20).isActive = true
         
-        /// Trip Title constraints
-        flightInfoView.translatesAutoresizingMaskIntoConstraints = false
-        flightInfoView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
-        flightInfoView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
-        flightInfoView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        flightInfoView.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        /// Start constraints
+        selectBtn.translatesAutoresizingMaskIntoConstraints = false
+        selectBtn.bottomAnchor.constraint(equalTo: backgroundPhoto.bottomAnchor, constant: -20).isActive = true
+        selectBtn.rightAnchor.constraint(equalTo: backgroundPhoto.rightAnchor, constant: -20).isActive = true
+        selectBtn.widthAnchor.constraint(equalToConstant: 120).isActive = true
+        selectBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
-        /// Trip Title constraints
-        flightDepartureLabel.translatesAutoresizingMaskIntoConstraints = false
-        flightDepartureLabel.topAnchor.constraint(equalTo: flightInfoView.topAnchor, constant: 10).isActive = true
-        flightDepartureLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
+//        /// Trip Title constraints
+//        flightInfoView.translatesAutoresizingMaskIntoConstraints = false
+//        flightInfoView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+//        flightInfoView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+//        flightInfoView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+//        flightInfoView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
-        /// Trip Title constraints
-        flightArrivalLabel.translatesAutoresizingMaskIntoConstraints = false
-        flightArrivalLabel.topAnchor.constraint(equalTo: flightInfoView.topAnchor, constant: 10).isActive = true
-        flightArrivalLabel.leftAnchor.constraint(equalTo: flightDepartureLabel.rightAnchor, constant: 5).isActive = true
-        
-        /// Trip Title constraints
-        fromToLabel.translatesAutoresizingMaskIntoConstraints = false
-        fromToLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
-        fromToLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10).isActive = true
-
-        /// Trip Title constraints
-        flightPriceLabel.translatesAutoresizingMaskIntoConstraints = false
-        flightPriceLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -10).isActive = true
-        flightPriceLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10).isActive = true
+//        /// Trip Title constraints
+//        flightDepartureLabel.translatesAutoresizingMaskIntoConstraints = false
+//        flightDepartureLabel.topAnchor.constraint(equalTo: flightInfoView.topAnchor, constant: 10).isActive = true
+//        flightDepartureLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
+//        
+//        /// Trip Title constraints
+//        flightArrivalLabel.translatesAutoresizingMaskIntoConstraints = false
+//        flightArrivalLabel.topAnchor.constraint(equalTo: flightInfoView.topAnchor, constant: 10).isActive = true
+//        flightArrivalLabel.leftAnchor.constraint(equalTo: flightDepartureLabel.rightAnchor, constant: 5).isActive = true
+//        
+//        /// Trip Title constraints
+//        fromToLabel.translatesAutoresizingMaskIntoConstraints = false
+//        fromToLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 20).isActive = true
+//        fromToLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10).isActive = true
+//
+//        /// Trip Title constraints
+//        flightPriceLabel.translatesAutoresizingMaskIntoConstraints = false
+//        flightPriceLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -10).isActive = true
+//        flightPriceLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10).isActive = true
         
     }
 }
 
-extension UIView {
-  func round(corners: UIRectCorner, radius: CGFloat) {
-    let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-    let mask = CAShapeLayer()
-    mask.path = path.cgPath
-    self.layer.mask = mask
-  }
+extension CACornerMask {
+    public static var leftBottom     : CACornerMask { get { return .layerMinXMaxYCorner}}
+    public static var rightBottom    : CACornerMask { get { return .layerMaxXMaxYCorner}}
+    public static var leftTop        : CACornerMask { get { return .layerMaxXMinYCorner}}
+    public static var rightTop       : CACornerMask { get { return .layerMinXMinYCorner}}
+}
+
+extension CALayer {
+    func roundCorners(_ mask:CACornerMask,corner:CGFloat) {
+        self.maskedCorners = mask
+        self.cornerRadius = corner
+    }
 }
