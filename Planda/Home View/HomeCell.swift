@@ -11,12 +11,13 @@ import MaterialComponents
 import TagListView
 
 class HomeCell: MDCCardCollectionCell, TagListViewDelegate {
-    
+
     let plandaColor = UIColor(rgb: 0xDB555A)
     
     var backgroundPhotoCover = UIView()
     var backgroundPhoto = UIImageView()
     var tripTitle = UILabel()
+    var tripPrice = UILabel()
     var tagListView = TagListView()
     var bookBtn = MDCButton()
     var onVar = 0
@@ -58,12 +59,22 @@ class HomeCell: MDCCardCollectionCell, TagListViewDelegate {
         }
     }
     
+    func setupTripPrice() {
+        if onVar == 0 {
+            tripPrice = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+            tripPrice.numberOfLines = 0
+            tripPrice.textColor = .white
+            tripPrice.font = .boldSystemFont(ofSize: 18)
+            tripPrice.sizeToFit()
+        }
+    }
+    
     
     func setupTagView() {
         if onVar == 0 {
             onVar = 1
             tagListView.delegate = self
-            tagListView.textColor = plandaColor
+            tagListView.textColor = .black
             tagListView.tagBackgroundColor = UIColor.white.withAlphaComponent(0.8)
             tagListView.alignment = .left
             tagListView.cornerRadius = 5
@@ -89,14 +100,17 @@ class HomeCell: MDCCardCollectionCell, TagListViewDelegate {
         bookBtn = MDCButton(frame: CGRect(x: 0, y: 0, width: 100, height: 120))
         bookBtn.isUppercaseTitle = true
         bookBtn.setTitle("Book Now", for: .normal)
-        bookBtn.setBackgroundColor(plandaColor)
-        bookBtn.layer.cornerRadius = 5
+        bookBtn.setBackgroundColor(.white)
+        bookBtn.setTitleColor(.black, for: .normal)
+        bookBtn.layer.cornerRadius = 10
+        bookBtn.setElevation(.cardResting, for: .normal)
     }
     
     func loadSubviews() {
         addSubview(backgroundPhoto)
         addSubview(backgroundPhotoCover)
         addSubview(tripTitle)
+        addSubview(tripPrice)
         addSubview(tagListView)
         addSubview(bookBtn)
         setupConstraints()
@@ -116,6 +130,13 @@ class HomeCell: MDCCardCollectionCell, TagListViewDelegate {
         backgroundPhotoCover.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         backgroundPhotoCover.topAnchor.constraint(equalTo: topAnchor).isActive = true
         backgroundPhotoCover.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        
+        /// Book Now button constraints
+        bookBtn.translatesAutoresizingMaskIntoConstraints = false
+        bookBtn.rightAnchor.constraint(equalTo: backgroundPhoto.rightAnchor, constant: -20).isActive = true
+        bookBtn.bottomAnchor.constraint(equalTo: backgroundPhoto.bottomAnchor, constant: -20).isActive = true
+        bookBtn.widthAnchor.constraint(equalToConstant: 120).isActive = true
+        bookBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
 
         /// Trip Title constraints
         tripTitle.translatesAutoresizingMaskIntoConstraints = false
@@ -123,17 +144,17 @@ class HomeCell: MDCCardCollectionCell, TagListViewDelegate {
         tripTitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
         tripTitle.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40).isActive = true
         
+        /// Trip Title constraints
+        tripPrice.translatesAutoresizingMaskIntoConstraints = false
+        tripPrice.leftAnchor.constraint(equalTo: backgroundPhoto.leftAnchor, constant: 20).isActive = true
+        tripPrice.rightAnchor.constraint(equalTo: bookBtn.leftAnchor, constant: 40).isActive = true
+        tripPrice.centerYAnchor.constraint(equalTo: bookBtn.centerYAnchor).isActive = true
+        
         /// Tag List View constraints
         tagListView.translatesAutoresizingMaskIntoConstraints = false
         tagListView.topAnchor.constraint(equalTo: tripTitle.bottomAnchor, constant: 10).isActive = true
         tagListView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
         tagListView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
         
-        /// Book Now button constraints
-        bookBtn.translatesAutoresizingMaskIntoConstraints = false
-        bookBtn.rightAnchor.constraint(equalTo: backgroundPhoto.rightAnchor, constant: -20).isActive = true
-        bookBtn.bottomAnchor.constraint(equalTo: backgroundPhoto.bottomAnchor, constant: -20).isActive = true
-        bookBtn.widthAnchor.constraint(equalToConstant: 120).isActive = true
-        bookBtn.heightAnchor.constraint(equalToConstant: 60).isActive = true
     }
 }

@@ -13,5 +13,12 @@ target 'Planda' do
   pod 'FBSDKLoginKit'
   # For Trip Card Tags
   pod 'TagListView', '~> 1.0'
+  pod 'Firebase/Database'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'SkyFloatingLabelTextField'
+  pod 'Firebase/Firestore'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 
 end

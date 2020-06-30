@@ -6,6 +6,7 @@
 	<dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
@@ -13,11 +14,21 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+=======
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>BoringSSL-GRPC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>DropDown.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
@@ -25,18 +36,24 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>5</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>FBSDKLoginKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
@@ -99,123 +116,234 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>17</integer>
+=======
+		</dict>
+		<key>Firebase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FirebaseAuth.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FirebaseAuthInterop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FirebaseCore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FirebaseCoreDiagnostics.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FirebaseCoreDiagnosticsInterop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FirebaseDatabase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FirebaseFirestore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMSessionFetcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleDataTransport.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleDataTransportCCTSupport.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleUtilities.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MDFInternationalization.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>35</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MDFTextAccessibility.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>36</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MaterialComponents-MaterialIcons_ic_arrow_back.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>24</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MaterialComponents-MaterialIcons_ic_check.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>25</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MaterialComponents-MaterialIcons_ic_check_circle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>26</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MaterialComponents-MaterialIcons_ic_chevron_right.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>27</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MaterialComponents-MaterialIcons_ic_color_lens.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>28</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MaterialComponents-MaterialIcons_ic_help_outline.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>29</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MaterialComponents-MaterialIcons_ic_info.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>30</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MaterialComponents-MaterialIcons_ic_more_horiz.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>31</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MaterialComponents-MaterialIcons_ic_radio_button_unchecked.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>32</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MaterialComponents-MaterialIcons_ic_reorder.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>33</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MaterialComponents-MaterialIcons_ic_settings.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>34</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MaterialComponents.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>23</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MotionAnimator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>37</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>MotionInterchange.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>38</integer>
+=======
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>Pods-Planda.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>40</integer>
 		</dict>
@@ -233,11 +361,29 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>43</integer>
+=======
+		</dict>
+		<key>PromisesObjC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SkyFloatingLabelTextField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>TagListView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
 			<key>orderHint</key>
 			<integer>44</integer>
 		</dict>
@@ -260,6 +406,38 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>20</integer>
+=======
+		</dict>
+		<key>abseil.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>gRPC-C++-gRPCCertificates-Cpp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>gRPC-C++.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>gRPC-Core.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>leveldb-library.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>nanopb.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 		<key>leveldb-library.xcscheme</key>
 		<dict>

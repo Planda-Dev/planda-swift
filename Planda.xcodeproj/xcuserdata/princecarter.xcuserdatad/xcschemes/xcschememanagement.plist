@@ -7,7 +7,29 @@
 		<key>Planda.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>45</integer>
+=======
+			<integer>35</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>C8208957244FD8A9009E4C2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8208970244FD8AA009E4C2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C820897B244FD8AA009E4C2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+>>>>>>> 030ac509330c1b1a20819ad925b8a1eb98980bfb
 		</dict>
 	</dict>
 </dict>
