@@ -8,7 +8,7 @@ target 'Planda' do
   # Components for our UI
   pod 'MaterialComponents'
   # For Location Search Dropdown Since Material Doesnt Have A DropDown Component
-  pod 'DropDown', '2.3.2'
+  # pod 'DropDown', '2.3.2'
   # For Facebook Login
   pod 'FBSDKLoginKit'
   # For Trip Card Tags

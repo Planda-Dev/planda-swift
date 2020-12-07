@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6701CE3E83AFA9BC4AEB8E37 /* Pods_Planda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1F9240579A648408A691EC /* Pods_Planda.framework */; };
 		C820895C244FD8A9009E4C2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820895B244FD8A9009E4C2D /* AppDelegate.swift */; };
 		C820895E244FD8A9009E4C2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820895D244FD8A9009E4C2D /* SceneDelegate.swift */; };
 		C8208963244FD8A9009E4C2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8208961244FD8A9009E4C2D /* Main.storyboard */; };
@@ -25,12 +26,12 @@
 		C8BD5CC22462E99400679EDF /* SignUpViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD5CC12462E99400679EDF /* SignUpViewController2.swift */; };
 		C8FA0F56246C57B300767252 /* LoginViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA0F55246C57B300767252 /* LoginViewController2.swift */; };
 		C8FD71DC24A01057005C14DB /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FD71DB24A01057005C14DB /* PlanViewController.swift */; };
-		EFF537BE02D1052D79529567 /* Pods_Planda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C4010CBD0345AAE4096924 /* Pods_Planda.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19C4010CBD0345AAE4096924 /* Pods_Planda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Planda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D6E15A80C3D6CCE69D1D6A5 /* Pods-Planda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.debug.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.debug.xcconfig"; sourceTree = "<group>"; };
+		1B1F9240579A648408A691EC /* Pods_Planda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Planda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21BD08B99FDBF1CE46B210D1 /* Pods-Planda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.release.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.release.xcconfig"; sourceTree = "<group>"; };
+		600376D07197CD58A42B02A1 /* Pods-Planda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.debug.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.debug.xcconfig"; sourceTree = "<group>"; };
 		C8208958244FD8A9009E4C2D /* Planda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C820895B244FD8A9009E4C2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C820895D244FD8A9009E4C2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +60,6 @@
 		C8BD5CC12462E99400679EDF /* SignUpViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController2.swift; sourceTree = "<group>"; };
 		C8FA0F55246C57B300767252 /* LoginViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController2.swift; sourceTree = "<group>"; };
 		C8FD71DB24A01057005C14DB /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
-		E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planda.release.xcconfig"; path = "Target Support Files/Pods-Planda/Pods-Planda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8647B5F2455F40400D84749 /* SkyFloatingLabelTextField.framework in Frameworks */,
-				EFF537BE02D1052D79529567 /* Pods_Planda.framework in Frameworks */,
+				6701CE3E83AFA9BC4AEB8E37 /* Pods_Planda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,8 +189,8 @@
 		D5998CAA8B54937F6414D19C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8D6E15A80C3D6CCE69D1D6A5 /* Pods-Planda.debug.xcconfig */,
-				E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */,
+				600376D07197CD58A42B02A1 /* Pods-Planda.debug.xcconfig */,
+				21BD08B99FDBF1CE46B210D1 /* Pods-Planda.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -203,7 +203,7 @@
 				C889B6CC2455EB1400FDBE36 /* SwiftPageMenu.framework */,
 				C889B6C92455E7E800FDBE36 /* Swift_PageMenu.framework */,
 				C889B6C72455E71B00FDBE36 /* Swift_PageMenu.framework */,
-				19C4010CBD0345AAE4096924 /* Pods_Planda.framework */,
+				1B1F9240579A648408A691EC /* Pods_Planda.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,20 +215,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8208985244FD8AA009E4C2D /* Build configuration list for PBXNativeTarget "Planda" */;
 			buildPhases = (
-				1E9B19984AC99B9C7C611389 /* [CP] Check Pods Manifest.lock */,
+				54C85ECD1FDB9153AC42A844 /* [CP] Check Pods Manifest.lock */,
 				C8208954244FD8A9009E4C2D /* Sources */,
 				C8208955244FD8A9009E4C2D /* Frameworks */,
 				C8208956244FD8A9009E4C2D /* Resources */,
 				C8647B5A2455F3AB00D84749 /* ShellScript */,
-				0E5E2273ECE1CDAA1DE6047B /* [CP] Embed Pods Frameworks */,
+				8E2038786940C4A6CD2E40DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Planda;
-			packageProductDependencies = (
-			);
 			productName = Planda;
 			productReference = C8208958244FD8A9009E4C2D /* Planda.app */;
 			productType = "com.apple.product-type.application";
@@ -240,7 +238,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = Planda;
 				TargetAttributes = {
 					C8208957244FD8A9009E4C2D = {
@@ -257,8 +255,6 @@
 				Base,
 			);
 			mainGroup = C820894F244FD8A9009E4C2D;
-			packageReferences = (
-			);
 			productRefGroup = C8208959244FD8A9009E4C2D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,24 +279,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0E5E2273ECE1CDAA1DE6047B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1E9B19984AC99B9C7C611389 /* [CP] Check Pods Manifest.lock */ = {
+		54C85ECD1FDB9153AC42A844 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,6 +299,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E2038786940C4A6CD2E40DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Planda/Pods-Planda-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8647B5A2455F3AB00D84749 /* ShellScript */ = {
@@ -411,6 +407,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -472,6 +469,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -503,7 +501,7 @@
 		};
 		C8208986244FD8AA009E4C2D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D6E15A80C3D6CCE69D1D6A5 /* Pods-Planda.debug.xcconfig */;
+			baseConfigurationReference = 600376D07197CD58A42B02A1 /* Pods-Planda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Planda/Planda.entitlements;
@@ -541,7 +539,7 @@
 		};
 		C8208987244FD8AA009E4C2D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E078F1C3567B9DA6F444C52C /* Pods-Planda.release.xcconfig */;
+			baseConfigurationReference = 21BD08B99FDBF1CE46B210D1 /* Pods-Planda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Planda/Planda.entitlements;
