@@ -8,6 +8,7 @@
 
 import UIKit
 import MaterialComponents
+import AuthenticationServices
 import SkyFloatingLabelTextField
 
 ///// Constants for testing
@@ -18,6 +19,13 @@ var locations = ["Bali, Indonesia",
                  "Los Angeles, California",
                  "New York City, New York",
                  "Paris, France"
+]
+
+var cities = [
+    "Singapore",
+    "New York City",
+    "Auckland",
+    "Sydney"
 ]
 
 var images = [
@@ -71,6 +79,13 @@ MDCBottomNavigationBarControllerDelegate
     var collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
     var bottomNavBar = MDCBottomNavigationBar()
     
+    let appleButton: ASAuthorizationAppleIDButton = {
+        let button = ASAuthorizationAppleIDButton()
+        button.cornerRadius = 8.0
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -84,7 +99,11 @@ MDCBottomNavigationBarControllerDelegate
         setupBottomNavBar()
         loadSubviews()
         setupConstraints()
+        
+        
+        
     }
+    
 
     func setupHeaderBackgroundImg() {
         headerBackgroundImg.image = UIImage(named: "paris")
@@ -213,7 +232,7 @@ MDCBottomNavigationBarControllerDelegate
     
     
     func bottomNavigationBar(_ bottomNavigationBar: MDCBottomNavigationBar, didSelect item: UITabBarItem) {
-        if (item.title == "Search"){
+        if (item.title == "Home"){
             print("Seguing...")
             
         }
@@ -222,7 +241,7 @@ MDCBottomNavigationBarControllerDelegate
             print("Seguing...")
         }
         
-        if (item.title == "Pools"){
+        if (item.title == "Profile"){
             print("Seguing...")
         }
     }

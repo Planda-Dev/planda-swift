@@ -9,6 +9,7 @@
 import UIKit
 import MaterialComponents
 import FBSDKLoginKit
+import AuthenticationServices
 import FirebaseAuth
 import FirebaseFirestore
 
@@ -21,6 +22,13 @@ LoginButtonDelegate {
     var fbLoginBtn = FBLoginButton()
     var signupBtn = MDCButton()
     var agreementText = UILabel()
+    
+    let appleButton: ASAuthorizationAppleIDButton = {
+        let button = ASAuthorizationAppleIDButton()
+        button.cornerRadius = 8.0
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +46,13 @@ LoginButtonDelegate {
         setupSignupBtn()
         loadSubviews()
         setupConstraints()
+        
+        view.addSubview(appleButton)
+        appleButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        appleButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 610).isActive = true
+        appleButton.heightAnchor.constraint(equalToConstant: 46).isActive = true
+        appleButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40).isActive = true
+        
     }
     
     @objc fileprivate func goToLoginView(_ sender: AnyObject) {
